@@ -1,0 +1,106 @@
+num_voters,num_alternatives,Num Profiles,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+20,10,10,25,equal_size,plackett_luce,Borda,0.073,0.03,0.027,0.0
+20,10,10,25,equal_size,plackett_luce,Borda,0.073,0.032,0.019,0.0
+20,10,10,25,equal_size,plackett_luce,Copeland,0.074,0.028,0.018,0.0
+20,10,10,25,equal_size,plackett_luce,Borda,0.081,0.034,0.021,0.0
+20,10,10,25,equal_size,plackett_luce,Copeland,0.084,0.026,0.02,0.0
+20,10,10,25,equal_size,plackett_luce,Copeland,0.084,0.029,0.029,0.0
+20,10,10,25,equal_size,plackett_luce,Borda,0.087,0.03,0.04,0.0
+20,10,10,25,equal_size,plackett_luce,Borda,0.087,0.034,0.014,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.087,0.03,0.022,0.0
+20,10,10,25,equal_size,plackett_luce,Copeland,0.089,0.03,0.038,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Borda,0.095,0.036,0.036,0.0
+20,10,10,25,equal_size,plackett_luce,Copeland,0.1,0.032,0.023,0.0
+20,10,10,25,equal_size,plackett_luce,Dowdall,0.11,0.04,0.047,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.116,0.032,0.034,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.119,0.038,0.038,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Borda,0.119,0.033,0.047,0.0
+20,10,10,25,equal_size,plackett_luce,Dowdall,0.12,0.043,0.038,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.12,0.042,0.044,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.121,0.035,0.047,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.129,0.044,0.029,0.0
+20,10,10,25,equal_size,plackett_luce,Dowdall,0.135,0.045,0.053,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.137,0.037,0.043,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.138,0.036,0.062,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.14,0.048,0.038,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.144,0.04,0.064,0.0
+20,10,10,25,equal_size,plackett_luce,Dowdall,0.144,0.041,0.073,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.147,0.044,0.051,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.147,0.044,0.058,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.151,0.049,0.079,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.152,0.041,0.05,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.154,0.045,0.059,0.0
+20,10,10,25,equal_size,plackett_luce,Dowdall,0.158,0.042,0.051,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality Veto,0.167,0.047,0.059,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.171,0.046,0.074,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Borda,0.173,0.048,0.083,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality Veto,0.182,0.044,0.067,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.182,0.052,0.067,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.183,0.048,0.088,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality Veto,0.187,0.042,0.067,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality Veto,0.187,0.042,0.077,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.188,0.046,0.117,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.189,0.046,0.087,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Borda,0.189,0.054,0.091,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.19,0.051,0.084,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Borda,0.191,0.05,0.106,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality Veto,0.193,0.045,0.072,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.204,0.053,0.113,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.21,0.052,0.122,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.215,0.053,0.116,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.216,0.051,0.083,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.217,0.052,0.131,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.221,0.046,0.106,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.223,0.048,0.093,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.225,0.056,0.093,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.239,0.049,0.121,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.243,0.053,0.104,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.259,0.055,0.151,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.26,0.063,0.122,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.261,0.062,0.158,0.0
+20,10,10,25,equal_size,plackett_luce,Anti-Plurality,0.281,0.042,0.197,0.0
+20,10,10,25,equal_size,plackett_luce,Anti-Plurality,0.287,0.044,0.163,0.0
+20,10,10,25,equal_size,plackett_luce,Anti-Plurality,0.29,0.043,0.179,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.292,0.053,0.173,0.0
+20,10,10,25,equal_size,plackett_luce,Anti-Plurality,0.293,0.04,0.187,0.0
+20,10,10,25,equal_size,plackett_luce,Anti-Plurality,0.297,0.031,0.193,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality,0.302,0.056,0.157,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.314,0.051,0.157,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.316,0.06,0.157,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.316,0.06,0.178,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality,0.319,0.056,0.179,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality,0.319,0.052,0.17,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality,0.319,0.047,0.159,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.323,0.045,0.201,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.324,0.054,0.18,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.332,0.049,0.218,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.333,0.038,0.216,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.333,0.057,0.187,0.0
+20,10,10,25,equal_size,plackett_luce,Plurality,0.333,0.054,0.168,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.334,0.061,0.166,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.34,0.045,0.231,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.341,0.063,0.178,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.342,0.058,0.17,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.351,0.06,0.243,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.353,0.053,0.236,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.355,0.059,0.252,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.361,0.054,0.238,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.367,0.053,0.242,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.367,0.053,0.214,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.381,0.041,0.28,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.393,0.056,0.226,0.0
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.478,0.124,0.506,0.119
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.489,0.127,0.494,0.12
+20,10,10,25,equal_size,plackett_luce,Random,0.494,0.129,0.489,0.117
+20,10,10,25,equal_size,plackett_luce,Random,0.494,0.119,0.508,0.128
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.124,0.491,0.122
+20,10,10,25,equal_size,plackett_luce,Random,0.499,0.122,0.506,0.108
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.114,0.496,0.129
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.119,0.495,0.118
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.122,0.495,0.117
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.113,0.492,0.114
+20,10,10,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.117,0.507,0.119
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.115,0.49,0.118
+20,10,10,25,equal_size,plackett_luce,Random,0.507,0.121,0.497,0.12
+20,10,10,25,equal_size,MALLOWS-RELPHI-R,Random,0.509,0.118,0.509,0.116
+20,10,10,25,equal_size,plackett_luce,Random,0.509,0.116,0.501,0.118

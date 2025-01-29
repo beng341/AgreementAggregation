@@ -1,0 +1,41 @@
+num_voters,num_alternatives,Num Profiles,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.065,0.008,0.077,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.066,0.008,0.069,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.066,0.004,0.06,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.066,0.007,0.065,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.067,0.006,0.078,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.068,0.005,0.058,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.069,0.007,0.072,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.069,0.006,0.064,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.072,0.004,0.064,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.072,0.008,0.091,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda,0.072,0.007,0.077,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.073,0.009,0.083,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.075,0.008,0.09,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.076,0.007,0.084,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.078,0.011,0.096,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.079,0.005,0.099,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.08,0.008,0.098,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.08,0.008,0.108,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.082,0.007,0.099,0.0
+100,100,1,10,equal_size,plackett_luce,Borda,0.084,0.006,0.093,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.088,0.008,0.068,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.088,0.01,0.076,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.089,0.009,0.072,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.089,0.004,0.062,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.09,0.006,0.059,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.09,0.008,0.074,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.091,0.007,0.064,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.091,0.009,0.093,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.092,0.007,0.09,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.093,0.009,0.067,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.094,0.011,0.082,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.094,0.01,0.079,0.0
+100,100,1,10,equal_size,MALLOWS-0.4,Borda Min-Max,0.096,0.005,0.065,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.097,0.006,0.098,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.098,0.007,0.089,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.099,0.011,0.092,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.1,0.008,0.109,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.1,0.009,0.099,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.101,0.007,0.097,0.0
+100,100,1,10,equal_size,plackett_luce,Borda Min-Max,0.103,0.007,0.091,0.0

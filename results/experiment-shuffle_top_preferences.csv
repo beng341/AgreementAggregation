@@ -1,0 +1,1261 @@
+num_voters,num_alternatives,Num Profiles,Shuffle Amount,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.122,0.039,0.078,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.368,0.048,0.257,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.246,0.048,0.16,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.119,0.038,0.078,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.158,0.041,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.331,0.052,0.267,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.109,0.034,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.254,0.048,0.189,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.234,0.036,0.17,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.208,0.042,0.123,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.117,0.507,0.113
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.164,0.043,0.067,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.342,0.05,0.242,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.248,0.051,0.159,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.145,0.036,0.069,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.156,0.04,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.38,0.046,0.262,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.143,0.034,0.064,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.27,0.045,0.197,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.251,0.042,0.166,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.234,0.044,0.124,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.117,0.49,0.123
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.194,0.04,0.133,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.392,0.048,0.272,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.305,0.051,0.193,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.177,0.04,0.142,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.203,0.044,0.14,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.386,0.048,0.287,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.18,0.042,0.16,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.327,0.043,0.239,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.291,0.05,0.207,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.267,0.039,0.183,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.117,0.504,0.114
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.138,0.034,0.033,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.349,0.053,0.282,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.268,0.046,0.171,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.12,0.036,0.028,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.149,0.037,0.058,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.376,0.035,0.266,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.121,0.033,0.023,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.296,0.038,0.181,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.242,0.035,0.12,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.215,0.037,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.492,0.111,0.506,0.12
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.209,0.05,0.111,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.371,0.056,0.266,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.309,0.06,0.183,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.19,0.047,0.103,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.196,0.05,0.124,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.42,0.06,0.291,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.196,0.045,0.102,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.303,0.051,0.219,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.27,0.054,0.169,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.271,0.05,0.152,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.115,0.51,0.129
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.24,0.052,0.202,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.354,0.056,0.278,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.287,0.058,0.204,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.242,0.048,0.182,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.234,0.056,0.178,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.383,0.049,0.296,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.239,0.051,0.176,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.315,0.05,0.238,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.312,0.05,0.24,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.292,0.055,0.221,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.487,0.129,0.504,0.111
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.137,0.039,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.358,0.05,0.259,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.255,0.046,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.137,0.037,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.168,0.041,0.107,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.359,0.045,0.269,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.125,0.033,0.073,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.297,0.045,0.2,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.242,0.049,0.144,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.229,0.04,0.142,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.123,0.495,0.112
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.137,0.035,0.102,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.32,0.047,0.229,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.252,0.052,0.131,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.129,0.035,0.099,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.146,0.042,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.367,0.046,0.243,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.112,0.035,0.089,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.243,0.05,0.189,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.224,0.043,0.162,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.198,0.043,0.113,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.119,0.51,0.129
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.129,0.039,0.067,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.314,0.054,0.248,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.215,0.045,0.139,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.11,0.039,0.07,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.124,0.04,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.324,0.039,0.271,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.117,0.037,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.25,0.044,0.199,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.226,0.042,0.147,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.197,0.043,0.123,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.511,0.129,0.503,0.126
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.168,0.04,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.388,0.046,0.268,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.279,0.054,0.199,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.164,0.038,0.088,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.179,0.038,0.102,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.387,0.049,0.3,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.161,0.034,0.09,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.3,0.044,0.213,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.279,0.036,0.191,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.254,0.043,0.181,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.117,0.499,0.12
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.16,0.041,0.047,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.314,0.058,0.189,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.223,0.053,0.108,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.151,0.041,0.039,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.189,0.051,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.336,0.061,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.133,0.041,0.039,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.257,0.054,0.142,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.226,0.047,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.219,0.049,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.118,0.506,0.12
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.152,0.046,0.042,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.325,0.054,0.198,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.226,0.047,0.099,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.141,0.045,0.04,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.194,0.052,0.078,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.307,0.054,0.186,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.133,0.039,0.038,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.256,0.048,0.133,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.215,0.047,0.104,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.193,0.047,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.118,0.5,0.12
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.152,0.05,0.056,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.313,0.058,0.188,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.235,0.058,0.104,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.132,0.042,0.04,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.171,0.048,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.33,0.061,0.176,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.137,0.041,0.039,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.256,0.05,0.108,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.202,0.048,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.193,0.05,0.079,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.118,0.502,0.13
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.157,0.042,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.33,0.056,0.192,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.228,0.054,0.118,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.148,0.041,0.077,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.174,0.052,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.322,0.062,0.189,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.147,0.042,0.078,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.238,0.05,0.119,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.207,0.05,0.116,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.206,0.047,0.113,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.492,0.121,0.5,0.111
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.154,0.049,0.053,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.323,0.061,0.176,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.236,0.052,0.101,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.137,0.045,0.056,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.179,0.05,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.341,0.062,0.176,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.136,0.043,0.049,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.255,0.056,0.126,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.22,0.046,0.103,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.194,0.042,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.513,0.132,0.506,0.128
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.145,0.042,0.049,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.34,0.051,0.214,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.23,0.054,0.114,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.132,0.044,0.049,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.182,0.05,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.321,0.059,0.178,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.129,0.039,0.044,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.238,0.053,0.121,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.2,0.05,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.188,0.05,0.09,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.111,0.5,0.113
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.153,0.048,0.067,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.318,0.06,0.186,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.237,0.055,0.116,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.133,0.043,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.173,0.048,0.062,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.353,0.061,0.183,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.131,0.038,0.041,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.244,0.053,0.097,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.209,0.049,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.174,0.044,0.078,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.496,0.124,0.502,0.113
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.153,0.045,0.053,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.308,0.055,0.197,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.205,0.053,0.109,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.146,0.046,0.052,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.16,0.052,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.313,0.051,0.203,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.138,0.041,0.044,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.232,0.052,0.121,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.222,0.048,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.194,0.043,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.111,0.502,0.119
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.147,0.05,0.073,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.308,0.06,0.181,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.219,0.054,0.111,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.133,0.045,0.058,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.166,0.049,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.323,0.059,0.188,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.127,0.04,0.048,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.239,0.051,0.132,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.196,0.051,0.107,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.173,0.045,0.083,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.506,0.119,0.507,0.118
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.157,0.047,0.056,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.342,0.061,0.154,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.253,0.053,0.103,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.152,0.043,0.058,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.199,0.055,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.331,0.06,0.183,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.156,0.044,0.048,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.245,0.051,0.117,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.223,0.055,0.111,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.203,0.05,0.099,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.123,0.498,0.114
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.074,0.031,0.02,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.327,0.057,0.169,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.206,0.046,0.084,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.082,0.034,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.147,0.043,0.062,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.309,0.028,0.192,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.092,0.029,0.028,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.237,0.05,0.116,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.181,0.042,0.099,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.145,0.033,0.069,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.509,0.114,0.499,0.12
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.074,0.035,0.02,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.313,0.054,0.193,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.178,0.05,0.066,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.088,0.034,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.15,0.044,0.067,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.282,0.051,0.166,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.09,0.03,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.254,0.044,0.109,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.188,0.045,0.118,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.163,0.041,0.081,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.508,0.12,0.492,0.13
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.072,0.03,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.31,0.048,0.159,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.187,0.042,0.076,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.089,0.032,0.032,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.135,0.039,0.064,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.293,0.033,0.208,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.089,0.031,0.036,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.226,0.045,0.118,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.172,0.043,0.1,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.154,0.036,0.072,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.498,0.121,0.508,0.118
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.079,0.03,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.301,0.046,0.181,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.169,0.04,0.054,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.084,0.031,0.033,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.135,0.038,0.058,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.294,0.035,0.171,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.091,0.031,0.037,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.235,0.041,0.127,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.182,0.041,0.094,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.148,0.036,0.072,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.512,0.123,0.502,0.124
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.068,0.03,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.309,0.052,0.192,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.184,0.04,0.089,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.086,0.03,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.136,0.044,0.047,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.288,0.036,0.204,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.086,0.029,0.031,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.233,0.046,0.104,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.187,0.043,0.079,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.148,0.039,0.069,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.503,0.132,0.498,0.125
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.07,0.029,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.326,0.048,0.194,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.198,0.044,0.098,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.082,0.032,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.156,0.04,0.06,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.288,0.03,0.207,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.086,0.025,0.031,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.239,0.043,0.128,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.189,0.038,0.087,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.158,0.039,0.052,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.515,0.115,0.516,0.119
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.076,0.031,0.022,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.31,0.052,0.192,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.176,0.043,0.076,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.088,0.032,0.036,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.144,0.037,0.067,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.284,0.045,0.203,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.094,0.031,0.042,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.25,0.047,0.113,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.191,0.039,0.106,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.148,0.04,0.057,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.503,0.12,0.498,0.114
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.063,0.031,0.013,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.314,0.053,0.18,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.176,0.044,0.074,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.074,0.03,0.023,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.122,0.038,0.038,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.282,0.036,0.187,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.081,0.025,0.026,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.22,0.051,0.1,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.179,0.041,0.084,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.139,0.035,0.069,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.49,0.121,0.496,0.125
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.081,0.031,0.02,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.327,0.055,0.187,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.193,0.046,0.074,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.089,0.029,0.033,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.146,0.043,0.064,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.276,0.043,0.197,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.088,0.026,0.037,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.233,0.048,0.114,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.19,0.046,0.08,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.153,0.038,0.071,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.492,0.121,0.496,0.128
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.066,0.026,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.319,0.05,0.168,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.19,0.039,0.082,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.077,0.028,0.021,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.148,0.036,0.053,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anti-Plurality,0.296,0.036,0.191,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.087,0.029,0.022,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.232,0.039,0.109,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.172,0.04,0.09,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.144,0.038,0.073,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.499,0.122,0.501,0.125
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.216,0.059,0.196,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.378,0.073,0.221,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.287,0.067,0.223,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.192,0.058,0.174,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.238,0.061,0.169,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.322,0.063,0.322,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.188,0.053,0.184,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.277,0.061,0.221,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.234,0.057,0.201,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.218,0.06,0.199,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.114,0.509,0.122
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.111,0.035,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.331,0.046,0.219,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.22,0.042,0.138,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.11,0.034,0.066,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.158,0.037,0.097,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.274,0.045,0.252,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.112,0.032,0.079,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.254,0.04,0.219,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.22,0.051,0.138,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.178,0.04,0.174,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.116,0.511,0.128
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.122,0.041,0.093,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.303,0.043,0.222,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.2,0.045,0.137,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.116,0.039,0.097,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.137,0.036,0.121,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.279,0.045,0.263,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.108,0.036,0.104,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.221,0.044,0.222,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.194,0.04,0.188,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.161,0.042,0.148,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.129,0.501,0.119
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.145,0.041,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.31,0.048,0.232,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.228,0.051,0.151,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.138,0.036,0.092,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.139,0.044,0.133,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.299,0.047,0.278,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.137,0.037,0.09,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.228,0.049,0.232,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.206,0.046,0.184,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.188,0.045,0.169,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.125,0.492,0.122
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.159,0.047,0.122,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.31,0.05,0.199,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.208,0.049,0.141,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.148,0.043,0.131,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.158,0.041,0.136,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.284,0.049,0.267,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.154,0.039,0.126,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.222,0.045,0.199,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.202,0.047,0.179,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.208,0.042,0.191,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.12,0.492,0.124
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.152,0.046,0.116,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.37,0.047,0.206,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.23,0.043,0.173,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.142,0.047,0.113,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.177,0.052,0.113,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.281,0.043,0.296,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.139,0.04,0.112,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.278,0.056,0.206,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.205,0.052,0.16,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.18,0.05,0.128,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.133,0.492,0.123
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.122,0.042,0.102,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.282,0.049,0.191,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.197,0.045,0.133,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.108,0.036,0.102,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.123,0.039,0.124,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.308,0.046,0.246,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.102,0.034,0.111,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.202,0.041,0.191,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.171,0.04,0.177,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.156,0.043,0.153,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.49,0.124,0.499,0.126
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.102,0.032,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.278,0.045,0.153,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.177,0.039,0.098,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.097,0.028,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.103,0.034,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.26,0.046,0.217,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.097,0.029,0.059,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.201,0.039,0.153,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.154,0.043,0.093,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.129,0.038,0.106,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.508,0.113,0.505,0.116
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.084,0.026,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.292,0.041,0.177,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.173,0.033,0.111,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.079,0.027,0.042,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.107,0.03,0.069,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.271,0.036,0.243,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.077,0.025,0.038,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.208,0.046,0.177,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.16,0.038,0.121,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.154,0.035,0.106,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.127,0.518,0.126
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.144,0.046,0.073,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.329,0.057,0.163,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.223,0.055,0.121,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.125,0.042,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.163,0.049,0.082,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.296,0.058,0.243,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.129,0.04,0.063,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.238,0.051,0.163,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.198,0.049,0.142,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.182,0.049,0.123,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.126,0.502,0.129
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.111,0.04,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.26,0.051,0.113,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.184,0.05,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.091,0.035,0.052,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.131,0.042,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.26,0.058,0.19,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.092,0.037,0.052,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.171,0.046,0.113,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.142,0.044,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.122,0.039,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.117,0.503,0.117
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.109,0.038,0.082,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.257,0.052,0.128,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.162,0.045,0.099,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.104,0.038,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.136,0.044,0.089,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.215,0.058,0.191,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.113,0.037,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.174,0.046,0.128,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.143,0.045,0.109,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.14,0.038,0.1,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.508,0.118,0.5,0.119
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.102,0.038,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.274,0.059,0.14,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.167,0.045,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.095,0.033,0.043,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.135,0.043,0.073,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.221,0.048,0.157,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.083,0.029,0.032,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.18,0.046,0.14,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.154,0.042,0.09,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.127,0.043,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.506,0.125,0.49,0.118
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.095,0.034,0.06,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.257,0.06,0.132,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.164,0.042,0.073,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.104,0.032,0.066,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.138,0.042,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.221,0.051,0.182,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.099,0.033,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.179,0.045,0.132,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.145,0.041,0.133,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.146,0.034,0.104,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.113,0.481,0.121
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.105,0.036,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.261,0.045,0.124,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.155,0.044,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.1,0.034,0.063,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.126,0.042,0.071,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.215,0.054,0.187,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.093,0.031,0.048,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.175,0.044,0.124,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.155,0.043,0.103,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.129,0.041,0.1,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.515,0.128,0.488,0.121
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.127,0.041,0.058,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.246,0.063,0.098,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.164,0.045,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.101,0.037,0.052,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.116,0.042,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.228,0.052,0.168,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.093,0.033,0.048,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.154,0.042,0.098,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.136,0.041,0.077,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.128,0.045,0.08,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.506,0.115,0.503,0.12
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.107,0.04,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.281,0.055,0.111,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.175,0.046,0.088,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.102,0.037,0.06,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.138,0.046,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.229,0.051,0.186,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.095,0.036,0.054,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.191,0.046,0.111,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.148,0.041,0.091,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.136,0.043,0.084,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.115,0.516,0.118
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.111,0.038,0.056,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.261,0.065,0.107,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.165,0.048,0.081,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.11,0.035,0.048,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.135,0.044,0.069,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.218,0.05,0.2,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.105,0.031,0.044,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.165,0.048,0.107,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.151,0.042,0.096,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.132,0.039,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.505,0.123,0.499,0.121
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.134,0.045,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.26,0.055,0.129,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.172,0.046,0.114,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.103,0.035,0.068,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.135,0.039,0.071,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.221,0.056,0.199,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.105,0.037,0.058,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.172,0.046,0.129,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.156,0.042,0.103,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.147,0.04,0.098,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.497,0.121,0.494,0.115
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.1,0.04,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.248,0.051,0.154,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.158,0.044,0.102,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.095,0.036,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.125,0.04,0.091,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.21,0.049,0.198,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.101,0.033,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.157,0.044,0.154,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.136,0.037,0.107,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.113,0.039,0.084,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.111,0.487,0.133
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.04,0.027,0.013,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.237,0.049,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.132,0.037,0.044,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.052,0.026,0.019,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.103,0.037,0.062,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.233,0.035,0.192,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.064,0.024,0.028,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.151,0.045,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.121,0.038,0.088,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.102,0.034,0.072,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.498,0.112,0.502,0.12
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.048,0.02,0.011,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.229,0.049,0.13,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.132,0.036,0.057,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.052,0.02,0.023,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.088,0.033,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.225,0.038,0.194,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.056,0.021,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.144,0.039,0.13,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.121,0.036,0.081,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.096,0.035,0.056,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.51,0.125,0.503,0.112
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.046,0.024,0.02,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.228,0.047,0.103,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.127,0.038,0.047,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.052,0.024,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.09,0.033,0.044,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.235,0.038,0.19,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.06,0.023,0.028,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.146,0.041,0.103,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.117,0.04,0.088,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.106,0.034,0.078,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.495,0.117,0.493,0.114
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.042,0.023,0.016,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.221,0.051,0.114,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.127,0.036,0.047,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.051,0.023,0.021,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.089,0.032,0.051,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.233,0.034,0.199,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.059,0.021,0.021,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.135,0.039,0.114,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.112,0.034,0.087,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.105,0.032,0.062,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.494,0.126,0.506,0.112
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.055,0.023,0.02,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.215,0.048,0.136,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.119,0.035,0.074,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.058,0.024,0.03,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.083,0.031,0.064,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.239,0.04,0.198,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.063,0.023,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.145,0.033,0.136,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.107,0.031,0.084,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.093,0.03,0.063,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.505,0.121,0.503,0.122
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.051,0.026,0.02,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.257,0.05,0.136,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.145,0.038,0.054,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.059,0.026,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.103,0.04,0.051,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.229,0.046,0.172,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.063,0.026,0.029,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.172,0.042,0.136,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.114,0.037,0.068,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.092,0.032,0.068,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.493,0.119,0.513,0.111
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.062,0.028,0.029,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.245,0.046,0.116,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.13,0.037,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.065,0.025,0.028,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.095,0.035,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.222,0.04,0.19,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.072,0.028,0.026,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.167,0.041,0.116,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.117,0.037,0.08,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.103,0.031,0.071,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.488,0.117,0.492,0.112
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.043,0.025,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.252,0.051,0.12,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.125,0.036,0.053,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.051,0.027,0.028,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.114,0.037,0.049,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.223,0.035,0.193,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.062,0.025,0.033,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.168,0.042,0.12,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.135,0.037,0.092,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.113,0.039,0.069,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.499,0.123,0.509,0.126
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.053,0.025,0.016,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.236,0.053,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.13,0.038,0.047,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.068,0.026,0.021,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.099,0.039,0.056,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.239,0.033,0.197,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.066,0.025,0.026,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.153,0.042,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.118,0.034,0.077,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.103,0.033,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.495,0.121,0.5,0.119
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.037,0.023,0.013,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.233,0.051,0.119,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.123,0.035,0.042,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.047,0.026,0.013,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.095,0.032,0.042,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anti-Plurality,0.225,0.043,0.171,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.051,0.021,0.019,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.159,0.037,0.119,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.122,0.035,0.097,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.1,0.032,0.058,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.509,0.124,0.503,0.122
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.219,0.036,0.164,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.116,0.029,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.062,0.019,0.06,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.076,0.026,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.224,0.017,0.252,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.058,0.023,0.066,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.176,0.03,0.164,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.147,0.016,0.164,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.136,0.02,0.139,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.492,0.118,0.506,0.116
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.224,0.041,0.152,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.148,0.038,0.131,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.092,0.031,0.072,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.116,0.035,0.091,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.213,0.026,0.254,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.098,0.029,0.06,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.162,0.034,0.152,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.131,0.026,0.152,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.118,0.034,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.496,0.124,0.5,0.117
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.265,0.054,0.207,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.168,0.048,0.159,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.125,0.038,0.16,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.143,0.042,0.167,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.213,0.035,0.26,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.13,0.037,0.152,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.184,0.044,0.207,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.145,0.034,0.207,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.136,0.035,0.209,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.487,0.122,0.495,0.121
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.259,0.051,0.191,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.18,0.042,0.149,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.123,0.038,0.126,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.139,0.04,0.146,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.265,0.026,0.258,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.132,0.039,0.111,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.206,0.037,0.191,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.171,0.027,0.191,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.135,0.029,0.18,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.111,0.483,0.127
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.277,0.062,0.21,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.202,0.06,0.216,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.113,0.04,0.197,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.155,0.048,0.191,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.22,0.044,0.299,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.141,0.042,0.189,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.199,0.045,0.21,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.156,0.038,0.21,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.139,0.044,0.212,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.121,0.498,0.115
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.244,0.05,0.206,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.166,0.041,0.188,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.115,0.038,0.136,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.12,0.04,0.153,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.204,0.028,0.277,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.125,0.041,0.132,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.171,0.041,0.206,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.139,0.032,0.206,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.137,0.033,0.176,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.508,0.123,0.5,0.117
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.303,0.059,0.248,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.188,0.048,0.224,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.14,0.046,0.196,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.183,0.05,0.201,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.228,0.042,0.289,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.166,0.047,0.196,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.225,0.049,0.248,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.183,0.043,0.248,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.164,0.04,0.222,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.508,0.127,0.516,0.127
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.216,0.054,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.136,0.038,0.109,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.07,0.025,0.07,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.099,0.033,0.063,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.213,0.022,0.273,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.068,0.023,0.073,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.151,0.039,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.121,0.03,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.097,0.027,0.109,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.488,0.128,0.503,0.125
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.241,0.054,0.182,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.181,0.043,0.159,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.083,0.032,0.12,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.124,0.039,0.15,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.234,0.028,0.282,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.093,0.032,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.163,0.038,0.182,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.133,0.031,0.182,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.13,0.032,0.177,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.492,0.117,0.498,0.12
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.258,0.056,0.209,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.179,0.047,0.201,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.104,0.034,0.2,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.152,0.042,0.191,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.214,0.036,0.281,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.131,0.035,0.199,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.181,0.044,0.209,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.146,0.039,0.209,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.119,0.033,0.216,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.477,0.126,0.51,0.12
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.162,0.045,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.11,0.038,0.064,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.04,0.021,0.059,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.069,0.033,0.058,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.175,0.03,0.164,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.048,0.022,0.041,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.106,0.032,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.083,0.026,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.07,0.026,0.076,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.113,0.5,0.118
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.149,0.047,0.099,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.114,0.035,0.069,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.046,0.024,0.044,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.073,0.032,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.137,0.024,0.178,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.053,0.021,0.048,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.092,0.032,0.099,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.069,0.024,0.099,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.073,0.021,0.091,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.127,0.485,0.126
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.157,0.04,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.101,0.034,0.083,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.052,0.022,0.043,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.085,0.029,0.056,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.145,0.025,0.174,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.051,0.023,0.044,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.103,0.031,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.079,0.023,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.071,0.023,0.061,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.483,0.116,0.502,0.115
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.162,0.044,0.119,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.106,0.035,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.058,0.027,0.07,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.087,0.036,0.087,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.155,0.021,0.174,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.061,0.027,0.063,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.108,0.034,0.119,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.085,0.029,0.119,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.093,0.03,0.086,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.507,0.117,0.498,0.113
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.144,0.043,0.082,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.111,0.034,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.044,0.025,0.051,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.071,0.028,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.147,0.025,0.193,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.057,0.023,0.042,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.094,0.032,0.082,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.071,0.027,0.082,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.075,0.023,0.069,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.13,0.503,0.122
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.149,0.041,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.096,0.032,0.083,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.044,0.024,0.057,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.075,0.03,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.152,0.026,0.192,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.053,0.021,0.046,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.096,0.032,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.076,0.026,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.08,0.026,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.114,0.503,0.126
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.148,0.046,0.076,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.107,0.032,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.054,0.024,0.047,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.071,0.032,0.056,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.144,0.027,0.144,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.056,0.02,0.048,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.093,0.031,0.076,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.068,0.024,0.076,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.073,0.025,0.073,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.115,0.495,0.122
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.168,0.049,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.119,0.035,0.087,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.059,0.026,0.05,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.091,0.032,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.158,0.025,0.196,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.066,0.023,0.056,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.114,0.032,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.088,0.026,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.09,0.03,0.087,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.132,0.493,0.115
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.158,0.046,0.133,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.092,0.037,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.058,0.022,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.075,0.03,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.155,0.023,0.166,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.075,0.021,0.054,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.106,0.029,0.133,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.081,0.022,0.133,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.063,0.024,0.104,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.121,0.504,0.124
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.174,0.04,0.093,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.118,0.035,0.068,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.057,0.025,0.054,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.081,0.031,0.067,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.162,0.03,0.194,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.067,0.024,0.047,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.128,0.034,0.093,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.103,0.028,0.093,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.071,0.026,0.091,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.117,0.5,0.127
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.139,0.039,0.076,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.079,0.027,0.044,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.035,0.017,0.026,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.061,0.024,0.049,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.203,0.014,0.197,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.043,0.019,0.037,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.09,0.026,0.076,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.072,0.022,0.076,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.064,0.019,0.056,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.516,0.118,0.49,0.123
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.145,0.035,0.083,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.067,0.025,0.041,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.029,0.018,0.021,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.056,0.026,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.191,0.015,0.191,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.043,0.019,0.026,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.099,0.026,0.083,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.083,0.018,0.083,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.067,0.018,0.076,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.488,0.118,0.499,0.124
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.128,0.039,0.059,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.07,0.03,0.032,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.033,0.016,0.019,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.051,0.023,0.027,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.194,0.01,0.206,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.047,0.016,0.034,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.08,0.028,0.059,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.06,0.023,0.059,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.057,0.019,0.047,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.507,0.123,0.498,0.117
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.126,0.038,0.069,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.075,0.028,0.052,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.023,0.016,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.05,0.022,0.036,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.216,0.013,0.227,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.039,0.016,0.031,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.087,0.024,0.069,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.069,0.018,0.069,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.049,0.018,0.057,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.506,0.121,0.499,0.119
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.135,0.036,0.082,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.073,0.025,0.031,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.033,0.016,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.048,0.024,0.044,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.215,0.008,0.217,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.041,0.016,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.092,0.028,0.082,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.07,0.021,0.082,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.056,0.02,0.056,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.503,0.118,0.495,0.121
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.136,0.037,0.107,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.078,0.028,0.05,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.035,0.018,0.022,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.065,0.027,0.069,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.208,0.009,0.218,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.041,0.015,0.027,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.09,0.027,0.107,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.072,0.021,0.107,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.066,0.021,0.071,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.492,0.115,0.503,0.126
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.126,0.038,0.072,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.078,0.028,0.047,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.029,0.018,0.024,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.056,0.022,0.038,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.183,0.014,0.187,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.032,0.016,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.083,0.027,0.072,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.065,0.021,0.072,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.053,0.017,0.052,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.499,0.125,0.503,0.121
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.137,0.042,0.091,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.083,0.029,0.043,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.029,0.016,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.061,0.021,0.069,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.218,0.01,0.217,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.033,0.017,0.039,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.09,0.026,0.091,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.068,0.018,0.091,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.061,0.02,0.08,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.507,0.113,0.5,0.122
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.136,0.039,0.077,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.07,0.029,0.03,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.024,0.016,0.014,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.06,0.027,0.031,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.184,0.011,0.186,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.036,0.017,0.017,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.092,0.026,0.077,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.07,0.021,0.077,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.062,0.02,0.054,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.494,0.125,0.499,0.12
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.148,0.046,0.074,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.075,0.03,0.032,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.038,0.018,0.026,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.065,0.025,0.042,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anti-Plurality,0.199,0.012,0.199,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.034,0.017,0.023,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.101,0.028,0.074,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.081,0.021,0.074,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.057,0.019,0.057,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.497,0.121,0.496,0.12
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.192,0.05,0.191,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.088,0.031,0.177,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.06,0.025,0.162,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.095,0.033,0.171,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.17,0.01,0.273,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.08,0.027,0.163,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.135,0.035,0.191,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.109,0.029,0.191,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.091,0.022,0.191,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.118,0.503,0.123
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.183,0.037,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.097,0.026,0.15,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.066,0.023,0.108,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.095,0.028,0.109,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.172,0.008,0.261,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.074,0.023,0.118,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.137,0.026,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.118,0.022,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.098,0.015,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.12,0.513,0.114
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.128,0.033,0.119,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.082,0.024,0.097,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.046,0.02,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.065,0.023,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.177,0.005,0.243,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.075,0.019,0.07,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.099,0.021,0.119,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.084,0.013,0.119,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.075,0.01,0.119,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.513,0.119,0.498,0.121
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.159,0.034,0.161,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.098,0.028,0.103,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.059,0.019,0.103,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.082,0.026,0.109,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.193,0.009,0.214,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.071,0.02,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.127,0.024,0.161,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.109,0.017,0.161,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.09,0.011,0.161,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.121,0.519,0.115
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.133,0.03,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.074,0.028,0.07,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.041,0.013,0.063,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.065,0.022,0.072,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.191,0.007,0.224,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.063,0.015,0.057,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.104,0.022,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.087,0.017,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.074,0.01,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.483,0.119,0.497,0.119
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.135,0.034,0.132,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.073,0.028,0.137,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.041,0.017,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.067,0.026,0.109,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.148,0.011,0.247,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.05,0.016,0.093,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.097,0.024,0.132,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.082,0.021,0.132,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.068,0.016,0.132,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.11,0.495,0.121
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.124,0.034,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.071,0.028,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.049,0.022,0.108,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.065,0.024,0.131,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.143,0.009,0.254,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.055,0.017,0.121,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.089,0.021,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.077,0.016,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.068,0.011,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.492,0.123,0.504,0.122
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.149,0.028,0.144,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.093,0.026,0.13,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.072,0.021,0.101,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.078,0.027,0.096,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.209,0.006,0.289,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.071,0.019,0.077,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.116,0.023,0.144,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.098,0.019,0.144,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.078,0.009,0.144,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.119,0.506,0.127
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.19,0.045,0.227,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.098,0.034,0.2,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.077,0.029,0.176,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.112,0.038,0.202,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.148,0.013,0.272,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.105,0.027,0.174,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.14,0.037,0.227,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.115,0.026,0.227,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.098,0.02,0.227,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.482,0.118,0.492,0.116
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.139,0.033,0.134,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.075,0.027,0.142,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.047,0.02,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.072,0.023,0.117,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.161,0.009,0.249,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.051,0.02,0.099,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.11,0.023,0.134,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.095,0.019,0.134,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.082,0.013,0.134,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.511,0.126,0.504,0.118
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.094,0.028,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.055,0.024,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.033,0.016,0.059,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.046,0.019,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.124,0.009,0.17,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.046,0.012,0.051,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.066,0.021,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.051,0.016,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.044,0.011,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.492,0.123,0.503,0.12
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.088,0.035,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.062,0.027,0.092,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.027,0.017,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.038,0.022,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.129,0.009,0.189,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.034,0.017,0.066,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.058,0.024,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.043,0.019,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.034,0.011,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.134,0.503,0.121
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.107,0.029,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.062,0.026,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.025,0.016,0.062,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.058,0.024,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.133,0.01,0.183,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.048,0.017,0.052,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.079,0.021,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.066,0.017,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.055,0.012,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.49,0.128,0.496,0.12
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.098,0.034,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.066,0.028,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.035,0.015,0.058,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.044,0.021,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.133,0.01,0.223,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.041,0.013,0.049,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.062,0.023,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.047,0.016,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.04,0.012,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.121,0.505,0.122
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.106,0.035,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.073,0.026,0.087,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.034,0.018,0.061,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.045,0.021,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.128,0.007,0.178,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.038,0.016,0.062,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.076,0.022,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.061,0.017,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.054,0.012,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.505,0.135,0.482,0.121
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.111,0.032,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.059,0.025,0.066,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.041,0.017,0.059,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.053,0.023,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.139,0.006,0.179,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.052,0.015,0.049,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.082,0.023,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.069,0.017,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.06,0.012,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.511,0.119,0.506,0.115
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.09,0.028,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.068,0.024,0.1,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.03,0.018,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.048,0.023,0.087,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.115,0.008,0.209,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.05,0.015,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.062,0.019,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.051,0.016,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.043,0.011,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.116,0.525,0.127
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.09,0.027,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.062,0.024,0.099,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.026,0.018,0.06,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.045,0.019,0.062,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.129,0.008,0.192,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.04,0.013,0.054,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.064,0.016,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.055,0.012,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.05,0.01,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.483,0.129,0.497,0.119
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.103,0.032,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.068,0.026,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.032,0.016,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.054,0.023,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.122,0.008,0.166,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.048,0.017,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.07,0.022,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.056,0.018,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.046,0.013,0.116,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.123,0.502,0.128
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.102,0.029,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.056,0.023,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.023,0.014,0.062,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.045,0.023,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anti-Plurality,0.124,0.007,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.033,0.014,0.037,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.072,0.022,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.06,0.016,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.053,0.013,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.119,0.51,0.115
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.084,0.024,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.054,0.022,0.042,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.023,0.011,0.041,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.042,0.019,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.186,0.003,0.19,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.024,0.01,0.04,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.06,0.019,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.049,0.015,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.04,0.009,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.514,0.127,0.511,0.126
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.094,0.03,0.083,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.063,0.024,0.041,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.031,0.016,0.031,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.046,0.021,0.059,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.179,0.004,0.186,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.029,0.013,0.031,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.071,0.022,0.083,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.058,0.015,0.083,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.051,0.01,0.083,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.51,0.122,0.49,0.118
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.075,0.023,0.061,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.045,0.02,0.034,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.017,0.011,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.034,0.018,0.046,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.19,0.004,0.201,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.018,0.009,0.03,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.055,0.014,0.061,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.046,0.012,0.061,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.04,0.009,0.061,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.498,0.133,0.501,0.112
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.081,0.026,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.045,0.02,0.043,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.018,0.012,0.024,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.04,0.017,0.038,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.179,0.003,0.193,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.025,0.012,0.033,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.06,0.019,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.049,0.012,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.042,0.009,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.491,0.119,0.5,0.127
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.075,0.023,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.039,0.02,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.014,0.012,0.018,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.028,0.017,0.027,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.181,0.005,0.179,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.026,0.01,0.022,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.055,0.017,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.046,0.012,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.041,0.007,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.491,0.138,0.487,0.12
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.086,0.022,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.043,0.019,0.044,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.019,0.014,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.036,0.018,0.04,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.17,0.004,0.183,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.025,0.009,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.068,0.018,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.06,0.011,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.056,0.008,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.497,0.119,0.491,0.121
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.076,0.025,0.076,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.041,0.02,0.04,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.019,0.014,0.036,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.03,0.019,0.056,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.177,0.003,0.188,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.024,0.008,0.03,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.054,0.019,0.076,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.043,0.014,0.076,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.037,0.009,0.076,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.503,0.123,0.491,0.118
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.073,0.022,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.051,0.02,0.036,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.018,0.012,0.021,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.038,0.019,0.036,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.192,0.002,0.2,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.027,0.013,0.023,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.054,0.017,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.045,0.013,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.038,0.006,0.051,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.488,0.13,0.495,0.126
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.076,0.022,0.054,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.05,0.02,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.022,0.013,0.019,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.034,0.018,0.031,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.189,0.003,0.191,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.034,0.01,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.052,0.018,0.054,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.04,0.013,0.054,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.034,0.008,0.054,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.499,0.122,0.484,0.131
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.086,0.029,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.045,0.021,0.022,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.016,0.012,0.007,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.039,0.023,0.024,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anti-Plurality,0.185,0.003,0.186,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.023,0.01,0.018,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.063,0.02,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.05,0.013,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.046,0.007,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.501,0.121,0.496,0.117

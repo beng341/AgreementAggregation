@@ -1,0 +1,46 @@
+n_voters,n_candidates,n_splits,pref_dist,axiom_name,possible_violations,total_violations,non_violating_rule_names
+100,20,50,MALLOWS-RELPHI-R,Homogeneity,500,35,"Counter({'Borda': 449, 'Dowdall': 6, 'Anti-Plurality': 4, 'Plurality Veto': 3, 'Two Approval': 2, 'Plurality': 1})"
+100,20,50,MALLOWS-RELPHI-R,Reversal Symmetry,500,0,"Counter({'Borda': 475, 'Dowdall': 11, 'Plurality': 5, 'Plurality Veto': 3, 'Two Approval': 3, 'Anti-Plurality': 3})"
+100,20,50,MALLOWS-RELPHI-R,Monotonicity,500,2,"Counter({'Borda': 476, 'Dowdall': 12, 'Plurality': 4, 'Plurality Veto': 3, 'Two Approval': 2, 'Anti-Plurality': 1})"
+100,20,50,MALLOWS-RELPHI-R,Strong Consistency,442,8,"Counter({'Borda': 432, 'Plurality Veto': 2})"
+100,20,50,MALLOWS-RELPHI-R,Weak Consistency,68,6,Counter({'Borda': 62})
+100,20,50,URN-R,Homogeneity,500,88,"Counter({'Borda': 250, 'Dowdall': 103, 'Plurality Veto': 28, 'Two Approval': 17, 'Anti-Plurality': 8, 'Plurality': 6})"
+100,20,50,URN-R,Reversal Symmetry,500,0,"Counter({'Borda': 277, 'Dowdall': 142, 'Plurality Veto': 42, 'Two Approval': 22, 'Anti-Plurality': 11, 'Plurality': 6})"
+100,20,50,URN-R,Monotonicity,500,5,"Counter({'Borda': 279, 'Dowdall': 142, 'Plurality Veto': 37, 'Two Approval': 21, 'Anti-Plurality': 11, 'Plurality': 5})"
+100,20,50,URN-R,Strong Consistency,320,34,"Counter({'Borda': 198, 'Dowdall': 70, 'Plurality Veto': 16, 'Two Approval': 2})"
+100,20,50,URN-R,Weak Consistency,37,0,"Counter({'Borda': 35, 'Dowdall': 2})"
+100,20,50,plackett_luce,Homogeneity,500,13,Counter({'Borda': 487})
+100,20,50,plackett_luce,Reversal Symmetry,500,0,Counter({'Borda': 500})
+100,20,50,plackett_luce,Monotonicity,500,0,Counter({'Borda': 500})
+100,20,50,plackett_luce,Strong Consistency,500,0,Counter({'Borda': 500})
+100,20,50,plackett_luce,Weak Consistency,132,0,Counter({'Borda': 132})
+100,20,50,single_peaked_conitzer,Homogeneity,500,0,Counter({'Borda': 500})
+100,20,50,single_peaked_conitzer,Reversal Symmetry,500,0,Counter({'Borda': 500})
+100,20,50,single_peaked_conitzer,Monotonicity,500,35,Counter({'Borda': 465})
+100,20,50,single_peaked_conitzer,Strong Consistency,499,0,Counter({'Borda': 499})
+100,20,50,single_peaked_conitzer,Weak Consistency,0,0,Counter()
+100,20,50,IC,Homogeneity,500,123,"Counter({'Anti-Plurality': 92, 'Borda': 85, 'Two Approval': 68, 'Plurality': 55, 'Plurality Veto': 54, 'Dowdall': 23})"
+100,20,50,IC,Reversal Symmetry,500,0,"Counter({'Anti-Plurality': 116, 'Borda': 110, 'Two Approval': 89, 'Plurality': 81, 'Plurality Veto': 68, 'Dowdall': 36})"
+100,20,50,IC,Monotonicity,500,62,"Counter({'Borda': 114, 'Anti-Plurality': 90, 'Two Approval': 75, 'Plurality': 71, 'Plurality Veto': 50, 'Dowdall': 38})"
+100,20,50,IC,Strong Consistency,85,31,"Counter({'Plurality Veto': 15, 'Borda': 13, 'Anti-Plurality': 12, 'Two Approval': 7, 'Plurality': 4, 'Dowdall': 3})"
+100,20,50,IC,Weak Consistency,0,0,Counter()
+100,15,50,MALLOWS-RELPHI-R,Homogeneity,500,62,"Counter({'Borda': 426, 'Plurality Veto': 5, 'Anti-Plurality': 3, 'Dowdall': 2, 'Plurality': 1, 'Two Approval': 1})"
+100,15,50,MALLOWS-RELPHI-R,Reversal Symmetry,500,0,"Counter({'Borda': 480, 'Dowdall': 6, 'Plurality Veto': 5, 'Two Approval': 4, 'Anti-Plurality': 4, 'Plurality': 1})"
+100,15,50,MALLOWS-RELPHI-R,Monotonicity,500,3,"Counter({'Borda': 478, 'Plurality Veto': 8, 'Dowdall': 5, 'Anti-Plurality': 3, 'Plurality': 2, 'Two Approval': 1})"
+100,15,50,MALLOWS-RELPHI-R,Strong Consistency,426,6,"Counter({'Borda': 417, 'Anti-Plurality': 1, 'Dowdall': 1, 'Plurality Veto': 1})"
+100,15,50,MALLOWS-RELPHI-R,Weak Consistency,118,3,Counter({'Borda': 115})
+100,15,50,URN-R,Homogeneity,500,112,"Counter({'Borda': 212, 'Dowdall': 114, 'Plurality Veto': 27, 'Two Approval': 17, 'Plurality': 10, 'Anti-Plurality': 8})"
+100,15,50,URN-R,Reversal Symmetry,500,0,"Counter({'Borda': 262, 'Dowdall': 139, 'Plurality Veto': 47, 'Two Approval': 26, 'Anti-Plurality': 16, 'Plurality': 10})"
+100,15,50,URN-R,Monotonicity,500,11,"Counter({'Borda': 255, 'Dowdall': 146, 'Plurality Veto': 41, 'Two Approval': 30, 'Anti-Plurality': 12, 'Plurality': 5})"
+100,15,50,URN-R,Strong Consistency,309,27,"Counter({'Borda': 178, 'Dowdall': 79, 'Plurality Veto': 13, 'Two Approval': 9, 'Plurality': 2, 'Anti-Plurality': 1})"
+100,15,50,URN-R,Weak Consistency,52,0,"Counter({'Borda': 47, 'Dowdall': 5})"
+100,15,50,plackett_luce,Homogeneity,500,16,Counter({'Borda': 484})
+100,15,50,plackett_luce,Reversal Symmetry,500,0,Counter({'Borda': 500})
+100,15,50,plackett_luce,Monotonicity,500,1,"Counter({'Borda': 498, 'Dowdall': 1})"
+100,15,50,plackett_luce,Strong Consistency,500,0,Counter({'Borda': 500})
+100,15,50,plackett_luce,Weak Consistency,194,0,Counter({'Borda': 194})
+100,15,50,single_peaked_conitzer,Homogeneity,500,0,Counter({'Borda': 500})
+100,15,50,single_peaked_conitzer,Reversal Symmetry,500,0,Counter({'Borda': 500})
+100,15,50,single_peaked_conitzer,Monotonicity,500,26,Counter({'Borda': 474})
+100,15,50,single_peaked_conitzer,Strong Consistency,500,0,Counter({'Borda': 500})
+100,15,50,single_peaked_conitzer,Weak Consistency,2,0,Counter({'Borda': 2})

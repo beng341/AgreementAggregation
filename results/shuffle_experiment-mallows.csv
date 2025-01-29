@@ -1,0 +1,1261 @@
+num_voters,num_alternatives,Num Profiles,Shuffle Amount,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.245,0.063,0.133,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.215,0.053,0.129,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.185,0.049,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.126,0.041,0.038,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.127,0.041,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.163,0.042,0.14,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.147,0.046,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.203,0.053,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.152,0.048,0.071,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.114,0.04,0.067,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.361,0.054,0.226,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.372,0.056,0.29,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.387,0.053,0.242,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.381,0.061,0.291,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.372,0.049,0.236,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.376,0.043,0.306,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.382,0.05,0.253,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.393,0.051,0.254,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.4,0.045,0.29,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.346,0.04,0.23,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.303,0.057,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.314,0.056,0.187,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.268,0.05,0.16,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.294,0.053,0.164,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.256,0.052,0.15,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.259,0.05,0.137,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.313,0.062,0.177,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.27,0.048,0.134,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.211,0.048,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.27,0.052,0.158,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.263,0.06,0.169,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.238,0.057,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.202,0.05,0.146,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.065,0.025,0.018,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.198,0.038,0.114,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.271,0.063,0.169,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.218,0.052,0.108,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.18,0.047,0.128,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.214,0.053,0.101,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Borda,0.221,0.062,0.09,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.227,0.045,0.162,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.137,0.036,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.179,0.039,0.144,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.227,0.048,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.22,0.053,0.116,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.263,0.063,0.173,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.234,0.049,0.107,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.16,0.045,0.131,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.217,0.054,0.127,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.279,0.056,0.164,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.339,0.048,0.23,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.374,0.062,0.244,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.348,0.057,0.243,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.422,0.061,0.29,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.363,0.049,0.242,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.368,0.053,0.276,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.359,0.06,0.239,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.379,0.053,0.259,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.327,0.044,0.233,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.354,0.061,0.239,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.202,0.042,0.158,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.241,0.06,0.126,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.199,0.042,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.157,0.036,0.092,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.213,0.053,0.123,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.122,0.034,0.073,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.163,0.048,0.048,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.215,0.041,0.122,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.148,0.036,0.068,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.19,0.046,0.102,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.288,0.042,0.201,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.33,0.062,0.271,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.37,0.062,0.299,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.329,0.063,0.197,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.323,0.048,0.229,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.361,0.059,0.182,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.256,0.046,0.143,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.319,0.061,0.197,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.334,0.043,0.239,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.292,0.047,0.207,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.297,0.062,0.187,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.256,0.054,0.148,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.251,0.045,0.188,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.302,0.056,0.217,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.254,0.05,0.113,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.292,0.054,0.207,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.326,0.056,0.23,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.233,0.034,0.156,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.234,0.041,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.231,0.047,0.173,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.298,0.051,0.143,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.226,0.047,0.16,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.24,0.046,0.163,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.245,0.044,0.127,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.252,0.045,0.164,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.281,0.054,0.257,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.277,0.049,0.134,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.226,0.042,0.122,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.325,0.058,0.192,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.249,0.056,0.117,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.114,0.503,0.118
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.116,0.508,0.117
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.125,0.506,0.129
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.126,0.497,0.133
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.505,0.119,0.503,0.123
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.123,0.499,0.125
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.123,0.501,0.119
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.119,0.48,0.125
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.115,0.488,0.129
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.119,0.5,0.118
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.151,0.044,0.053,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.142,0.046,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.151,0.048,0.031,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.137,0.043,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.148,0.046,0.047,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.142,0.047,0.06,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.159,0.049,0.06,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.168,0.046,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.163,0.049,0.062,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.161,0.048,0.053,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.333,0.048,0.173,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.318,0.056,0.178,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.319,0.05,0.18,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.317,0.053,0.186,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.33,0.062,0.176,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.343,0.066,0.198,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.317,0.053,0.153,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.339,0.057,0.182,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.323,0.054,0.179,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.332,0.054,0.17,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.229,0.054,0.122,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.212,0.051,0.092,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.226,0.049,0.1,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.225,0.049,0.1,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.223,0.051,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.222,0.054,0.088,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.236,0.049,0.096,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.211,0.052,0.103,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.209,0.049,0.118,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.231,0.052,0.099,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.13,0.047,0.046,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.136,0.044,0.05,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.134,0.045,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.122,0.043,0.061,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.134,0.042,0.054,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.134,0.044,0.052,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.13,0.043,0.047,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.135,0.04,0.066,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.127,0.042,0.043,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.132,0.044,0.049,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.182,0.046,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.183,0.052,0.062,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.184,0.051,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.153,0.047,0.071,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.18,0.049,0.071,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.169,0.045,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.167,0.045,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.171,0.053,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.16,0.047,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.181,0.053,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.325,0.06,0.172,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.34,0.055,0.209,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.339,0.057,0.202,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.33,0.059,0.182,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.328,0.056,0.169,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.347,0.054,0.174,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.317,0.057,0.209,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.301,0.05,0.209,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.336,0.055,0.182,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.301,0.053,0.218,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.131,0.043,0.042,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.122,0.043,0.038,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.144,0.04,0.051,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.122,0.04,0.031,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.125,0.042,0.041,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.134,0.042,0.04,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.126,0.042,0.034,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.128,0.041,0.047,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.123,0.041,0.043,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.105,0.034,0.037,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.248,0.05,0.131,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.244,0.054,0.106,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.225,0.047,0.13,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.256,0.06,0.129,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.25,0.056,0.112,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.25,0.053,0.127,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.246,0.059,0.121,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.248,0.054,0.137,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.24,0.053,0.124,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.253,0.046,0.112,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.217,0.055,0.086,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.205,0.05,0.087,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.213,0.045,0.093,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.202,0.049,0.089,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.215,0.05,0.116,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.221,0.051,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.214,0.053,0.089,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.203,0.046,0.116,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.202,0.049,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.211,0.051,0.079,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.203,0.05,0.099,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.175,0.047,0.079,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.192,0.05,0.083,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.181,0.043,0.076,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.196,0.046,0.084,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.189,0.043,0.08,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.208,0.049,0.091,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.179,0.046,0.074,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.197,0.043,0.1,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.2,0.049,0.081,0.0
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.116,0.504,0.119
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.115,0.507,0.122
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.52,0.124,0.505,0.119
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.107,0.493,0.119
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.13,0.489,0.121
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.511,0.118,0.513,0.123
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.127,0.504,0.12
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.124,0.501,0.132
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.121,0.51,0.114
+20,10,10,0,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.124,0.505,0.124
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.073,0.03,0.011,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.07,0.03,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.066,0.029,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.067,0.029,0.02,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.072,0.031,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.077,0.033,0.022,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.067,0.028,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.074,0.032,0.022,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.062,0.028,0.022,0.0
+20,10,10,0,25,equal_size,plackett_luce,PL MLE,0.064,0.03,0.002,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.314,0.053,0.167,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.314,0.056,0.161,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.318,0.051,0.19,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.292,0.05,0.171,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.308,0.05,0.188,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.308,0.051,0.189,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.297,0.051,0.182,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.297,0.058,0.144,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.29,0.057,0.18,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality,0.304,0.053,0.187,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.168,0.041,0.072,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.197,0.053,0.088,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.184,0.047,0.08,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.193,0.046,0.081,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.185,0.044,0.079,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.185,0.045,0.077,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.173,0.045,0.08,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.169,0.041,0.07,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.175,0.042,0.064,0.0
+20,10,10,0,25,equal_size,plackett_luce,Plurality Veto,0.198,0.043,0.083,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.076,0.031,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.092,0.033,0.038,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.08,0.031,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.086,0.029,0.033,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.084,0.031,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.077,0.032,0.019,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.092,0.032,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.078,0.029,0.029,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.074,0.028,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Borda,0.084,0.03,0.018,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.139,0.04,0.053,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.123,0.04,0.04,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.136,0.041,0.051,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.141,0.042,0.06,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.148,0.041,0.073,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.135,0.04,0.062,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.129,0.039,0.053,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.161,0.043,0.08,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.13,0.04,0.033,0.0
+20,10,10,0,25,equal_size,plackett_luce,Dowdall,0.138,0.041,0.053,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.284,0.05,0.16,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.277,0.04,0.187,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.28,0.046,0.192,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.282,0.044,0.182,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.296,0.035,0.176,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.283,0.033,0.211,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.279,0.034,0.182,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.276,0.049,0.19,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.288,0.036,0.191,0.0
+20,10,10,0,25,equal_size,plackett_luce,Anit-Plurality,0.28,0.042,0.2,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.087,0.029,0.026,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.086,0.027,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.083,0.03,0.023,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.092,0.027,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.093,0.031,0.027,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.074,0.025,0.019,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.072,0.027,0.026,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.094,0.031,0.038,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.088,0.027,0.014,0.0
+20,10,10,0,25,equal_size,plackett_luce,Copeland,0.097,0.028,0.024,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.214,0.038,0.131,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.228,0.048,0.084,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.206,0.041,0.124,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.243,0.05,0.123,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.221,0.047,0.104,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.243,0.047,0.11,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.23,0.044,0.133,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.216,0.049,0.104,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.234,0.041,0.108,0.0
+20,10,10,0,25,equal_size,plackett_luce,Two Approval,0.218,0.047,0.132,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.179,0.04,0.081,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.171,0.038,0.099,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.173,0.048,0.086,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.185,0.046,0.09,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.177,0.038,0.083,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.188,0.042,0.1,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.18,0.044,0.083,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.182,0.045,0.083,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.182,0.045,0.094,0.0
+20,10,10,0,25,equal_size,plackett_luce,Three Approval,0.185,0.041,0.099,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.151,0.033,0.082,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.164,0.038,0.073,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.168,0.036,0.067,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.143,0.038,0.064,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.17,0.036,0.084,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.144,0.039,0.067,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.173,0.04,0.056,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.167,0.04,0.073,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.145,0.039,0.077,0.0
+20,10,10,0,25,equal_size,plackett_luce,Four Approval,0.151,0.036,0.087,0.0
+20,10,10,0,25,equal_size,plackett_luce,Random,0.52,0.12,0.497,0.117
+20,10,10,0,25,equal_size,plackett_luce,Random,0.494,0.121,0.511,0.116
+20,10,10,0,25,equal_size,plackett_luce,Random,0.482,0.123,0.497,0.12
+20,10,10,0,25,equal_size,plackett_luce,Random,0.509,0.124,0.494,0.133
+20,10,10,0,25,equal_size,plackett_luce,Random,0.506,0.12,0.508,0.118
+20,10,10,0,25,equal_size,plackett_luce,Random,0.51,0.126,0.491,0.125
+20,10,10,0,25,equal_size,plackett_luce,Random,0.495,0.127,0.518,0.12
+20,10,10,0,25,equal_size,plackett_luce,Random,0.504,0.115,0.509,0.116
+20,10,10,0,25,equal_size,plackett_luce,Random,0.501,0.119,0.501,0.123
+20,10,10,0,25,equal_size,plackett_luce,Random,0.494,0.127,0.498,0.12
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.161,0.046,0.113,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.12,0.045,0.07,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.151,0.045,0.152,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.151,0.042,0.158,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.135,0.035,0.093,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.094,0.034,0.053,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.083,0.032,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.097,0.039,0.047,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.237,0.06,0.189,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,PL MLE,0.171,0.049,0.149,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.32,0.046,0.213,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.325,0.041,0.222,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.378,0.058,0.233,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.362,0.059,0.211,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.394,0.057,0.272,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.407,0.06,0.291,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.264,0.043,0.17,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.369,0.038,0.241,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.338,0.05,0.223,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.344,0.063,0.177,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.214,0.051,0.176,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.179,0.047,0.116,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.185,0.048,0.124,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.243,0.054,0.131,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.238,0.054,0.158,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.186,0.051,0.1,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.151,0.041,0.07,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.301,0.058,0.231,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.291,0.062,0.248,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.149,0.031,0.101,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.188,0.05,0.171,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.117,0.035,0.114,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.118,0.039,0.087,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.115,0.04,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.14,0.041,0.08,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.158,0.056,0.123,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.147,0.046,0.131,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.12,0.034,0.083,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.133,0.045,0.109,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Borda,0.176,0.052,0.112,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.17,0.046,0.102,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.153,0.037,0.104,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.146,0.048,0.131,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.164,0.045,0.144,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.23,0.051,0.18,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.148,0.038,0.097,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.196,0.053,0.102,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.146,0.043,0.091,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.151,0.038,0.104,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.164,0.05,0.107,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.308,0.059,0.249,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.298,0.045,0.276,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.33,0.055,0.281,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.24,0.041,0.209,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.296,0.052,0.248,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.26,0.057,0.227,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.273,0.062,0.254,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.301,0.051,0.234,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.288,0.043,0.303,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.285,0.057,0.282,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.096,0.036,0.084,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.187,0.049,0.16,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.165,0.043,0.127,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.126,0.039,0.086,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.159,0.045,0.117,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.151,0.044,0.17,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.112,0.037,0.077,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.13,0.042,0.097,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.065,0.028,0.032,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.103,0.033,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.183,0.048,0.136,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.198,0.049,0.151,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.258,0.056,0.248,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.206,0.049,0.212,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.238,0.049,0.227,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.229,0.055,0.208,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.2,0.04,0.204,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.22,0.051,0.228,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.211,0.054,0.178,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.22,0.044,0.219,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.238,0.054,0.219,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.24,0.047,0.18,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.228,0.046,0.172,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.228,0.057,0.206,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.183,0.051,0.141,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.225,0.051,0.179,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.168,0.04,0.121,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.207,0.051,0.188,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.185,0.044,0.147,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.237,0.051,0.243,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.163,0.042,0.149,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.149,0.039,0.122,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.167,0.043,0.11,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.195,0.04,0.174,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.163,0.043,0.144,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.169,0.046,0.121,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.218,0.053,0.182,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.16,0.046,0.137,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.141,0.041,0.11,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.197,0.052,0.172,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.512,0.121,0.481,0.119
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.488,0.124,0.497,0.13
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.124,0.514,0.111
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.125,0.509,0.127
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.496,0.124,0.504,0.114
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.484,0.111,0.513,0.122
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.117,0.495,0.112
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.118,0.497,0.118
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.105,0.491,0.116
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.128,0.5,0.117
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.096,0.036,0.04,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.101,0.039,0.06,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.105,0.04,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.112,0.04,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.103,0.038,0.078,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.106,0.036,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.094,0.04,0.038,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.096,0.035,0.047,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.1,0.037,0.049,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.11,0.036,0.049,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.26,0.054,0.093,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.271,0.063,0.123,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.248,0.053,0.107,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.258,0.056,0.133,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.252,0.054,0.114,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.241,0.056,0.136,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.291,0.055,0.119,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.243,0.052,0.111,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.276,0.056,0.136,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.232,0.049,0.114,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.17,0.043,0.074,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.154,0.046,0.068,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.164,0.041,0.088,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.157,0.046,0.073,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.183,0.053,0.086,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.172,0.045,0.096,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.151,0.046,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.161,0.044,0.078,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.164,0.049,0.078,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.177,0.046,0.078,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.092,0.033,0.06,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.087,0.033,0.052,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.096,0.038,0.054,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.099,0.039,0.072,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.112,0.036,0.054,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.09,0.038,0.038,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.108,0.036,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.096,0.035,0.061,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.098,0.036,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.109,0.039,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.132,0.041,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.135,0.045,0.069,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.151,0.042,0.104,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.12,0.04,0.056,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.122,0.044,0.056,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.134,0.041,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.13,0.046,0.076,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.122,0.036,0.08,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.124,0.041,0.058,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.118,0.041,0.071,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.215,0.057,0.161,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.218,0.056,0.17,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.22,0.054,0.189,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.223,0.052,0.161,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.241,0.063,0.207,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.214,0.054,0.189,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.232,0.052,0.17,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.212,0.052,0.174,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.237,0.053,0.218,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.247,0.056,0.193,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.093,0.032,0.043,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.089,0.036,0.024,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.107,0.034,0.064,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.101,0.034,0.033,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.078,0.029,0.032,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.095,0.032,0.049,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.09,0.033,0.054,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.096,0.033,0.04,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.087,0.032,0.039,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.091,0.031,0.028,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.162,0.044,0.146,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.173,0.048,0.112,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.172,0.045,0.146,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.164,0.046,0.12,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.173,0.044,0.106,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.164,0.046,0.114,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.162,0.048,0.138,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.182,0.048,0.131,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.18,0.045,0.112,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.18,0.042,0.134,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.141,0.045,0.092,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.124,0.035,0.09,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.11,0.039,0.081,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.135,0.04,0.101,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.153,0.047,0.098,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.147,0.042,0.118,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.118,0.037,0.079,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.16,0.041,0.124,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.147,0.04,0.13,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.164,0.042,0.106,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.115,0.037,0.084,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.127,0.038,0.094,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.137,0.041,0.071,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.131,0.039,0.072,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.123,0.043,0.051,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.13,0.042,0.067,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.115,0.041,0.062,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.153,0.041,0.088,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.116,0.042,0.082,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.149,0.04,0.088,0.0
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.484,0.115,0.497,0.123
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.132,0.486,0.13
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.116,0.499,0.12
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.12,0.495,0.115
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.49,0.128,0.496,0.117
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.51,0.119,0.514,0.119
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.508,0.12,0.501,0.115
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.115,0.517,0.119
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.506,0.122,0.501,0.116
+20,10,10,2,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.117,0.489,0.121
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.051,0.021,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.055,0.026,0.022,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.05,0.025,0.022,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.05,0.024,0.029,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.052,0.022,0.033,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.054,0.026,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.043,0.024,0.018,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.048,0.023,0.011,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.037,0.021,0.02,0.0
+20,10,10,2,25,equal_size,plackett_luce,PL MLE,0.049,0.021,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.233,0.052,0.118,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.247,0.049,0.124,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.259,0.054,0.093,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.23,0.049,0.121,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.235,0.048,0.107,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.234,0.05,0.104,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.245,0.049,0.124,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.242,0.046,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.238,0.047,0.158,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality,0.237,0.05,0.116,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.133,0.036,0.058,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.128,0.036,0.053,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.134,0.032,0.054,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.117,0.038,0.038,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.123,0.037,0.079,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.119,0.036,0.043,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.128,0.036,0.062,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.127,0.036,0.04,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.134,0.038,0.054,0.0
+20,10,10,2,25,equal_size,plackett_luce,Plurality Veto,0.134,0.036,0.051,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.062,0.025,0.023,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.054,0.026,0.027,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.056,0.028,0.017,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.046,0.023,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.06,0.022,0.02,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.049,0.025,0.019,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.068,0.023,0.033,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.045,0.023,0.028,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.051,0.025,0.021,0.0
+20,10,10,2,25,equal_size,plackett_luce,Borda,0.056,0.027,0.022,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.097,0.03,0.049,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.089,0.034,0.053,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.1,0.033,0.073,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.083,0.033,0.047,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.096,0.034,0.042,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.085,0.034,0.04,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.088,0.032,0.056,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.109,0.038,0.049,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.093,0.033,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Dowdall,0.094,0.034,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.228,0.04,0.193,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.236,0.04,0.179,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.225,0.032,0.191,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.233,0.041,0.199,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.223,0.037,0.196,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.223,0.044,0.173,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.226,0.033,0.196,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.228,0.04,0.174,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.224,0.041,0.176,0.0
+20,10,10,2,25,equal_size,plackett_luce,Anit-Plurality,0.24,0.042,0.199,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.066,0.024,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.062,0.026,0.037,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.068,0.023,0.036,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.057,0.027,0.026,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.057,0.024,0.017,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.058,0.022,0.021,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.069,0.025,0.024,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.052,0.021,0.036,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.063,0.021,0.031,0.0
+20,10,10,2,25,equal_size,plackett_luce,Copeland,0.059,0.023,0.037,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.155,0.043,0.103,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.164,0.042,0.124,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.166,0.047,0.122,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.166,0.046,0.124,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.162,0.041,0.138,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.155,0.037,0.112,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.16,0.043,0.107,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.148,0.042,0.101,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.147,0.037,0.1,0.0
+20,10,10,2,25,equal_size,plackett_luce,Two Approval,0.15,0.041,0.11,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.125,0.033,0.127,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.119,0.034,0.089,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.105,0.031,0.097,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.126,0.041,0.088,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.136,0.039,0.094,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.118,0.04,0.086,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.117,0.035,0.069,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.126,0.038,0.078,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.122,0.04,0.063,0.0
+20,10,10,2,25,equal_size,plackett_luce,Three Approval,0.116,0.035,0.1,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.103,0.033,0.074,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.101,0.033,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.099,0.031,0.053,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.111,0.034,0.07,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.108,0.033,0.071,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.108,0.033,0.06,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.102,0.036,0.063,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.093,0.032,0.058,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.102,0.033,0.056,0.0
+20,10,10,2,25,equal_size,plackett_luce,Four Approval,0.108,0.031,0.059,0.0
+20,10,10,2,25,equal_size,plackett_luce,Random,0.495,0.11,0.499,0.114
+20,10,10,2,25,equal_size,plackett_luce,Random,0.489,0.131,0.493,0.119
+20,10,10,2,25,equal_size,plackett_luce,Random,0.501,0.117,0.494,0.114
+20,10,10,2,25,equal_size,plackett_luce,Random,0.508,0.124,0.494,0.125
+20,10,10,2,25,equal_size,plackett_luce,Random,0.499,0.115,0.509,0.128
+20,10,10,2,25,equal_size,plackett_luce,Random,0.501,0.114,0.506,0.123
+20,10,10,2,25,equal_size,plackett_luce,Random,0.506,0.11,0.496,0.122
+20,10,10,2,25,equal_size,plackett_luce,Random,0.497,0.118,0.495,0.125
+20,10,10,2,25,equal_size,plackett_luce,Random,0.506,0.113,0.51,0.12
+20,10,10,2,25,equal_size,plackett_luce,Random,0.507,0.106,0.499,0.119
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.201,0.043,0.172,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.192,0.046,0.112,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.201,0.053,0.141,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.177,0.044,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.22,0.046,0.178,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.175,0.046,0.129,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.246,0.052,0.177,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.204,0.049,0.147,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.255,0.049,0.162,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.213,0.052,0.163,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.136,0.041,0.128,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.131,0.039,0.124,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.186,0.036,0.174,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.159,0.043,0.184,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.11,0.035,0.093,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.191,0.055,0.268,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.163,0.045,0.14,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.124,0.031,0.101,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.166,0.044,0.213,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.15,0.037,0.138,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.077,0.032,0.078,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.084,0.029,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.067,0.021,0.086,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.112,0.037,0.118,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.087,0.033,0.119,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.088,0.033,0.137,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.129,0.046,0.137,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.071,0.025,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.113,0.037,0.119,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Borda,0.09,0.032,0.163,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.088,0.031,0.121,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.079,0.031,0.122,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.079,0.028,0.073,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.099,0.034,0.089,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.185,0.05,0.212,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.141,0.04,0.211,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.113,0.039,0.134,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.119,0.033,0.091,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.163,0.05,0.178,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.127,0.041,0.114,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.172,0.029,0.217,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.196,0.026,0.239,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.286,0.027,0.291,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.215,0.03,0.349,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.207,0.029,0.288,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.196,0.02,0.222,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.201,0.03,0.233,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.258,0.023,0.287,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.158,0.023,0.206,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.186,0.032,0.292,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.121,0.041,0.18,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.104,0.035,0.103,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.107,0.033,0.091,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.083,0.026,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.109,0.037,0.128,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.091,0.029,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.101,0.033,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.109,0.034,0.15,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.105,0.03,0.108,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.107,0.028,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.188,0.036,0.208,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.152,0.03,0.138,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.171,0.042,0.233,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.151,0.029,0.138,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.162,0.039,0.172,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.146,0.042,0.158,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.156,0.033,0.147,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.134,0.034,0.116,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.242,0.044,0.261,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.174,0.034,0.218,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.103,0.02,0.123,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.175,0.035,0.252,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.127,0.023,0.134,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.11,0.028,0.149,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.124,0.035,0.198,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.117,0.025,0.136,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.111,0.034,0.196,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.102,0.026,0.122,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.129,0.025,0.172,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.132,0.024,0.14,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.106,0.024,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.113,0.029,0.153,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.087,0.022,0.099,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.143,0.035,0.214,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.148,0.031,0.17,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.171,0.041,0.238,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.132,0.04,0.23,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.134,0.03,0.173,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.105,0.019,0.1,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.108,0.031,0.143,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.117,0.491,0.127
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.493,0.126,0.495,0.13
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.125,0.506,0.121
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.126,0.504,0.117
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.127,0.488,0.114
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.121,0.485,0.118
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.486,0.115,0.488,0.115
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.118,0.504,0.124
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.111,0.522,0.118
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.125,0.505,0.114
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.14,0.043,0.117,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.159,0.049,0.092,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.16,0.047,0.102,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.163,0.045,0.1,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.187,0.046,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.148,0.043,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.146,0.043,0.098,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.162,0.042,0.086,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.171,0.048,0.077,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.148,0.039,0.089,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.109,0.035,0.077,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.103,0.037,0.089,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.121,0.036,0.074,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.094,0.037,0.088,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.106,0.033,0.068,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.095,0.034,0.079,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.096,0.03,0.067,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.104,0.03,0.089,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.111,0.034,0.099,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.113,0.035,0.09,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.045,0.022,0.044,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.058,0.026,0.041,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.063,0.026,0.068,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.05,0.023,0.051,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.065,0.03,0.053,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.053,0.024,0.034,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.051,0.027,0.059,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.057,0.026,0.054,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.056,0.025,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.061,0.026,0.073,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.091,0.029,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.084,0.031,0.084,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.088,0.032,0.076,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.088,0.03,0.049,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.075,0.032,0.064,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.07,0.029,0.056,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.085,0.031,0.06,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.1,0.033,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.085,0.035,0.082,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.072,0.029,0.062,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.133,0.024,0.19,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.149,0.026,0.207,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.16,0.026,0.182,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.16,0.029,0.167,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.161,0.025,0.171,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.158,0.024,0.2,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.162,0.022,0.211,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.157,0.021,0.179,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.159,0.019,0.194,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.143,0.024,0.193,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.053,0.021,0.038,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.064,0.025,0.057,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.062,0.023,0.052,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.055,0.023,0.063,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.065,0.024,0.03,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.066,0.029,0.04,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.067,0.026,0.058,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.066,0.026,0.064,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.065,0.022,0.07,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.047,0.022,0.041,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.108,0.034,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.109,0.031,0.09,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.108,0.034,0.096,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.109,0.031,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.107,0.034,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.099,0.028,0.097,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.102,0.034,0.092,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.108,0.028,0.093,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.104,0.033,0.096,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.111,0.033,0.083,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.093,0.03,0.092,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.096,0.025,0.107,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.088,0.026,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.098,0.028,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.1,0.027,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.074,0.021,0.106,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.076,0.027,0.073,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.071,0.024,0.113,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.078,0.023,0.111,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.09,0.03,0.071,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.062,0.022,0.077,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.069,0.026,0.082,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.084,0.028,0.078,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.076,0.026,0.074,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.069,0.026,0.08,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.081,0.028,0.089,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.086,0.022,0.102,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.084,0.028,0.116,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.063,0.027,0.08,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.064,0.026,0.083,0.0
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.119,0.497,0.121
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.112,0.509,0.122
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.122,0.494,0.118
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.113,0.499,0.118
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.487,0.121,0.497,0.123
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.12,0.497,0.13
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.508,0.124,0.512,0.117
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.126,0.49,0.119
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.513,0.124,0.498,0.12
+20,10,10,3,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.49,0.12,0.487,0.116
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.134,0.039,0.099,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.128,0.041,0.063,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.149,0.042,0.087,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.15,0.04,0.103,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.145,0.042,0.1,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.145,0.04,0.077,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.145,0.038,0.1,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.144,0.037,0.099,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.135,0.038,0.093,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality,0.156,0.039,0.094,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.076,0.029,0.05,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.075,0.029,0.046,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.082,0.027,0.05,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.082,0.031,0.054,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.068,0.026,0.043,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.074,0.028,0.041,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.067,0.028,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.078,0.027,0.048,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.072,0.025,0.046,0.0
+20,10,10,3,25,equal_size,plackett_luce,Plurality Veto,0.07,0.027,0.042,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.03,0.018,0.038,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.021,0.014,0.021,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.036,0.017,0.031,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.035,0.018,0.029,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.023,0.017,0.022,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.042,0.019,0.027,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.032,0.014,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.028,0.016,0.027,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.031,0.017,0.024,0.0
+20,10,10,3,25,equal_size,plackett_luce,Borda,0.033,0.019,0.02,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.056,0.024,0.029,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.054,0.02,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.067,0.024,0.047,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.07,0.027,0.042,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.063,0.025,0.04,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.047,0.023,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.066,0.028,0.051,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.068,0.028,0.051,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.075,0.027,0.033,0.0
+20,10,10,3,25,equal_size,plackett_luce,Dowdall,0.065,0.025,0.051,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.177,0.018,0.19,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.199,0.013,0.209,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.195,0.009,0.197,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.195,0.01,0.197,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.21,0.009,0.207,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.181,0.015,0.172,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.202,0.013,0.201,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.199,0.014,0.196,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.202,0.01,0.201,0.0
+20,10,10,3,25,equal_size,plackett_luce,Anit-Plurality,0.196,0.013,0.196,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.036,0.018,0.019,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.038,0.017,0.024,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.036,0.015,0.024,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.042,0.018,0.027,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.038,0.016,0.022,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.038,0.017,0.026,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.042,0.016,0.028,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.036,0.014,0.032,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.032,0.015,0.026,0.0
+20,10,10,3,25,equal_size,plackett_luce,Copeland,0.04,0.017,0.021,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.082,0.025,0.086,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.087,0.025,0.087,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.092,0.025,0.081,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.092,0.027,0.072,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.091,0.026,0.074,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.098,0.029,0.092,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.079,0.025,0.076,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.097,0.028,0.086,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.106,0.031,0.082,0.0
+20,10,10,3,25,equal_size,plackett_luce,Two Approval,0.082,0.027,0.086,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.076,0.022,0.082,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.065,0.024,0.09,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.073,0.019,0.078,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.075,0.021,0.094,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.071,0.02,0.081,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.071,0.017,0.094,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.06,0.02,0.086,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.078,0.019,0.078,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.07,0.022,0.077,0.0
+20,10,10,3,25,equal_size,plackett_luce,Three Approval,0.084,0.018,0.078,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.056,0.022,0.067,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.063,0.02,0.064,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.058,0.023,0.066,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.065,0.023,0.074,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.058,0.018,0.06,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.076,0.022,0.063,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.061,0.019,0.064,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.057,0.019,0.067,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.053,0.02,0.068,0.0
+20,10,10,3,25,equal_size,plackett_luce,Four Approval,0.058,0.019,0.07,0.0
+20,10,10,3,25,equal_size,plackett_luce,Random,0.492,0.123,0.495,0.125
+20,10,10,3,25,equal_size,plackett_luce,Random,0.483,0.118,0.485,0.122
+20,10,10,3,25,equal_size,plackett_luce,Random,0.503,0.131,0.497,0.116
+20,10,10,3,25,equal_size,plackett_luce,Random,0.478,0.12,0.505,0.124
+20,10,10,3,25,equal_size,plackett_luce,Random,0.5,0.119,0.504,0.121
+20,10,10,3,25,equal_size,plackett_luce,Random,0.495,0.117,0.508,0.117
+20,10,10,3,25,equal_size,plackett_luce,Random,0.491,0.116,0.491,0.108
+20,10,10,3,25,equal_size,plackett_luce,Random,0.508,0.125,0.496,0.111
+20,10,10,3,25,equal_size,plackett_luce,Random,0.499,0.126,0.505,0.119
+20,10,10,3,25,equal_size,plackett_luce,Random,0.491,0.115,0.496,0.117
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.162,0.038,0.179,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.169,0.043,0.19,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.139,0.032,0.124,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.138,0.038,0.164,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.146,0.041,0.16,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.165,0.041,0.173,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.13,0.029,0.107,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.138,0.033,0.159,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.149,0.038,0.177,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality,0.178,0.045,0.19,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.086,0.023,0.08,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.087,0.028,0.128,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.141,0.029,0.217,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.075,0.024,0.076,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.08,0.026,0.16,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.072,0.026,0.099,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.101,0.031,0.151,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.101,0.027,0.159,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.104,0.025,0.124,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.079,0.028,0.142,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.05,0.02,0.111,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.039,0.02,0.108,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.062,0.025,0.152,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.05,0.023,0.162,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.047,0.021,0.124,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.029,0.017,0.06,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.062,0.023,0.129,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.049,0.014,0.118,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.051,0.019,0.092,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Borda,0.038,0.018,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.068,0.026,0.113,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.107,0.033,0.204,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.103,0.038,0.176,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.062,0.024,0.126,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.082,0.027,0.132,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.088,0.033,0.181,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.068,0.019,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.066,0.025,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.089,0.031,0.102,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Dowdall,0.061,0.023,0.106,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.155,0.012,0.217,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.178,0.006,0.251,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.191,0.008,0.277,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.187,0.007,0.208,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.145,0.013,0.228,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.164,0.01,0.234,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.196,0.005,0.239,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.201,0.007,0.251,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.193,0.007,0.236,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Anit-Plurality,0.203,0.008,0.266,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.093,0.026,0.177,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.068,0.023,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.096,0.03,0.167,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.046,0.019,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.064,0.022,0.117,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.07,0.021,0.096,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.088,0.028,0.154,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.073,0.023,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.089,0.023,0.091,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Copeland,0.045,0.016,0.061,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.117,0.031,0.176,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.101,0.025,0.126,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.143,0.021,0.117,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.111,0.021,0.144,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.125,0.021,0.174,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.094,0.023,0.1,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.102,0.025,0.117,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.138,0.026,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.101,0.027,0.17,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Two Approval,0.123,0.027,0.194,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.099,0.022,0.198,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.09,0.023,0.181,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.081,0.017,0.129,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.126,0.021,0.209,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.094,0.017,0.121,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.1,0.022,0.168,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.09,0.015,0.133,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.115,0.016,0.153,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.109,0.019,0.184,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Three Approval,0.077,0.016,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.064,0.012,0.114,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.102,0.02,0.201,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.095,0.009,0.112,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.069,0.011,0.129,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.057,0.014,0.15,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.105,0.015,0.159,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.053,0.014,0.09,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.106,0.016,0.169,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.083,0.017,0.156,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Four Approval,0.076,0.013,0.147,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.119,0.496,0.118
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.131,0.504,0.126
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.116,0.494,0.126
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.121,0.489,0.133
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.122,0.499,0.115
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.508,0.117,0.489,0.125
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.115,0.497,0.114
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.129,0.499,0.118
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.124,0.508,0.115
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-R,Random,0.514,0.115,0.493,0.115
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.101,0.032,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.107,0.029,0.097,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.114,0.03,0.091,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.086,0.027,0.09,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.099,0.033,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.103,0.031,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.111,0.039,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.092,0.031,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.093,0.032,0.108,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.098,0.033,0.092,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.064,0.022,0.087,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.06,0.026,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.069,0.025,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.058,0.023,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.074,0.029,0.107,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.085,0.029,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.073,0.029,0.097,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.056,0.022,0.096,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.073,0.03,0.106,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Plurality Veto,0.079,0.027,0.101,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.028,0.016,0.072,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.026,0.015,0.042,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.031,0.015,0.052,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.027,0.015,0.063,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.036,0.017,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.033,0.017,0.081,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.023,0.014,0.059,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.032,0.017,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.026,0.017,0.056,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Borda,0.019,0.015,0.046,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.047,0.023,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.043,0.021,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.064,0.024,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.037,0.021,0.073,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.06,0.024,0.076,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.046,0.018,0.06,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.058,0.022,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.057,0.023,0.087,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.034,0.018,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Dowdall,0.064,0.026,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.137,0.01,0.202,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.119,0.008,0.182,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.132,0.008,0.172,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.15,0.007,0.203,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.139,0.008,0.18,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.134,0.008,0.174,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.14,0.006,0.19,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.111,0.006,0.188,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.115,0.011,0.192,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Anit-Plurality,0.125,0.009,0.176,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.053,0.017,0.072,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.039,0.015,0.047,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.034,0.014,0.052,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.027,0.013,0.032,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.038,0.016,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.04,0.017,0.056,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.03,0.013,0.051,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.044,0.016,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.04,0.015,0.058,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Copeland,0.049,0.017,0.059,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.073,0.018,0.088,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.045,0.018,0.067,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.058,0.022,0.091,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.06,0.025,0.1,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.059,0.022,0.072,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.064,0.022,0.074,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.064,0.022,0.082,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.055,0.02,0.086,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.078,0.022,0.091,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Two Approval,0.078,0.023,0.103,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.071,0.015,0.08,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.062,0.018,0.083,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.05,0.015,0.077,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.061,0.017,0.084,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.061,0.018,0.087,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.045,0.017,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.049,0.016,0.071,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.048,0.016,0.093,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.067,0.021,0.1,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Three Approval,0.07,0.016,0.089,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.038,0.013,0.069,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.042,0.01,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.057,0.009,0.079,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.056,0.014,0.094,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.067,0.011,0.074,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.046,0.011,0.079,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.038,0.013,0.078,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.049,0.011,0.09,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.075,0.01,0.098,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Four Approval,0.05,0.011,0.074,0.0
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.121,0.505,0.125
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.119,0.5,0.116
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.505,0.121,0.508,0.122
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.122,0.501,0.117
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.508,0.115,0.508,0.117
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.122,0.502,0.118
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.128,0.506,0.127
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.117,0.506,0.116
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.114,0.503,0.127
+20,10,10,4,25,equal_size,MALLOWS-RELPHI-0.5,Random,0.497,0.118,0.488,0.118
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.072,0.025,0.041,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.082,0.026,0.091,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.076,0.023,0.06,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.084,0.028,0.069,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.086,0.026,0.06,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.083,0.028,0.07,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.072,0.024,0.064,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.061,0.024,0.046,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.071,0.021,0.066,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality,0.087,0.028,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.044,0.019,0.03,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.058,0.022,0.026,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.044,0.021,0.036,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.049,0.019,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.049,0.02,0.031,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.052,0.019,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.05,0.023,0.03,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.047,0.023,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.039,0.018,0.042,0.0
+20,10,10,4,25,equal_size,plackett_luce,Plurality Veto,0.056,0.022,0.046,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.015,0.008,0.021,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.022,0.012,0.013,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.019,0.011,0.029,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.019,0.013,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.012,0.012,0.016,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.015,0.01,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.012,0.011,0.04,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.014,0.009,0.022,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.018,0.012,0.036,0.0
+20,10,10,4,25,equal_size,plackett_luce,Borda,0.012,0.01,0.034,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.036,0.018,0.04,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.038,0.016,0.033,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.036,0.018,0.042,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.042,0.02,0.058,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.039,0.019,0.047,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.03,0.016,0.032,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.029,0.019,0.027,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.035,0.018,0.044,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.025,0.015,0.044,0.0
+20,10,10,4,25,equal_size,plackett_luce,Dowdall,0.036,0.017,0.054,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.158,0.004,0.163,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.184,0.005,0.189,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.171,0.004,0.181,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.184,0.004,0.201,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.193,0.003,0.201,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.182,0.003,0.188,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.172,0.003,0.181,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.182,0.003,0.192,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.201,0.003,0.202,0.0
+20,10,10,4,25,equal_size,plackett_luce,Anit-Plurality,0.178,0.003,0.187,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.033,0.009,0.034,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.027,0.01,0.032,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.021,0.009,0.028,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.032,0.012,0.021,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.024,0.008,0.034,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.024,0.009,0.023,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.037,0.015,0.033,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.028,0.011,0.039,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.024,0.01,0.027,0.0
+20,10,10,4,25,equal_size,plackett_luce,Copeland,0.029,0.01,0.034,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.054,0.014,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.049,0.015,0.052,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.049,0.018,0.056,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.088,0.016,0.068,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.052,0.018,0.072,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.07,0.017,0.071,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.064,0.018,0.06,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.057,0.017,0.072,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.047,0.017,0.074,0.0
+20,10,10,4,25,equal_size,plackett_luce,Two Approval,0.059,0.019,0.071,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.064,0.011,0.06,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.057,0.014,0.074,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.047,0.013,0.073,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.06,0.014,0.083,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.041,0.012,0.056,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.037,0.014,0.037,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.048,0.011,0.06,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.047,0.011,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.067,0.013,0.079,0.0
+20,10,10,4,25,equal_size,plackett_luce,Three Approval,0.042,0.013,0.092,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.044,0.007,0.081,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.031,0.008,0.046,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.045,0.007,0.072,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.047,0.008,0.062,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.043,0.008,0.056,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.044,0.007,0.068,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.047,0.009,0.07,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.059,0.008,0.084,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.045,0.01,0.076,0.0
+20,10,10,4,25,equal_size,plackett_luce,Four Approval,0.059,0.007,0.086,0.0
+20,10,10,4,25,equal_size,plackett_luce,Random,0.501,0.124,0.5,0.113
+20,10,10,4,25,equal_size,plackett_luce,Random,0.485,0.114,0.497,0.123
+20,10,10,4,25,equal_size,plackett_luce,Random,0.513,0.132,0.495,0.122
+20,10,10,4,25,equal_size,plackett_luce,Random,0.494,0.113,0.491,0.116
+20,10,10,4,25,equal_size,plackett_luce,Random,0.504,0.128,0.497,0.125
+20,10,10,4,25,equal_size,plackett_luce,Random,0.504,0.116,0.494,0.118
+20,10,10,4,25,equal_size,plackett_luce,Random,0.497,0.118,0.501,0.136
+20,10,10,4,25,equal_size,plackett_luce,Random,0.478,0.122,0.511,0.12
+20,10,10,4,25,equal_size,plackett_luce,Random,0.492,0.117,0.49,0.124
+20,10,10,4,25,equal_size,plackett_luce,Random,0.499,0.118,0.5,0.124

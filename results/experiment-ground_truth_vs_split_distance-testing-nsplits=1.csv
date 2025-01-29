@@ -1,0 +1,161 @@
+num_voters,num_alternatives,Num Profiles,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.027,0.0,0.066,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.027,0.0,0.048,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.028,0.0,0.038,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.029,0.0,0.064,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.03,0.0,0.073,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.03,0.0,0.055,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.03,0.0,0.049,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.031,0.0,0.057,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.034,0.0,0.072,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.035,0.0,0.054,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.035,0.0,0.04,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.035,0.0,0.049,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.036,0.0,0.087,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.036,0.0,0.054,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.037,0.0,0.06,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.037,0.0,0.067,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.037,0.0,0.081,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.038,0.0,0.065,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.038,0.0,0.087,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.04,0.0,0.067,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.04,0.0,0.072,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.04,0.0,0.09,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.04,0.0,0.083,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.041,0.0,0.088,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.041,0.0,0.082,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.043,0.0,0.079,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,PL MLE,0.044,0.0,0.072,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.045,0.0,0.077,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Kemeny,0.046,0.0,0.056,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.046,0.0,0.083,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.046,0.0,0.084,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.049,0.0,0.092,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.049,0.0,0.079,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.049,0.0,0.087,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.05,0.0,0.084,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.051,0.0,0.086,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.051,0.0,0.098,0.0
+100,100,1,1,equal_size,plackett_luce,PL MLE,0.053,0.0,0.074,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.055,0.0,0.076,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.056,0.0,0.074,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.057,0.0,0.141,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.058,0.0,0.073,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.059,0.0,0.073,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.059,0.0,0.084,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.061,0.0,0.191,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.062,0.0,0.146,0.0
+100,100,1,1,equal_size,plackett_luce,Kemeny,0.062,0.0,0.102,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.063,0.0,0.15,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.064,0.0,0.145,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.064,0.0,0.174,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.064,0.0,0.126,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.065,0.0,0.064,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.066,0.0,0.184,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.066,0.0,0.062,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.066,0.0,0.106,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.068,0.0,0.197,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.068,0.0,0.078,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.068,0.0,0.197,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.07,0.0,0.093,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.071,0.0,0.067,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.071,0.0,0.142,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.071,0.0,0.125,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.071,0.0,0.144,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.072,0.0,0.082,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.072,0.0,0.161,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.072,0.0,0.095,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.072,0.0,0.089,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.073,0.0,0.096,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.073,0.0,0.203,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.074,0.0,0.247,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.074,0.0,0.228,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.074,0.0,0.097,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.075,0.0,0.075,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.075,0.0,0.079,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.075,0.0,0.142,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.075,0.0,0.09,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.076,0.0,0.222,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.076,0.0,0.23,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.076,0.0,0.138,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.076,0.0,0.088,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.077,0.0,0.178,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.077,0.0,0.16,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.077,0.0,0.141,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda,0.078,0.0,0.075,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.078,0.0,0.073,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.079,0.0,0.074,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.079,0.0,0.144,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.079,0.0,0.148,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.08,0.0,0.127,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.08,0.0,0.126,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.081,0.0,0.091,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.081,0.0,0.202,0.0
+100,100,1,1,equal_size,plackett_luce,Borda,0.081,0.0,0.09,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.082,0.0,0.241,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.082,0.0,0.255,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality Veto,0.082,0.0,0.142,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.084,0.0,0.06,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.084,0.0,0.264,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.085,0.0,0.062,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.086,0.0,0.249,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.086,0.0,0.235,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.086,0.0,0.196,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.086,0.0,0.198,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.086,0.0,0.197,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.086,0.0,0.267,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.086,0.0,0.262,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.087,0.0,0.096,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.087,0.0,0.095,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.087,0.0,0.111,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.088,0.0,0.175,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.088,0.0,0.162,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality Veto,0.088,0.0,0.147,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.089,0.0,0.239,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.091,0.0,0.066,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.091,0.0,0.229,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.092,0.0,0.089,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.092,0.0,0.095,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.093,0.0,0.194,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.093,0.0,0.244,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.093,0.0,0.26,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.094,0.0,0.078,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.094,0.0,0.1,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.094,0.0,0.231,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.095,0.0,0.176,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.095,0.0,0.224,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.095,0.0,0.277,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.095,0.0,0.078,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.095,0.0,0.174,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.096,0.0,0.089,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.096,0.0,0.201,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.096,0.0,0.265,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.097,0.0,0.238,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.097,0.0,0.235,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.097,0.0,0.25,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Borda Min-Max,0.097,0.0,0.076,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.099,0.0,0.093,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.099,0.0,0.258,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Two Approval,0.1,0.0,0.172,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.1,0.0,0.254,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.101,0.0,0.239,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.101,0.0,0.094,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.102,0.0,0.285,0.0
+100,100,1,1,equal_size,plackett_luce,Borda Min-Max,0.102,0.0,0.088,0.0
+100,100,1,1,equal_size,plackett_luce,Two Approval,0.102,0.0,0.196,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.103,0.0,0.259,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.105,0.0,0.255,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.107,0.0,0.265,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.108,0.0,0.262,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.11,0.0,0.237,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.11,0.0,0.243,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.111,0.0,0.255,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.111,0.0,0.257,0.0
+100,100,1,1,equal_size,plackett_luce,Anti-Plurality,0.112,0.0,0.233,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.112,0.0,0.263,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.113,0.0,0.256,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.115,0.0,0.248,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.117,0.0,0.265,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Plurality,0.117,0.0,0.253,0.0
+100,100,1,1,equal_size,MALLOWS-0.4,Anti-Plurality,0.117,0.0,0.264,0.0
+100,100,1,1,equal_size,plackett_luce,Plurality,0.122,0.0,0.246,0.0

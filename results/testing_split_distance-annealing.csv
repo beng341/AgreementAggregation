@@ -1,0 +1,61 @@
+,num_voters,num_alternatives,Num Profiles,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+0,20,20,3,40,equal_size,plackett_luce,Annealing Score Vector,0.1,0.021,0.051,0.011
+1,20,20,3,40,equal_size,plackett_luce,Borda,0.048,0.013,0.019,0.0
+2,20,20,3,40,equal_size,plackett_luce,Kemeny,0.033,0.01,0.009,0.0
+3,20,20,3,40,equal_size,plackett_luce,PL MLE,0.037,0.01,0.011,0.0
+4,20,20,3,40,equal_size,plackett_luce,Annealing Score Vector,0.11,0.022,0.049,0.01
+5,20,20,3,40,equal_size,plackett_luce,Borda,0.049,0.013,0.011,0.0
+6,20,20,3,40,equal_size,plackett_luce,Kemeny,0.035,0.011,0.012,0.0
+7,20,20,3,40,equal_size,plackett_luce,PL MLE,0.034,0.01,0.012,0.0
+8,20,20,3,40,equal_size,plackett_luce,Annealing Score Vector,0.095,0.02,0.054,0.012
+9,20,20,3,40,equal_size,plackett_luce,Borda,0.043,0.011,0.015,0.0
+10,20,20,3,40,equal_size,plackett_luce,Kemeny,0.025,0.01,0.009,0.0
+11,20,20,3,40,equal_size,plackett_luce,PL MLE,0.034,0.011,0.011,0.0
+12,20,20,3,40,equal_size,plackett_luce,Annealing Score Vector,0.086,0.02,0.034,0.01
+13,20,20,3,40,equal_size,plackett_luce,Borda,0.041,0.012,0.014,0.0
+14,20,20,3,40,equal_size,plackett_luce,Kemeny,0.031,0.011,0.009,0.0
+15,20,20,3,40,equal_size,plackett_luce,PL MLE,0.035,0.012,0.007,0.0
+16,20,20,3,40,equal_size,plackett_luce,Annealing Score Vector,0.086,0.019,0.055,0.013
+17,20,20,3,40,equal_size,plackett_luce,Borda,0.048,0.011,0.012,0.0
+18,20,20,3,40,equal_size,plackett_luce,Kemeny,0.036,0.011,0.009,0.0
+19,20,20,3,40,equal_size,plackett_luce,PL MLE,0.042,0.011,0.009,0.0
+20,20,20,3,40,equal_size,plackett_luce-R,Annealing Score Vector,0.378,0.046,0.325,0.014
+21,20,20,3,40,equal_size,plackett_luce-R,Borda,0.369,0.045,0.323,0.0
+22,20,20,3,40,equal_size,plackett_luce-R,Kemeny,0.366,0.05,0.296,0.0
+23,20,20,3,40,equal_size,plackett_luce-R,PL MLE,0.4,0.05,0.304,0.0
+24,20,20,3,40,equal_size,plackett_luce-R,Annealing Score Vector,0.325,0.047,0.248,0.019
+25,20,20,3,40,equal_size,plackett_luce-R,Borda,0.31,0.041,0.242,0.0
+26,20,20,3,40,equal_size,plackett_luce-R,Kemeny,0.312,0.043,0.235,0.0
+27,20,20,3,40,equal_size,plackett_luce-R,PL MLE,0.334,0.04,0.258,0.0
+28,20,20,3,40,equal_size,plackett_luce-R,Annealing Score Vector,0.34,0.048,0.355,0.016
+29,20,20,3,40,equal_size,plackett_luce-R,Borda,0.332,0.039,0.303,0.0
+30,20,20,3,40,equal_size,plackett_luce-R,Kemeny,0.323,0.041,0.298,0.0
+31,20,20,3,40,equal_size,plackett_luce-R,PL MLE,0.322,0.044,0.249,0.0
+32,20,20,3,40,equal_size,plackett_luce-R,Annealing Score Vector,0.329,0.043,0.255,0.026
+33,20,20,3,40,equal_size,plackett_luce-R,Borda,0.308,0.043,0.235,0.0
+34,20,20,3,40,equal_size,plackett_luce-R,Kemeny,0.314,0.045,0.216,0.0
+35,20,20,3,40,equal_size,plackett_luce-R,PL MLE,0.296,0.044,0.246,0.0
+36,20,20,3,40,equal_size,plackett_luce-R,Annealing Score Vector,0.398,0.038,0.32,0.038
+37,20,20,3,40,equal_size,plackett_luce-R,Borda,0.387,0.048,0.334,0.0
+38,20,20,3,40,equal_size,plackett_luce-R,Kemeny,0.385,0.05,0.318,0.0
+39,20,20,3,40,equal_size,plackett_luce-R,PL MLE,0.384,0.05,0.346,0.0
+40,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.2,0.04,0.101,0.019
+41,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Borda,0.134,0.026,0.063,0.0
+42,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.119,0.027,0.06,0.0
+43,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.14,0.026,0.067,0.0
+44,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.17,0.028,0.084,0.013
+45,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Borda,0.135,0.027,0.063,0.0
+46,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.129,0.025,0.058,0.0
+47,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.162,0.027,0.07,0.0
+48,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.164,0.032,0.086,0.01
+49,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Borda,0.141,0.024,0.062,0.0
+50,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.119,0.027,0.039,0.0
+51,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.162,0.029,0.061,0.0
+52,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.172,0.036,0.081,0.008
+53,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Borda,0.15,0.025,0.068,0.0
+54,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.126,0.023,0.063,0.0
+55,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.171,0.028,0.067,0.0
+56,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.183,0.037,0.101,0.018
+57,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Borda,0.133,0.026,0.049,0.0
+58,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.1,0.021,0.044,0.0
+59,20,20,3,40,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.154,0.026,0.058,0.0

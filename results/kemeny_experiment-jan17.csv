@@ -1,0 +1,801 @@
+num_voters,num_alternatives,Num Profiles,Shuffle Amount,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.018,0.008,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.03,0.013,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.224,0.044,0.136,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.128,0.483,0.125
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.116,0.038,0.049,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.114,0.039,0.031,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.273,0.05,0.142,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.493,0.128,0.483,0.114
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.113,0.034,0.058,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.132,0.039,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.236,0.055,0.162,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.475,0.123,0.479,0.111
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.072,0.028,0.036,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.087,0.029,0.027,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.241,0.046,0.193,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.493,0.11,0.5,0.122
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.134,0.032,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.141,0.039,0.084,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.28,0.049,0.187,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.474,0.12,0.503,0.114
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.138,0.037,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.134,0.036,0.084,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.252,0.043,0.173,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.484,0.128,0.511,0.12
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.087,0.032,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.101,0.04,0.027,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.242,0.052,0.116,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.511,0.128,0.523,0.124
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.099,0.038,0.084,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.15,0.038,0.076,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.207,0.05,0.171,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.517,0.102,0.488,0.119
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.052,0.024,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.075,0.028,0.031,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.219,0.034,0.116,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.521,0.13,0.478,0.115
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.118,0.03,0.084,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.133,0.039,0.084,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.251,0.059,0.167,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.47,0.106,0.502,0.105
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.058,0.024,0.027,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.072,0.024,0.04,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.249,0.041,0.142,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.115,0.503,0.122
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.008,0.007,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.014,0.008,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.243,0.022,0.184,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.493,0.116,0.509,0.112
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.124,0.036,0.058,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.151,0.046,0.089,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.266,0.061,0.16,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.122,0.512,0.127
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.15,0.032,0.067,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.173,0.038,0.071,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.289,0.054,0.191,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.483,0.122,0.498,0.129
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.026,0.012,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.036,0.015,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.204,0.041,0.142,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.495,0.112,0.509,0.104
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.095,0.021,0.076,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.091,0.025,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.277,0.039,0.222,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.512,0.131,0.493,0.107
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.251,0.057,0.182,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.291,0.053,0.204,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.321,0.072,0.253,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.119,0.496,0.127
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.062,0.022,0.04,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.081,0.029,0.044,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.196,0.04,0.14,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.518,0.12,0.502,0.117
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.005,0.007,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.01,0.008,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.181,0.035,0.127,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.126,0.512,0.115
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.12,0.038,0.098,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.113,0.041,0.102,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.264,0.043,0.202,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.478,0.12,0.479,0.12
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.024,0.018,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.045,0.024,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.171,0.041,0.078,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.127,0.498,0.11
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.028,0.016,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.042,0.021,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.17,0.043,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.488,0.116,0.491,0.125
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.018,0.015,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.037,0.021,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.16,0.043,0.073,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.476,0.121,0.493,0.118
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.021,0.019,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.043,0.029,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.148,0.039,0.047,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.496,0.113,0.499,0.129
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.026,0.017,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.04,0.025,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.153,0.04,0.058,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.482,0.123,0.487,0.123
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.023,0.019,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.05,0.027,0.022,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.172,0.046,0.076,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.516,0.107,0.484,0.115
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.02,0.018,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.048,0.022,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.154,0.043,0.069,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.117,0.48,0.126
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.019,0.017,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.047,0.023,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.16,0.044,0.08,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.477,0.112,0.488,0.117
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.023,0.017,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.057,0.023,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.157,0.044,0.091,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.487,0.118,0.477,0.117
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.025,0.016,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.043,0.023,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.2,0.044,0.107,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.481,0.123,0.512,0.114
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.018,0.018,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.033,0.022,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.158,0.036,0.062,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.497,0.122,0.509,0.109
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.019,0.016,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.039,0.025,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.165,0.045,0.064,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.111,0.521,0.116
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.018,0.016,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.056,0.023,0.018,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.165,0.046,0.058,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.487,0.112,0.524,0.118
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.032,0.019,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.049,0.023,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.146,0.038,0.111,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.509,0.143,0.485,0.118
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.026,0.016,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.046,0.026,0.018,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.159,0.042,0.082,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.507,0.127,0.507,0.128
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.027,0.019,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.042,0.024,0.013,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.176,0.04,0.091,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.52,0.123,0.502,0.115
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.017,0.016,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.044,0.024,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.163,0.039,0.071,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.117,0.501,0.107
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.022,0.016,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.046,0.027,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.181,0.047,0.076,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.518,0.121,0.492,0.13
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.017,0.017,0.004,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.047,0.027,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.163,0.042,0.089,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.127,0.488,0.124
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.019,0.017,0.0,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.048,0.025,0.009,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.161,0.042,0.062,0.0
+100,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.483,0.119,0.498,0.112
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.013,0.014,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.16,0.033,0.091,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.498,0.117,0.484,0.109
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.022,0.016,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.02,0.012,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.175,0.037,0.089,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.5,0.118,0.52,0.126
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.009,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.006,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.16,0.034,0.111,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.51,0.111,0.494,0.121
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.023,0.014,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.011,0.013,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.139,0.041,0.049,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.492,0.115,0.502,0.136
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.009,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.009,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.187,0.038,0.087,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.508,0.132,0.503,0.13
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.015,0.013,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.011,0.011,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.158,0.041,0.038,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.516,0.107,0.482,0.135
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.015,0.016,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.007,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.149,0.033,0.1,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.485,0.115,0.503,0.122
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.007,0.012,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.168,0.036,0.067,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.508,0.121,0.506,0.119
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.017,0.016,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.013,0.014,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.139,0.034,0.069,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.505,0.11,0.485,0.104
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.009,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.143,0.042,0.078,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.503,0.126,0.484,0.115
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.007,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.169,0.043,0.076,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.487,0.139,0.504,0.124
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.144,0.033,0.078,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.497,0.116,0.487,0.108
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.011,0.012,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.009,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.163,0.037,0.06,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.49,0.119,0.52,0.127
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.008,0.012,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.156,0.039,0.071,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.508,0.122,0.509,0.125
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.018,0.013,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.011,0.009,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.164,0.036,0.093,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.5,0.107,0.486,0.126
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.01,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.158,0.034,0.087,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.491,0.112,0.489,0.129
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.007,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.01,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.146,0.04,0.073,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.501,0.121,0.501,0.111
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.008,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.008,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.149,0.037,0.067,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.501,0.121,0.485,0.128
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.01,0.011,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.006,0.009,0.0,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.169,0.038,0.062,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.502,0.119,0.501,0.131
+100,10,5,0,20,equal_size,plackett_luce,Kemeny,0.016,0.013,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,PL MLE,0.012,0.012,0.004,0.0
+100,10,5,0,20,equal_size,plackett_luce,Plurality,0.162,0.042,0.073,0.0
+100,10,5,0,20,equal_size,plackett_luce,Random,0.485,0.118,0.509,0.132
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.143,0.027,0.069,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.152,0.024,0.082,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.333,0.04,0.246,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.491,0.076,0.5,0.074
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.241,0.026,0.141,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.227,0.029,0.128,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.395,0.042,0.263,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.49,0.072,0.499,0.072
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.109,0.017,0.091,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.128,0.019,0.088,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.317,0.032,0.289,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.08,0.495,0.068
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.03,0.009,0.008,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.05,0.011,0.013,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.259,0.029,0.175,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.505,0.079,0.496,0.066
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.004,0.003,0.0,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.016,0.006,0.003,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.295,0.023,0.215,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.083,0.499,0.077
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.116,0.019,0.065,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.135,0.022,0.061,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.313,0.033,0.214,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.081,0.506,0.07
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.111,0.02,0.052,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.138,0.025,0.074,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.29,0.043,0.159,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.074,0.501,0.087
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.118,0.022,0.066,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.132,0.021,0.072,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.34,0.04,0.244,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.079,0.512,0.084
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.107,0.022,0.048,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.126,0.02,0.071,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.287,0.028,0.189,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.506,0.07,0.513,0.075
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.207,0.029,0.148,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.224,0.027,0.143,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.346,0.043,0.296,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.491,0.076,0.484,0.079
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.036,0.01,0.011,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.052,0.014,0.013,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.283,0.031,0.179,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.068,0.507,0.076
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.036,0.011,0.013,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.055,0.014,0.019,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.252,0.029,0.143,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.511,0.082,0.501,0.085
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.135,0.024,0.097,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.145,0.023,0.112,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.317,0.034,0.218,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.509,0.074,0.49,0.082
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.122,0.024,0.081,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.141,0.024,0.074,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.312,0.034,0.25,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.491,0.078,0.495,0.082
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.048,0.011,0.022,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.066,0.015,0.033,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.298,0.03,0.201,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.076,0.497,0.067
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.047,0.013,0.017,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.082,0.019,0.029,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.263,0.035,0.135,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.071,0.489,0.072
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.076,0.018,0.059,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.089,0.019,0.068,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.302,0.029,0.204,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.081,0.503,0.063
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.195,0.03,0.122,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.218,0.031,0.119,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.337,0.039,0.252,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.07,0.502,0.081
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.163,0.031,0.072,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.179,0.027,0.085,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.359,0.039,0.239,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.075,0.497,0.082
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.087,0.018,0.039,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.105,0.018,0.039,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.346,0.03,0.239,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.072,0.503,0.072
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.043,0.012,0.014,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.065,0.016,0.027,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.233,0.028,0.113,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.507,0.084,0.512,0.078
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.042,0.015,0.014,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.066,0.015,0.025,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.22,0.027,0.117,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.505,0.069,0.494,0.083
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.042,0.012,0.012,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.068,0.014,0.02,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.233,0.035,0.11,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.502,0.073,0.504,0.08
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.038,0.013,0.008,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.061,0.016,0.022,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.243,0.032,0.133,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.5,0.078,0.488,0.08
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.039,0.012,0.012,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.063,0.015,0.024,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.249,0.033,0.131,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.499,0.074,0.504,0.074
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.038,0.013,0.011,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.063,0.015,0.032,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.228,0.026,0.13,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.497,0.081,0.517,0.08
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.039,0.012,0.012,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.072,0.016,0.025,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.239,0.033,0.117,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.07,0.503,0.075
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.043,0.013,0.009,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.061,0.014,0.021,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.222,0.034,0.133,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.08,0.505,0.067
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.045,0.013,0.02,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.063,0.015,0.032,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.229,0.031,0.128,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.081,0.499,0.08
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.046,0.012,0.021,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.065,0.018,0.034,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.242,0.029,0.143,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.496,0.081,0.505,0.082
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.04,0.011,0.013,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.062,0.015,0.024,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.255,0.034,0.141,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.493,0.083,0.487,0.072
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.048,0.013,0.017,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.071,0.015,0.023,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.239,0.025,0.148,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.496,0.075,0.504,0.078
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.044,0.013,0.013,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.069,0.018,0.026,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.24,0.028,0.125,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.08,0.508,0.079
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.046,0.013,0.011,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.065,0.016,0.02,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.254,0.029,0.108,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.504,0.079,0.507,0.079
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.043,0.01,0.014,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.064,0.015,0.022,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.253,0.034,0.126,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.083,0.485,0.077
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.039,0.014,0.012,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.06,0.015,0.022,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.236,0.025,0.116,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.077,0.504,0.07
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.034,0.012,0.007,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.06,0.015,0.02,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.25,0.032,0.132,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.075,0.505,0.092
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.037,0.012,0.007,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.062,0.016,0.02,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.225,0.033,0.123,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.084,0.501,0.079
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.038,0.012,0.014,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.062,0.015,0.024,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.229,0.035,0.129,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.507,0.07,0.501,0.075
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.041,0.013,0.008,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.059,0.014,0.017,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.227,0.033,0.118,0.0
+100,20,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.07,0.504,0.078
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.005,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.253,0.025,0.174,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.497,0.088,0.498,0.078
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.24,0.023,0.199,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.503,0.079,0.504,0.086
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.007,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.26,0.026,0.157,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.498,0.078,0.518,0.081
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.259,0.024,0.182,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.508,0.072,0.503,0.08
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.246,0.025,0.175,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.497,0.076,0.501,0.084
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.245,0.023,0.168,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.508,0.082,0.492,0.077
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.254,0.03,0.149,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.503,0.08,0.499,0.078
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.005,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.249,0.027,0.167,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.503,0.076,0.509,0.081
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.002,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.256,0.023,0.179,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.5,0.084,0.503,0.076
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.249,0.029,0.144,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.511,0.067,0.493,0.085
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.007,0.005,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.256,0.026,0.181,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.508,0.084,0.503,0.089
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.25,0.026,0.177,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.5,0.078,0.514,0.077
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.258,0.025,0.188,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.504,0.078,0.507,0.085
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.266,0.02,0.179,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.496,0.083,0.501,0.075
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.26,0.025,0.169,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.508,0.087,0.504,0.089
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.008,0.005,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.276,0.021,0.171,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.497,0.084,0.501,0.075
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.004,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.002,0.002,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.249,0.022,0.176,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.507,0.081,0.505,0.08
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.006,0.005,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.004,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.273,0.023,0.183,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.507,0.074,0.492,0.089
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.005,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.005,0.004,0.001,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.249,0.023,0.176,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.507,0.086,0.506,0.062
+100,20,5,0,20,equal_size,plackett_luce,Kemeny,0.007,0.004,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,PL MLE,0.003,0.003,0.0,0.0
+100,20,5,0,20,equal_size,plackett_luce,Plurality,0.254,0.023,0.161,0.0
+100,20,5,0,20,equal_size,plackett_luce,Random,0.514,0.081,0.494,0.086
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.142,0.047,0.084,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.198,0.05,0.107,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.336,0.051,0.264,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.514,0.12,0.473,0.105
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.279,0.067,0.178,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.322,0.077,0.222,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.428,0.052,0.34,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.124,0.502,0.123
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.26,0.058,0.222,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.245,0.059,0.213,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.441,0.048,0.338,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.474,0.123,0.5,0.128
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.086,0.027,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.109,0.029,0.058,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.339,0.04,0.22,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.105,0.495,0.133
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.287,0.071,0.173,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.316,0.061,0.222,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.394,0.056,0.307,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.499,0.11,0.518,0.117
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.105,0.04,0.018,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.135,0.043,0.036,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.339,0.062,0.184,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.113,0.51,0.118
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.175,0.051,0.107,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.197,0.053,0.124,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.392,0.059,0.282,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.483,0.123,0.501,0.113
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.167,0.056,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.227,0.052,0.102,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.352,0.048,0.218,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.1,0.52,0.132
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.079,0.031,0.031,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.099,0.038,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.351,0.048,0.258,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.506,0.114,0.481,0.111
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.232,0.055,0.156,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.247,0.069,0.164,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.43,0.059,0.284,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.122,0.513,0.105
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.226,0.057,0.116,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.269,0.068,0.156,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.379,0.071,0.209,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.507,0.116,0.473,0.116
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.129,0.041,0.049,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.155,0.048,0.071,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.333,0.057,0.224,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.518,0.111,0.496,0.137
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.112,0.041,0.031,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.117,0.037,0.036,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.394,0.048,0.247,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.493,0.119,0.492,0.111
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.064,0.028,0.009,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.121,0.035,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.343,0.036,0.218,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.12,0.523,0.125
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.233,0.066,0.151,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.265,0.069,0.182,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.401,0.067,0.216,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.143,0.527,0.116
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.093,0.033,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.113,0.036,0.071,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.343,0.055,0.207,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.117,0.499,0.111
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.229,0.058,0.098,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.258,0.064,0.111,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.409,0.061,0.278,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.123,0.505,0.123
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.269,0.06,0.142,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.286,0.069,0.138,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.442,0.048,0.364,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.49,0.128,0.5,0.124
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.258,0.051,0.147,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.272,0.068,0.129,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.424,0.05,0.284,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.122,0.487,0.121
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.121,0.043,0.049,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.14,0.041,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.347,0.047,0.253,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.124,0.494,0.118
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.103,0.039,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.158,0.048,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.319,0.05,0.171,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.478,0.115,0.502,0.123
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.123,0.049,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.162,0.046,0.076,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.324,0.059,0.144,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.511,0.117,0.504,0.123
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.112,0.043,0.036,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.15,0.042,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.311,0.053,0.193,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.115,0.52,0.145
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.104,0.045,0.036,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.137,0.046,0.058,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.29,0.064,0.209,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.488,0.116,0.508,0.116
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.114,0.04,0.044,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.14,0.042,0.076,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.322,0.064,0.151,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.471,0.125,0.518,0.114
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.109,0.042,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.139,0.049,0.093,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.31,0.051,0.191,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.496,0.129,0.512,0.128
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.09,0.038,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.132,0.045,0.044,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.356,0.06,0.184,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.492,0.109,0.487,0.127
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.132,0.054,0.031,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.163,0.05,0.058,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.326,0.053,0.231,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.123,0.493,0.122
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.115,0.042,0.044,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.14,0.052,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.321,0.05,0.169,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.516,0.11,0.506,0.118
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.125,0.044,0.049,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.166,0.046,0.067,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.332,0.058,0.187,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.508,0.124,0.515,0.131
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.127,0.048,0.062,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.175,0.053,0.093,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.329,0.062,0.202,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.497,0.121,0.512,0.129
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.097,0.04,0.018,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.154,0.047,0.067,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.327,0.057,0.182,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.521,0.125,0.486,0.122
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.125,0.046,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.181,0.052,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.288,0.046,0.167,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.52,0.119,0.485,0.117
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.11,0.044,0.04,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.159,0.043,0.053,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.327,0.059,0.169,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.494,0.117,0.498,0.124
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.1,0.044,0.018,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.155,0.047,0.044,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.345,0.053,0.22,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.51,0.133,0.491,0.128
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.102,0.045,0.022,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.14,0.047,0.058,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.356,0.052,0.184,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.488,0.114,0.483,0.122
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.099,0.043,0.018,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.154,0.046,0.049,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.325,0.055,0.187,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.501,0.127,0.519,0.121
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.096,0.046,0.022,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.151,0.044,0.049,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.358,0.042,0.182,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.503,0.123,0.485,0.13
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.084,0.045,0.031,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.122,0.049,0.067,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.332,0.055,0.171,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.511,0.123,0.494,0.113
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Kemeny,0.126,0.048,0.027,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,PL MLE,0.156,0.047,0.067,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.332,0.05,0.189,0.0
+20,10,5,0,20,equal_size,MALLOWS-RELPHI-0.5,Random,0.507,0.123,0.497,0.109
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.07,0.031,0.027,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.076,0.028,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.296,0.042,0.2,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.515,0.118,0.516,0.12
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.064,0.029,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.063,0.028,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.283,0.055,0.18,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.5,0.126,0.509,0.119
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.06,0.027,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.058,0.03,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.328,0.052,0.136,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.477,0.128,0.497,0.117
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.071,0.029,0.027,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.069,0.03,0.018,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.34,0.048,0.22,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.484,0.107,0.508,0.118
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.067,0.026,0.027,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.074,0.027,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.313,0.049,0.156,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.491,0.124,0.515,0.119
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.073,0.03,0.027,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.066,0.032,0.027,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.337,0.064,0.189,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.501,0.131,0.509,0.127
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.045,0.029,0.009,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.052,0.031,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.298,0.053,0.178,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.486,0.117,0.512,0.108
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.066,0.028,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.073,0.029,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.299,0.057,0.167,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.479,0.107,0.506,0.121
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.067,0.034,0.018,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.07,0.028,0.018,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.323,0.055,0.176,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.471,0.128,0.526,0.116
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.052,0.03,0.004,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.081,0.028,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.326,0.053,0.204,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.514,0.12,0.511,0.119
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.075,0.033,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.071,0.037,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.314,0.048,0.184,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.498,0.13,0.501,0.13
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.054,0.026,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.064,0.031,0.004,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.317,0.038,0.176,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.485,0.113,0.505,0.113
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.09,0.032,0.036,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.093,0.029,0.036,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.346,0.03,0.204,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.521,0.134,0.512,0.115
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.078,0.034,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.086,0.034,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.289,0.047,0.204,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.495,0.118,0.506,0.122
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.044,0.026,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.059,0.029,0.018,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.303,0.044,0.18,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.504,0.125,0.497,0.117
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.059,0.031,0.018,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.058,0.026,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.322,0.057,0.173,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.513,0.121,0.488,0.114
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.058,0.025,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.07,0.031,0.031,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.375,0.045,0.14,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.496,0.127,0.49,0.125
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.062,0.034,0.013,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.081,0.031,0.009,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.345,0.052,0.187,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.508,0.122,0.517,0.123
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.044,0.03,0.004,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.058,0.026,0.009,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.308,0.048,0.169,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.528,0.112,0.498,0.112
+20,10,5,0,20,equal_size,plackett_luce,Kemeny,0.075,0.029,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,PL MLE,0.065,0.028,0.022,0.0
+20,10,5,0,20,equal_size,plackett_luce,Plurality,0.294,0.053,0.144,0.0
+20,10,5,0,20,equal_size,plackett_luce,Random,0.483,0.116,0.496,0.127
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.199,0.035,0.126,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.226,0.037,0.124,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.441,0.036,0.345,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.498,0.077,0.499,0.077
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.14,0.023,0.081,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.168,0.027,0.079,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.389,0.028,0.326,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.515,0.072,0.497,0.087
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.153,0.025,0.101,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.156,0.025,0.103,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.432,0.024,0.362,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.496,0.071,0.491,0.081
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.122,0.026,0.041,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.169,0.028,0.069,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.396,0.028,0.318,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.088,0.482,0.07
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.133,0.025,0.084,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.162,0.024,0.117,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.417,0.027,0.304,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.506,0.081,0.483,0.077
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.182,0.027,0.114,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.207,0.03,0.113,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.437,0.036,0.332,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.079,0.506,0.086
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.055,0.015,0.018,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.1,0.02,0.039,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.41,0.027,0.31,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.487,0.081,0.507,0.083
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.076,0.016,0.026,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.098,0.019,0.039,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.388,0.03,0.271,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.502,0.086,0.502,0.082
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.227,0.034,0.123,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.249,0.031,0.144,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.444,0.038,0.354,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.079,0.493,0.077
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.06,0.015,0.025,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.088,0.014,0.027,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.38,0.029,0.314,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.505,0.069,0.511,0.072
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.162,0.029,0.093,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.194,0.033,0.116,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.442,0.038,0.323,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.489,0.073,0.497,0.088
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.206,0.032,0.119,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.25,0.032,0.151,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.424,0.032,0.329,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.515,0.083,0.503,0.08
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.148,0.026,0.086,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.175,0.025,0.088,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.444,0.025,0.337,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.074,0.5,0.076
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.076,0.02,0.028,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.098,0.023,0.049,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.393,0.026,0.299,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.5,0.073,0.5,0.075
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.144,0.03,0.112,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.17,0.027,0.129,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.437,0.027,0.318,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.496,0.076,0.492,0.086
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.199,0.032,0.144,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.214,0.033,0.172,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.433,0.036,0.334,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.497,0.079,0.497,0.078
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.134,0.024,0.063,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.165,0.027,0.083,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.423,0.034,0.337,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.069,0.492,0.091
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.201,0.034,0.129,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.221,0.034,0.139,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.415,0.037,0.339,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.482,0.079,0.505,0.077
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.091,0.021,0.043,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.141,0.021,0.057,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.403,0.029,0.248,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.505,0.078,0.5,0.076
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Kemeny,0.09,0.02,0.041,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,PL MLE,0.11,0.021,0.052,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.383,0.028,0.266,0.0
+20,20,5,0,20,equal_size,MALLOWS-RELPHI-R,Random,0.508,0.077,0.514,0.077

@@ -1,0 +1,14 @@
+,,,Better for paper (?),,Included in paper,
+,"Even splits, 4+ reviews per paper, 2 reviews per split","Even splits, 4+ reviews per paper, rounded half papers per split","Even splits, 6+ reviews per paper, 3 reviews per split ","Even splits, 6+ reviews per paper, rounded half papers per split","Uneven splits, 4+ reviews per paper","Uneven splits, 6+ reviews per paper"
+gmean,0.42 +- 0.021,0.398 +- 0.015,0.38 +- 0.025,0.374 +- 0.022,0.393 +- 0.014,0.37 +- 0.023
+hmean,0.423 +- 0.021,0.406 +- 0.015,0.391 +- 0.024,0.385 +- 0.022,0.402 +- 0.014,0.383 +- 0.022
+max,0.436 +- 0.019,0.421 +- 0.015,0.425 +- 0.022,0.422 +- 0.018,0.419 +- 0.013,0.423 +- 0.016
+mean,0.418 +- 0.02,0.395 +- 0.015,0.376 +- 0.025,0.37 +- 0.02,0.39 +- 0.014,0.366 +- 0.023
+median,0.418 +- 0.02,0.398 +- 0.015,0.38 +- 0.021,0.368 +- 0.022,0.395 +- 0.016,0.363 +- 0.023
+midrange,0.418 +- 0.02,0.411 +- 0.014,0.4 +- 0.024,0.4 +- 0.019,0.407 +- 0.015,0.398 +- 0.02
+min,0.442 +- 0.021,0.451 +- 0.016,0.453 +- 0.022,0.45 +- 0.017,0.454 +- 0.012,0.453 +- 0.017
+,,,,,,
+,,,,,,
+Even splits: Each split has the same number of reviews,,,,,,
+X+ reviews: We filter out any papers that have fewer than X reviews,,,,,,
+Rounded half of reviews: One split contains half (rounded down) of reviews while the other split contains the remainder of reviews,,,,,,

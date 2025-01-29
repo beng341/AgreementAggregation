@@ -1,0 +1,46 @@
+,num_voters,num_alternatives,Num Profiles,Shuffle Amount,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+0,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Annealing Score Vector,0.217,0.06,0.095,0.02
+1,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Plurality,0.352,0.049,0.258,0.0
+2,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Random,0.494,0.099,0.493,0.099
+3,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Annealing Score Vector,0.103,0.032,0.054,0.028
+4,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Plurality,0.302,0.038,0.198,0.0
+5,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Random,0.501,0.118,0.497,0.097
+6,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Annealing Score Vector,0.24,0.051,0.152,0.025
+7,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Plurality,0.419,0.045,0.271,0.0
+8,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Random,0.471,0.108,0.512,0.115
+9,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Annealing Score Vector,0.207,0.057,0.107,0.033
+10,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Plurality,0.386,0.029,0.304,0.0
+11,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Random,0.479,0.101,0.487,0.091
+12,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Annealing Score Vector,0.245,0.073,0.172,0.03
+13,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Plurality,0.324,0.054,0.242,0.0
+14,20,10,5,0,10,equal_size,MALLOWS-RELPHI-R,Random,0.504,0.124,0.479,0.119
+15,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.164,0.053,0.053,0.016
+16,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.354,0.055,0.204,0.0
+17,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Random,0.462,0.131,0.504,0.098
+18,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.214,0.069,0.117,0.03
+19,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.334,0.061,0.231,0.0
+20,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Random,0.521,0.116,0.506,0.104
+21,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.171,0.059,0.074,0.026
+22,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.343,0.048,0.176,0.0
+23,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Random,0.492,0.1,0.479,0.132
+24,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.204,0.057,0.096,0.026
+25,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.322,0.057,0.162,0.0
+26,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Random,0.538,0.126,0.476,0.114
+27,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Annealing Score Vector,0.184,0.058,0.066,0.018
+28,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Plurality,0.331,0.056,0.149,0.0
+29,20,10,5,0,10,equal_size,MALLOWS-RELPHI-0.5,Random,0.498,0.124,0.495,0.093
+30,20,10,5,0,10,equal_size,plackett_luce,Annealing Score Vector,0.169,0.053,0.074,0.03
+31,20,10,5,0,10,equal_size,plackett_luce,Plurality,0.359,0.058,0.202,0.0
+32,20,10,5,0,10,equal_size,plackett_luce,Random,0.501,0.127,0.501,0.125
+33,20,10,5,0,10,equal_size,plackett_luce,Annealing Score Vector,0.157,0.047,0.048,0.018
+34,20,10,5,0,10,equal_size,plackett_luce,Plurality,0.305,0.039,0.153,0.0
+35,20,10,5,0,10,equal_size,plackett_luce,Random,0.516,0.131,0.466,0.126
+36,20,10,5,0,10,equal_size,plackett_luce,Annealing Score Vector,0.187,0.054,0.079,0.025
+37,20,10,5,0,10,equal_size,plackett_luce,Plurality,0.303,0.05,0.184,0.0
+38,20,10,5,0,10,equal_size,plackett_luce,Random,0.516,0.109,0.496,0.132
+39,20,10,5,0,10,equal_size,plackett_luce,Annealing Score Vector,0.154,0.05,0.068,0.022
+40,20,10,5,0,10,equal_size,plackett_luce,Plurality,0.3,0.049,0.176,0.0
+41,20,10,5,0,10,equal_size,plackett_luce,Random,0.504,0.107,0.488,0.113
+42,20,10,5,0,10,equal_size,plackett_luce,Annealing Score Vector,0.138,0.041,0.05,0.018
+43,20,10,5,0,10,equal_size,plackett_luce,Plurality,0.303,0.05,0.138,0.0
+44,20,10,5,0,10,equal_size,plackett_luce,Random,0.496,0.14,0.497,0.114

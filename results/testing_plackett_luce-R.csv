@@ -1,0 +1,21 @@
+,num_voters,num_alternatives,Num Profiles,Shuffle Amount,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+0,50,10,1,0,20,equal_size,plackett_luce-R,Kemeny,0.303,0.049,0.178,0.0
+1,50,10,1,0,20,equal_size,plackett_luce-R,PL MLE,0.257,0.054,0.222,0.0
+2,50,10,1,0,20,equal_size,plackett_luce-R,Kemeny,0.221,0.051,0.133,0.0
+3,50,10,1,0,20,equal_size,plackett_luce-R,PL MLE,0.214,0.048,0.133,0.0
+4,50,10,1,0,20,equal_size,plackett_luce-R,Kemeny,0.372,0.084,0.267,0.0
+5,50,10,1,0,20,equal_size,plackett_luce-R,PL MLE,0.418,0.077,0.356,0.0
+6,50,10,1,0,20,equal_size,plackett_luce-R,Kemeny,0.191,0.067,0.089,0.0
+7,50,10,1,0,20,equal_size,plackett_luce-R,PL MLE,0.227,0.032,0.089,0.0
+8,50,10,1,0,20,equal_size,plackett_luce-R,Kemeny,0.334,0.094,0.267,0.0
+9,50,10,1,0,20,equal_size,plackett_luce-R,PL MLE,0.304,0.058,0.222,0.0
+10,50,10,1,0,20,equal_size,plackett_luce,Kemeny,0.033,0.023,0.0,0.0
+11,50,10,1,0,20,equal_size,plackett_luce,PL MLE,0.03,0.016,0.022,0.0
+12,50,10,1,0,20,equal_size,plackett_luce,Kemeny,0.052,0.011,0.0,0.0
+13,50,10,1,0,20,equal_size,plackett_luce,PL MLE,0.047,0.018,0.0,0.0
+14,50,10,1,0,20,equal_size,plackett_luce,Kemeny,0.028,0.021,0.0,0.0
+15,50,10,1,0,20,equal_size,plackett_luce,PL MLE,0.023,0.019,0.0,0.0
+16,50,10,1,0,20,equal_size,plackett_luce,Kemeny,0.029,0.028,0.022,0.0
+17,50,10,1,0,20,equal_size,plackett_luce,PL MLE,0.032,0.016,0.0,0.0
+18,50,10,1,0,20,equal_size,plackett_luce,Kemeny,0.026,0.024,0.0,0.0
+19,50,10,1,0,20,equal_size,plackett_luce,PL MLE,0.038,0.028,0.0,0.0

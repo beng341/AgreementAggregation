@@ -1,0 +1,71 @@
+num_voters,num_alternatives,Num Profiles,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Borda,0.088,0.016,0.036,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Borda,0.094,0.017,0.048,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Borda,0.105,0.019,0.073,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Borda,0.118,0.02,0.065,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Borda,0.12,0.023,0.057,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Copeland,0.123,0.019,0.083,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Borda,0.133,0.023,0.061,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Copeland,0.148,0.027,0.069,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Borda,0.151,0.025,0.068,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Copeland,0.168,0.025,0.098,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Borda,0.168,0.03,0.079,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Dowdall,0.17,0.025,0.074,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Dowdall,0.17,0.023,0.098,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Copeland,0.172,0.029,0.071,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Dowdall,0.172,0.027,0.109,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Copeland,0.174,0.028,0.105,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Copeland,0.175,0.027,0.099,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Copeland,0.183,0.027,0.096,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Copeland,0.187,0.027,0.103,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Borda,0.192,0.031,0.118,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Dowdall,0.194,0.03,0.102,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Borda,0.197,0.03,0.109,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Dowdall,0.205,0.028,0.123,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Copeland,0.206,0.033,0.093,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Dowdall,0.22,0.03,0.135,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Dowdall,0.241,0.036,0.155,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Copeland,0.251,0.033,0.146,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.261,0.029,0.15,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality Veto,0.268,0.036,0.174,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.271,0.033,0.155,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality Veto,0.271,0.03,0.169,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.284,0.03,0.186,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Dowdall,0.291,0.038,0.193,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.301,0.035,0.161,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Dowdall,0.313,0.041,0.236,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality Veto,0.332,0.038,0.203,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality Veto,0.343,0.04,0.227,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality Veto,0.349,0.035,0.256,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.35,0.029,0.274,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality Veto,0.358,0.04,0.246,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality,0.368,0.037,0.268,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.375,0.036,0.306,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.376,0.039,0.26,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.386,0.035,0.282,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality,0.389,0.03,0.267,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.39,0.037,0.298,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.392,0.034,0.286,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Anti-Plurality,0.394,0.03,0.277,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.396,0.022,0.28,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Dowdall,0.397,0.049,0.295,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.401,0.033,0.317,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Anti-Plurality,0.401,0.027,0.328,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Plurality,0.401,0.033,0.261,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality,0.409,0.036,0.313,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality,0.414,0.036,0.306,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Anti-Plurality,0.419,0.039,0.318,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Plurality,0.419,0.036,0.356,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Anti-Plurality,0.421,0.036,0.259,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Anti-Plurality,0.421,0.036,0.306,0.0
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Anti-Plurality,0.441,0.038,0.334,0.0
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Random,0.49,0.083,0.501,0.078
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Random,0.495,0.079,0.504,0.075
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Random,0.495,0.079,0.493,0.071
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Random,0.496,0.074,0.491,0.073
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.073,0.503,0.083
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Random,0.503,0.082,0.497,0.076
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Random,0.504,0.072,0.507,0.08
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Random,0.509,0.078,0.495,0.079
+30,20,10,20,equal_prob,MALLOWS-RELPHI-R,Random,0.511,0.073,0.506,0.085
+30,20,10,20,equal_size,MALLOWS-RELPHI-R,Random,0.511,0.079,0.495,0.079
