@@ -1,6 +1,8 @@
 import copy
 import random
 
+import pingouin as pg
+from statsmodels.multivariate.manova import MANOVA
 import pandas as pd
 import prefsampling as ps
 import numpy as np
@@ -705,9 +707,48 @@ def astronomy_stats(astro_df):
     print(review_counts)
 
 
+def print_pvalues():
+    """
+    Quick utility to print pvalues of saved test data.
+    Independent variable: "voting rule"
+    Dependent variables: "KT Distance Between Splits", "Distance from Central Vote"
+    :return:
+    """
+    df = pd.read_csv("results/experiment-ground_truth_vs_split_distance-testing-nsplits=10.csv")
+    filtered_df = df[df["preference distribution"] == "MALLOWS-0.4"]
+
+    # col = "KT Distance Between Splits"
+    # data = pg.anova(data=filtered_df, dv=col, between="voting rule", detailed=True)
+    # print(f"Results for: {col}")
+    # print(data)
+    # print()
+    #
+    # col = "Distance from Central Vote"
+    # data = pg.anova(data=filtered_df, dv=col, between="voting rule", detailed=True)
+    # print(f"Results for: {col}")
+    # print(data)
+    # print()
+
+    # Need to get rid of spaces in all the column names we use
+    filtered_df = filtered_df.rename(columns={"KT Distance Between Splits": "Split_Distance",
+                                              "Distance from Central Vote": "Reference_Distance",
+                                              "voting rule": "voting_rule"})
+
+    dvs = ["Split_Distance", "Reference_Distance"]
+    between = "voting_rule"
+    formula = f'{" + ".join(dvs)} ~ {between}'
+    manova = MANOVA.from_formula(formula, data=filtered_df)
+    manova_results = manova.mv_test()
+    print(f"Results for MANOVA test")
+    print(manova_results)
+
+
 if __name__ == "__main__":
-    astro_dict, proposal_scores = parse_astronomy_csv()
-    astronomy_stats(astro_dict)
+
+    print_pvalues()
+
+    # astro_dict, proposal_scores = parse_astronomy_csv()
+    # astronomy_stats(astro_dict)
 
     # json_folder = load_json_folder()
     # acl_2017_stats(json_folder)
