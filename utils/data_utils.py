@@ -739,7 +739,21 @@ def print_pvalues():
     formula = f'{" + ".join(dvs)} ~ {between}'
     manova = MANOVA.from_formula(formula, data=filtered_df)
     manova_results = manova.mv_test()
-    print(f"Results for MANOVA test")
+    print(f"Results for MANOVA test (MALLOWS-0.4)")
+    print(manova_results)
+
+    print("")
+
+    filtered_df = df[df["preference distribution"] == "plackett_luce"]
+    filtered_df = filtered_df.rename(columns={"KT Distance Between Splits": "Split_Distance",
+                                              "Distance from Central Vote": "Reference_Distance",
+                                              "voting rule": "voting_rule"})
+    dvs = ["Split_Distance", "Reference_Distance"]
+    between = "voting_rule"
+    formula = f'{" + ".join(dvs)} ~ {between}'
+    manova = MANOVA.from_formula(formula, data=filtered_df)
+    manova_results = manova.mv_test()
+    print(f"Results for MANOVA test (Plackett-Luce)")
     print(manova_results)
 
 

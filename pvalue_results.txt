@@ -1,0 +1,55 @@
+
+Results of statsmodel.manova test for significance.
+
+Independent variable: voting rule
+Dependent variables: KT Distance Between Splits, Distance from Central Vote
+
+We run the test on each preference distribution we have considered. Raw output is below.
+
+
+
+Results for MANOVA test (MALLOWS-0.4)
+                    Multivariate linear model
+==================================================================
+                                                                  
+------------------------------------------------------------------
+         Intercept         Value  Num DF  Den DF   F Value  Pr > F
+------------------------------------------------------------------
+            Wilks' lambda  0.0248 2.0000 440.0000 8659.8881 0.0000
+           Pillai's trace  0.9752 2.0000 440.0000 8659.8881 0.0000
+   Hotelling-Lawley trace 39.3631 2.0000 440.0000 8659.8881 0.0000
+      Roy's greatest root 39.3631 2.0000 440.0000 8659.8881 0.0000
+------------------------------------------------------------------
+                                                                  
+------------------------------------------------------------------
+      voting_rule        Value    Num DF  Den DF   F Value  Pr > F
+------------------------------------------------------------------
+          Wilks' lambda   0.0043 16.0000 880.0000  786.5682 0.0000
+         Pillai's trace   1.3575 16.0000 882.0000  116.4651 0.0000
+ Hotelling-Lawley trace 148.4318 16.0000 716.4218 4074.6962 0.0000
+    Roy's greatest root 147.8590  8.0000 441.0000 8150.7276 0.0000
+==================================================================
+
+
+
+Results for MANOVA test (Plackett-Luce)
+                    Multivariate linear model
+=================================================================
+                                                                 
+-----------------------------------------------------------------
+        Intercept         Value  Num DF  Den DF   F Value  Pr > F
+-----------------------------------------------------------------
+           Wilks' lambda  0.0293 2.0000 440.0000 7277.9873 0.0000
+          Pillai's trace  0.9707 2.0000 440.0000 7277.9873 0.0000
+  Hotelling-Lawley trace 33.0818 2.0000 440.0000 7277.9873 0.0000
+     Roy's greatest root 33.0818 2.0000 440.0000 7277.9873 0.0000
+-----------------------------------------------------------------
+                                                                 
+-----------------------------------------------------------------
+      voting_rule        Value   Num DF  Den DF   F Value  Pr > F
+-----------------------------------------------------------------
+          Wilks' lambda  0.0135 16.0000 880.0000  417.6469 0.0000
+         Pillai's trace  1.2233 16.0000 882.0000   86.8246 0.0000
+ Hotelling-Lawley trace 55.3578 16.0000 716.4218 1519.6631 0.0000
+    Roy's greatest root 55.0400  8.0000 441.0000 3034.0819 0.0000
+=================================================================
