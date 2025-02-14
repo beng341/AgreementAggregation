@@ -127,6 +127,60 @@ def kt_distance_between_rankings(r1, r2, weights=None):
     return dist
 
 
+def kt_distance_one_profile_one_rule(profile, n_splits, rule, m=None, **kwargs):
+    """
+    Measure the KT distance between splits on one given profile using a single rule.
+    :param profile:
+    :param n_splits:
+    :param rule:
+    :return:
+    """
+    all_distances = []
+    n = len(profile)
+    if m is None:
+        m = [num for order in profile for num in order]
+        m = max(m)+1
+    for _ in range(n_splits):
+        s1, s2 = split_data(profile, n=n, m=m)
+
+        kwargs = {"m": m, "k": 6}
+
+        ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
+        ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
+
+        gamma = 2
+        # # calculate weight based on how balanced each ranking is
+        # # Can't assume that each alternative is ranked the same number of times
+        # proposal_split = np.zeros((m, 2))
+        # for ranking in s1:
+        #     for cand in ranking:
+        #         proposal_split[cand][0] += 1
+        # for ranking in s2:
+        #     for cand in ranking:
+        #         proposal_split[cand][1] += 1
+        #
+        # proposal_split = np.min(proposal_split, 1)
+        # weights = ((gamma ** proposal_split) - 1) / (gamma ** (int(l / 2)) - 1)
+
+        s1 = np.array(s1)
+        s2 = np.array(s2)
+        profile = np.array(profile)
+
+        weights = []
+        for a in range(m):
+            # count how many times a appears in both splits
+            min_occurrences = min(np.count_nonzero(s1 == a), np.count_nonzero(s2 == a))
+            total_occurrences = np.count_nonzero(profile == a)
+            total_occurrences += 0.00001
+            weights.append(((gamma**min_occurrences)-1) / ((gamma**total_occurrences)-1))
+
+        dist = kt_distance_between_rankings(ranking1, ranking2, weights=weights)
+
+        all_distances.append(dist)
+
+    return np.mean(all_distances), np.std(all_distances)
+
+
 def kt_distance_between_many_profiles_with_positional_scoring_rule(profiles, n_splits, score_vector):
     all_dists = []
     for profile in profiles:
@@ -331,13 +385,14 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
                                                     parameter_reps,
                                                     split_types=["equal_size"], save_results=True, path="",
                                                     filename="results.csv"):
-    columns = ["num_voters", "num_alternatives", "Num Profiles", "Splits Per Profile", "split type",
+    columns = ["num_voters", "num_alternatives", "Num Profiles", "profile_set_idx", "Splits Per Profile", "split type",
                "preference distribution", "voting rule",
                "KT Distance Between Splits", "KT Distance Std", "Distance from Central Vote",
                "Central Vote Distance Std"]
 
     result_rows = []
 
+    profile_set_idx = 0
     for n, m, pref_dist, split_type in itertools.product(all_n, all_m, all_dists, split_types):
         for pr in range(parameter_reps):
             print(f"Trial {pr} of {parameter_reps} with n={n}, m={m}, pref_dist={pref_dist} and ALL rules.")
@@ -373,13 +428,16 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
                 ref_dist_mean, ref_dist_stds = np.mean(ref_dist_means), np.mean(ref_dist_stds)
 
                 result_rows.append(
-                    [n, m, n_profiles, n_splits, split_type, pref_dist, rule_name,
+                    [n, m, n_profiles, profile_set_idx, n_splits, split_type, pref_dist, rule_name,
                      round(dist_mean, 3), round(dist_std, 3), round(ref_dist_mean, 3), round(ref_dist_stds, 3)])
+
+            # track which set of profiles we are on
+            profile_set_idx += 1
 
         # Save once in a while so not much gets lost if exiting early
         if save_results:
             df = pd.DataFrame(result_rows, columns=columns)
-            df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
+            # df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
 
             if not os.path.exists(path):
                 os.makedirs(path)
@@ -400,18 +458,18 @@ def compare_basic_ground_truth_vs_split_distance():
     splits_per_profile = 10  # On each profile, find pairwise distance between this many random splits
     n_profiles = 1  # Number of profiles tested during each repetition of parameters
     parameter_repetitions = 50  # Run this many trials over all combinations of other parameters
-    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-scaled.csv"
+    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-complete.csv"
 
     all_rules = [
-        # vu.annealing_ranking,
+        vu.annealing_ranking,
+        vu.kemeny_gurobi_lazy,
+        vu.choix_pl_ranking,
         vu.borda_minmax_ranking,
-        # vu.plurality_ranking,
-        # vu.plurality_veto_ranking,
-        # vu.antiplurality_ranking,
-        # vu.borda_ranking,
-        # vu.two_approval_ranking,
-        # vu.kemeny_gurobi_lazy,
-        # vu.choix_pl_ranking,
+        vu.plurality_ranking,
+        vu.plurality_veto_ranking,
+        vu.antiplurality_ranking,
+        vu.borda_ranking,
+        vu.two_approval_ranking,
         # vu.copeland_ranking,
         # vu.dowdall_ranking,
         # vu.three_approval,

@@ -1,6 +1,7 @@
 import itertools
 import pprint
 import random
+from collections import Counter
 
 from utils import data_utils as du
 from utils import voting_utils as vu
@@ -118,6 +119,13 @@ def score_data_kt_distance(review_scores):
         for k, dist in distances.items():
             all_distances[k].append(dist)
 
+    review_counts = Counter()
+    for paper, scores in review_scores.items():
+        review_counts[len(scores)] += 1
+    print(f"X:y; y proposals have X reviewers")
+    print(review_counts)
+    print()
+
     mean_distances = {k: np.mean(v) for k, v in all_distances.items()}
     std_distances = {k: np.std(v) for k, v in all_distances.items()}
 
@@ -137,14 +145,78 @@ def score_data_kt_distance(review_scores):
     pprint.pprint(results)
 
 
+def ordinal_data_kt_distance(voter_rankings):
+    """
+
+    :param voter_rankings: List of lists of pairs where first element is candidate id (in need of normalization) and
+    second element is the rank assigned by the voter to that candidate.
+    :return:
+    """
+
+    def single_rule_distance(rule, profile, num_splits):
+        dist, std = rc.kt_distance_one_profile_one_rule(profile=profile, n_splits=ns, rule=rule)
+        return dist, std
+
+    ns = 200
+
+    # normalize candidate ids
+    voter_rankings = du.rename_candidates(voter_rankings)
+    # convert to weak rankings without candidate ids
+    rankings = du.rankings_from_candidate_pair_lists(voter_rankings, strict=True)
+
+    # truncate to include only a random 6 rankings from each voter
+    # make sure to preserve order of underlying rankings
+    filtered_rankings = []
+    for ranking in rankings:
+        min_size = 6
+        if len(ranking) < min_size:
+            continue
+        indices = sorted(random.sample(range(len(ranking)), min_size))
+        ranking = [ranking[i] for i in indices]
+        filtered_rankings.append(ranking)
+
+    all_rules = [
+        # vu.annealing_ranking,
+        vu.borda_minmax_ranking,
+        vu.plurality_ranking,
+        vu.plurality_veto_ranking,
+        vu.antiplurality_ranking,
+        vu.borda_ranking,
+        vu.two_approval_ranking,
+        vu.kemeny_gurobi_lazy,
+        # vu.choix_pl_ranking,
+        vu.copeland_ranking,
+        # vu.dowdall_ranking,
+        # vu.three_approval,
+        # vu.four_approval,
+        # vu.five_approval,
+        # vu.six_approval,
+        # vu.random_ranking,
+    ]
+
+    all_rule_distances = dict()
+    print(f"KT Distances for {ns} splits")
+    for rule in all_rules:
+        dist, std = rc.kt_distance_one_profile_one_rule(profile=filtered_rankings, n_splits=ns, rule=vu.borda_ranking)
+
+        all_rule_distances[rule.name] = (dist, std)
+
+        print(f"{round(dist, 5)} ± {round(std, 6)} is KT Distance of {rule.name}.")
+
+
+
 if __name__ == "__main__":
-    astro_scores, proposal_scores, proposal_ranks = du.parse_astronomy_csv()
+    astro_scores, proposal_scores, proposal_ranks, voter_rankings = du.parse_astronomy_csv()
 
-    print("Distances on astronomy dataset for score data:")
+    # ordinal_data_kt_distance(voter_rankings)
+
+
+    # print("Distances on astronomy dataset for score data:")
     score_data_kt_distance(proposal_scores)
-
-    print("\n\n")
-
-    print("Distances on astronomy dataset for ordinal data")
-    score_data_kt_distance(proposal_ranks)
+    #
+    #
+    # print("\n\n")
+    #
+    # print("Distances on astronomy dataset for ordinal data")
+    # score_data_kt_distance(proposal_ranks)
 
