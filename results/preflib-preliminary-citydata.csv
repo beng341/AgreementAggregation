@@ -1,0 +1,37 @@
+Dataset,n_splits,n_alternatives,n_voters,rule_name,distance,distance_std
+City (2012 Oakland City Council - District 5),200,5,11266,Borda,0.0,0.0
+City (2012 Oakland City Council - District 5),200,5,11266,Plurality,0.0,0.0
+City (2012 Oakland City Council - District 5),200,5,11266,Plurality Veto,0.0,0.0
+City (2012 Oakland City Council - District 5),200,5,11266,Anti-Plurality,0.0,0.0
+City (2012 Oakland City Council - District 5),200,5,11266,Two Approval,0.0,0.0
+City (2012 Oakland City Council - District 5),200,5,11266,City-2012 Oakland City Council - District 5,0.0,0.0
+City (Aspen City Council 2009),200,11,2477,Borda,0.011,0.014
+City (Aspen City Council 2009),200,11,2477,Plurality,0.043,0.02
+City (Aspen City Council 2009),200,11,2477,Plurality Veto,0.033,0.018
+City (Aspen City Council 2009),200,11,2477,Anti-Plurality,0.032,0.018
+City (Aspen City Council 2009),200,11,2477,Two Approval,0.035,0.021
+City (Aspen City Council 2009),200,11,2477,City-Aspen City Council 2009,0.053,0.022
+City (Aspen Mayor 2009),200,5,2527,Borda,0.064,0.084
+City (Aspen Mayor 2009),200,5,2527,Plurality,0.0,0.0
+City (Aspen Mayor 2009),200,5,2527,Plurality Veto,0.0,0.0
+City (Aspen Mayor 2009),200,5,2527,Anti-Plurality,0.046,0.05
+City (Aspen Mayor 2009),200,5,2527,Two Approval,0.007,0.027
+City (Aspen Mayor 2009),200,5,2527,City-Aspen Mayor 2009,0.0,0.0
+City (2006 Burlington Mayoral Election),200,6,9788,Borda,0.0,0.0
+City (2006 Burlington Mayoral Election),200,6,9788,Plurality,0.004,0.015
+City (2006 Burlington Mayoral Election),200,6,9788,Plurality Veto,0.0,0.0
+City (2006 Burlington Mayoral Election),200,6,9788,Anti-Plurality,0.0,0.0
+City (2006 Burlington Mayoral Election),200,6,9788,Two Approval,0.0,0.0
+City (2006 Burlington Mayoral Election),200,6,9788,City-2006 Burlington Mayoral Election,0.003,0.015
+City (2010 Berkeley City Council - District 7),200,4,4173,Borda,0.0,0.0
+City (2010 Berkeley City Council - District 7),200,4,4173,Plurality,0.0,0.0
+City (2010 Berkeley City Council - District 7),200,4,4173,Plurality Veto,0.0,0.0
+City (2010 Berkeley City Council - District 7),200,4,4173,Anti-Plurality,0.15,0.05
+City (2010 Berkeley City Council - District 7),200,4,4173,Two Approval,0.0,0.0
+City (2010 Berkeley City Council - District 7),200,4,4173,City-2010 Berkeley City Council - District 7,0.0,0.0
+City (2009 Burlington Mayoral Election),200,6,8980,Borda,0.039,0.033
+City (2009 Burlington Mayoral Election),200,6,8980,Plurality,0.05,0.027
+City (2009 Burlington Mayoral Election),200,6,8980,Plurality Veto,0.001,0.007
+City (2009 Burlington Mayoral Election),200,6,8980,Anti-Plurality,0.027,0.033
+City (2009 Burlington Mayoral Election),200,6,8980,Two Approval,0.004,0.016
+City (2009 Burlington Mayoral Election),200,6,8980,City-2009 Burlington Mayoral Election,0.046,0.031

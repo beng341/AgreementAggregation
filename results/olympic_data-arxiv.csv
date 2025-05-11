@@ -1,0 +1,409 @@
+Game,n_splits,n_countries,n_events,rule_name,distance,distance_std
+1896 Summer,20,12,43,All Medals,0.029,0.013
+1896 Summer,20,12,43,Gold Medals,0.046,0.021
+1896 Summer,20,12,43,Borda,0.065,0.028
+1896 Summer,20,12,43,Single Profile Annealing,0.065,0.025
+1896 Summer,20,12,43,Three Approval,0.066,0.025
+1896 Summer,20,12,43,Plurality,0.08,0.053
+1896 Summer,20,12,43,Plurality Veto,0.08,0.053
+1896 Summer,20,12,43,Veto,0.096,0.037
+1900 Summer,20,31,90,All Medals,0.023,0.007
+1900 Summer,20,31,90,Gold Medals,0.028,0.009
+1900 Summer,20,31,90,Borda,0.031,0.01
+1900 Summer,20,31,90,Three Approval,0.032,0.011
+1900 Summer,20,31,90,Single Profile Annealing,0.033,0.009
+1900 Summer,20,31,90,Plurality,0.041,0.012
+1900 Summer,20,31,90,Plurality Veto,0.041,0.012
+1900 Summer,20,31,90,Veto,0.051,0.012
+1904 Summer,20,15,95,All Medals,0.049,0.03
+1904 Summer,20,15,95,Gold Medals,0.049,0.03
+1904 Summer,20,15,95,Borda,0.055,0.032
+1904 Summer,20,15,95,Three Approval,0.055,0.032
+1904 Summer,20,15,95,Plurality,0.058,0.032
+1904 Summer,20,15,95,Plurality Veto,0.058,0.032
+1904 Summer,20,15,95,Single Profile Annealing,0.059,0.035
+1904 Summer,20,15,95,Veto,0.064,0.031
+1906 Summer,20,21,74,All Medals,0.024,0.009
+1906 Summer,20,21,74,Gold Medals,0.03,0.017
+1906 Summer,20,21,74,Borda,0.044,0.021
+1906 Summer,20,21,74,Single Profile Annealing,0.044,0.021
+1906 Summer,20,21,74,Three Approval,0.046,0.02
+1906 Summer,20,21,74,Plurality,0.061,0.033
+1906 Summer,20,21,74,Plurality Veto,0.061,0.033
+1906 Summer,20,21,74,Veto,0.075,0.032
+1908 Summer,20,22,109,All Medals,0.021,0.012
+1908 Summer,20,22,109,Gold Medals,0.021,0.011
+1908 Summer,20,22,109,Borda,0.024,0.013
+1908 Summer,20,22,109,Single Profile Annealing,0.024,0.014
+1908 Summer,20,22,109,Three Approval,0.03,0.015
+1908 Summer,20,22,109,Plurality,0.037,0.019
+1908 Summer,20,22,109,Plurality Veto,0.037,0.019
+1908 Summer,20,22,109,Veto,0.043,0.021
+1912 Summer,20,29,107,All Medals,0.022,0.008
+1912 Summer,20,29,107,Borda,0.022,0.01
+1912 Summer,20,29,107,Single Profile Annealing,0.022,0.011
+1912 Summer,20,29,107,Gold Medals,0.023,0.008
+1912 Summer,20,29,107,Three Approval,0.025,0.012
+1912 Summer,20,29,107,Plurality,0.039,0.014
+1912 Summer,20,29,107,Plurality Veto,0.039,0.014
+1912 Summer,20,29,107,Veto,0.06,0.021
+1920 Summer,20,29,158,All Medals,0.023,0.01
+1920 Summer,20,29,158,Gold Medals,0.024,0.01
+1920 Summer,20,29,158,Borda,0.026,0.012
+1920 Summer,20,29,158,Single Profile Annealing,0.026,0.012
+1920 Summer,20,29,158,Three Approval,0.031,0.013
+1920 Summer,20,29,158,Plurality,0.037,0.014
+1920 Summer,20,29,158,Plurality Veto,0.037,0.014
+1920 Summer,20,29,158,Veto,0.059,0.019
+1924 Summer,20,45,131,Single Profile Annealing,0.036,0.012
+1924 Summer,20,45,131,All Medals,0.038,0.012
+1924 Summer,20,45,131,Gold Medals,0.039,0.011
+1924 Summer,20,45,131,Borda,0.039,0.013
+1924 Summer,20,45,131,Three Approval,0.052,0.016
+1924 Summer,20,45,131,Plurality,0.054,0.016
+1924 Summer,20,45,131,Plurality Veto,0.054,0.016
+1924 Summer,20,45,131,Veto,0.073,0.023
+1924 Winter,20,19,17,Single Profile Annealing,0.027,0.008
+1924 Winter,20,19,17,Borda,0.029,0.008
+1924 Winter,20,19,17,Three Approval,0.045,0.013
+1924 Winter,20,19,17,All Medals,0.05,0.012
+1924 Winter,20,19,17,Gold Medals,0.05,0.011
+1924 Winter,20,19,17,Plurality,0.079,0.017
+1924 Winter,20,19,17,Plurality Veto,0.079,0.017
+1924 Winter,20,19,17,Veto,0.102,0.027
+1928 Summer,20,46,122,All Medals,0.031,0.009
+1928 Summer,20,46,122,Borda,0.035,0.014
+1928 Summer,20,46,122,Gold Medals,0.036,0.012
+1928 Summer,20,46,122,Single Profile Annealing,0.036,0.015
+1928 Summer,20,46,122,Three Approval,0.045,0.013
+1928 Summer,20,46,122,Plurality,0.057,0.018
+1928 Summer,20,46,122,Plurality Veto,0.057,0.018
+1928 Summer,20,46,122,Veto,0.066,0.02
+1928 Winter,20,25,14,Single Profile Annealing,0.058,0.021
+1928 Winter,20,25,14,Borda,0.06,0.02
+1928 Winter,20,25,14,All Medals,0.082,0.03
+1928 Winter,20,25,14,Gold Medals,0.083,0.03
+1928 Winter,20,25,14,Plurality,0.087,0.034
+1928 Winter,20,25,14,Plurality Veto,0.087,0.034
+1928 Winter,20,25,14,Three Approval,0.087,0.031
+1928 Winter,20,25,14,Veto,0.105,0.04
+1932 Summer,20,47,131,All Medals,0.024,0.007
+1932 Summer,20,47,131,Gold Medals,0.026,0.006
+1932 Summer,20,47,131,Borda,0.034,0.009
+1932 Summer,20,47,131,Three Approval,0.034,0.01
+1932 Summer,20,47,131,Single Profile Annealing,0.035,0.008
+1932 Summer,20,47,131,Plurality,0.036,0.009
+1932 Summer,20,47,131,Plurality Veto,0.036,0.009
+1932 Summer,20,47,131,Veto,0.052,0.014
+1932 Winter,20,17,14,All Medals,0.062,0.027
+1932 Winter,20,17,14,Gold Medals,0.068,0.028
+1932 Winter,20,17,14,Borda,0.075,0.031
+1932 Winter,20,17,14,Single Profile Annealing,0.078,0.031
+1932 Winter,20,17,14,Three Approval,0.084,0.037
+1932 Winter,20,17,14,Plurality,0.1,0.042
+1932 Winter,20,17,14,Plurality Veto,0.1,0.042
+1932 Winter,20,17,14,Veto,0.11,0.049
+1936 Summer,20,49,150,All Medals,0.033,0.008
+1936 Summer,20,49,150,Gold Medals,0.036,0.009
+1936 Summer,20,49,150,Single Profile Annealing,0.045,0.014
+1936 Summer,20,49,150,Borda,0.046,0.014
+1936 Summer,20,49,150,Three Approval,0.046,0.012
+1936 Summer,20,49,150,Plurality,0.053,0.014
+1936 Summer,20,49,150,Plurality Veto,0.053,0.014
+1936 Summer,20,49,150,Veto,0.071,0.016
+1936 Winter,20,28,17,Single Profile Annealing,0.101,0.027
+1936 Winter,20,28,17,All Medals,0.104,0.026
+1936 Winter,20,28,17,Gold Medals,0.104,0.026
+1936 Winter,20,28,17,Borda,0.104,0.029
+1936 Winter,20,28,17,Three Approval,0.106,0.026
+1936 Winter,20,28,17,Plurality,0.134,0.035
+1936 Winter,20,28,17,Plurality Veto,0.134,0.035
+1936 Winter,20,28,17,Veto,0.148,0.036
+1948 Summer,20,59,153,Borda,0.028,0.009
+1948 Summer,20,59,153,Single Profile Annealing,0.028,0.009
+1948 Summer,20,59,153,All Medals,0.035,0.01
+1948 Summer,20,59,153,Gold Medals,0.037,0.009
+1948 Summer,20,59,153,Three Approval,0.039,0.01
+1948 Summer,20,59,153,Plurality,0.045,0.01
+1948 Summer,20,59,153,Plurality Veto,0.045,0.01
+1948 Summer,20,59,153,Veto,0.068,0.015
+1948 Winter,20,28,22,Borda,0.047,0.015
+1948 Winter,20,28,22,Single Profile Annealing,0.049,0.016
+1948 Winter,20,28,22,Plurality Veto,0.068,0.029
+1948 Winter,20,28,22,Veto,0.068,0.046
+1948 Winter,20,28,22,All Medals,0.078,0.029
+1948 Winter,20,28,22,Three Approval,0.079,0.03
+1948 Winter,20,28,22,Gold Medals,0.08,0.029
+1948 Winter,20,28,22,Plurality,0.103,0.035
+1952 Summer,20,69,149,Borda,0.029,0.009
+1952 Summer,20,69,149,Single Profile Annealing,0.029,0.009
+1952 Summer,20,69,149,All Medals,0.032,0.009
+1952 Summer,20,69,149,Gold Medals,0.033,0.008
+1952 Summer,20,69,149,Three Approval,0.034,0.011
+1952 Summer,20,69,149,Plurality,0.05,0.012
+1952 Summer,20,69,149,Plurality Veto,0.05,0.012
+1952 Summer,20,69,149,Veto,0.064,0.016
+1952 Winter,20,30,22,Borda,0.043,0.009
+1952 Winter,20,30,22,Single Profile Annealing,0.043,0.009
+1952 Winter,20,30,22,Plurality Veto,0.05,0.021
+1952 Winter,20,30,22,Veto,0.052,0.033
+1952 Winter,20,30,22,All Medals,0.069,0.022
+1952 Winter,20,30,22,Gold Medals,0.07,0.022
+1952 Winter,20,30,22,Three Approval,0.072,0.021
+1952 Winter,20,30,22,Plurality,0.096,0.027
+1956 Summer,20,72,151,All Medals,0.043,0.008
+1956 Summer,20,72,151,Gold Medals,0.044,0.008
+1956 Summer,20,72,151,Borda,0.044,0.008
+1956 Summer,20,72,151,Single Profile Annealing,0.044,0.008
+1956 Summer,20,72,151,Three Approval,0.051,0.01
+1956 Summer,20,72,151,Plurality,0.06,0.01
+1956 Summer,20,72,151,Plurality Veto,0.06,0.01
+1956 Summer,20,72,151,Veto,0.075,0.011
+1956 Winter,20,32,24,Single Profile Annealing,0.036,0.009
+1956 Winter,20,32,24,Borda,0.037,0.01
+1956 Winter,20,32,24,Plurality Veto,0.052,0.026
+1956 Winter,20,32,24,Veto,0.068,0.045
+1956 Winter,20,32,24,Three Approval,0.072,0.028
+1956 Winter,20,32,24,All Medals,0.073,0.027
+1956 Winter,20,32,24,Gold Medals,0.075,0.027
+1956 Winter,20,32,24,Plurality,0.099,0.035
+1960 Summer,20,84,150,Borda,0.038,0.008
+1960 Summer,20,84,150,Single Profile Annealing,0.038,0.008
+1960 Summer,20,84,150,All Medals,0.051,0.011
+1960 Summer,20,84,150,Gold Medals,0.052,0.011
+1960 Summer,20,84,150,Three Approval,0.055,0.011
+1960 Summer,20,84,150,Plurality,0.065,0.013
+1960 Summer,20,84,150,Plurality Veto,0.065,0.013
+1960 Summer,20,84,150,Veto,0.078,0.015
+1960 Winter,20,30,27,Borda,0.043,0.017
+1960 Winter,20,30,27,Single Profile Annealing,0.043,0.017
+1960 Winter,20,30,27,All Medals,0.072,0.024
+1960 Winter,20,30,27,Gold Medals,0.074,0.024
+1960 Winter,20,30,27,Three Approval,0.08,0.024
+1960 Winter,20,30,27,Plurality,0.095,0.031
+1960 Winter,20,30,27,Plurality Veto,0.095,0.031
+1960 Winter,20,30,27,Veto,0.125,0.036
+1964 Summer,20,93,163,Borda,0.045,0.009
+1964 Summer,20,93,163,Single Profile Annealing,0.045,0.009
+1964 Summer,20,93,163,All Medals,0.047,0.006
+1964 Summer,20,93,163,Gold Medals,0.047,0.006
+1964 Summer,20,93,163,Three Approval,0.05,0.007
+1964 Summer,20,93,163,Plurality,0.057,0.007
+1964 Summer,20,93,163,Plurality Veto,0.057,0.007
+1964 Summer,20,93,163,Veto,0.072,0.01
+1964 Winter,20,36,34,Single Profile Annealing,0.036,0.009
+1964 Winter,20,36,34,Borda,0.037,0.009
+1964 Winter,20,36,34,All Medals,0.071,0.022
+1964 Winter,20,36,34,Gold Medals,0.073,0.022
+1964 Winter,20,36,34,Three Approval,0.073,0.022
+1964 Winter,20,36,34,Plurality,0.096,0.027
+1964 Winter,20,36,34,Plurality Veto,0.096,0.027
+1964 Winter,20,36,34,Veto,0.12,0.031
+1968 Summer,20,112,172,Borda,0.038,0.008
+1968 Summer,20,112,172,Single Profile Annealing,0.038,0.008
+1968 Summer,20,112,172,All Medals,0.043,0.008
+1968 Summer,20,112,172,Gold Medals,0.044,0.009
+1968 Summer,20,112,172,Three Approval,0.046,0.009
+1968 Summer,20,112,172,Plurality,0.056,0.012
+1968 Summer,20,112,172,Plurality Veto,0.056,0.012
+1968 Summer,20,112,172,Veto,0.067,0.012
+1968 Winter,20,37,35,Borda,0.034,0.011
+1968 Winter,20,37,35,Single Profile Annealing,0.034,0.011
+1968 Winter,20,37,35,All Medals,0.069,0.026
+1968 Winter,20,37,35,Gold Medals,0.069,0.026
+1968 Winter,20,37,35,Three Approval,0.071,0.026
+1968 Winter,20,37,35,Plurality,0.103,0.037
+1968 Winter,20,37,35,Plurality Veto,0.103,0.037
+1968 Winter,20,37,35,Veto,0.131,0.047
+1972 Summer,20,121,193,Borda,0.046,0.008
+1972 Summer,20,121,193,Single Profile Annealing,0.046,0.008
+1972 Summer,20,121,193,Three Approval,0.054,0.012
+1972 Summer,20,121,193,All Medals,0.055,0.012
+1972 Summer,20,121,193,Gold Medals,0.055,0.012
+1972 Summer,20,121,193,Plurality,0.065,0.013
+1972 Summer,20,121,193,Plurality Veto,0.065,0.013
+1972 Summer,20,121,193,Veto,0.077,0.016
+1972 Winter,20,35,35,Single Profile Annealing,0.034,0.006
+1972 Winter,20,35,35,Borda,0.035,0.007
+1972 Winter,20,35,35,All Medals,0.071,0.021
+1972 Winter,20,35,35,Gold Medals,0.074,0.022
+1972 Winter,20,35,35,Three Approval,0.074,0.021
+1972 Winter,20,35,35,Plurality,0.103,0.028
+1972 Winter,20,35,35,Plurality Veto,0.103,0.028
+1972 Winter,20,35,35,Veto,0.127,0.032
+1976 Summer,20,92,198,Borda,0.043,0.011
+1976 Summer,20,92,198,Single Profile Annealing,0.043,0.011
+1976 Summer,20,92,198,All Medals,0.049,0.012
+1976 Summer,20,92,198,Gold Medals,0.05,0.012
+1976 Summer,20,92,198,Three Approval,0.052,0.013
+1976 Summer,20,92,198,Plurality,0.063,0.015
+1976 Summer,20,92,198,Plurality Veto,0.063,0.015
+1976 Summer,20,92,198,Veto,0.077,0.018
+1976 Winter,20,37,37,Borda,0.027,0.005
+1976 Winter,20,37,37,Single Profile Annealing,0.027,0.005
+1976 Winter,20,37,37,All Medals,0.065,0.016
+1976 Winter,20,37,37,Gold Medals,0.067,0.016
+1976 Winter,20,37,37,Three Approval,0.067,0.017
+1976 Winter,20,37,37,Plurality,0.097,0.023
+1976 Winter,20,37,37,Plurality Veto,0.097,0.023
+1976 Winter,20,37,37,Veto,0.12,0.028
+1980 Summer,20,80,203,Borda,0.038,0.009
+1980 Summer,20,80,203,Single Profile Annealing,0.038,0.009
+1980 Summer,20,80,203,All Medals,0.048,0.009
+1980 Summer,20,80,203,Gold Medals,0.05,0.009
+1980 Summer,20,80,203,Three Approval,0.052,0.009
+1980 Summer,20,80,203,Plurality,0.064,0.01
+1980 Summer,20,80,203,Plurality Veto,0.064,0.01
+1980 Summer,20,80,203,Veto,0.078,0.013
+1980 Winter,20,37,38,Single Profile Annealing,0.026,0.008
+1980 Winter,20,37,38,Borda,0.027,0.008
+1980 Winter,20,37,38,All Medals,0.06,0.024
+1980 Winter,20,37,38,Gold Medals,0.06,0.024
+1980 Winter,20,37,38,Three Approval,0.062,0.024
+1980 Winter,20,37,38,Plurality,0.08,0.031
+1980 Winter,20,37,38,Plurality Veto,0.08,0.031
+1980 Winter,20,37,38,Veto,0.106,0.04
+1984 Summer,20,140,221,Borda,0.041,0.006
+1984 Summer,20,140,221,Single Profile Annealing,0.041,0.006
+1984 Summer,20,140,221,All Medals,0.056,0.009
+1984 Summer,20,140,221,Gold Medals,0.056,0.009
+1984 Summer,20,140,221,Three Approval,0.057,0.009
+1984 Summer,20,140,221,Plurality,0.065,0.01
+1984 Summer,20,140,221,Plurality Veto,0.065,0.01
+1984 Summer,20,140,221,Veto,0.075,0.011
+1984 Winter,20,49,39,Borda,0.035,0.009
+1984 Winter,20,49,39,Single Profile Annealing,0.035,0.009
+1984 Winter,20,49,39,All Medals,0.077,0.027
+1984 Winter,20,49,39,Three Approval,0.077,0.028
+1984 Winter,20,49,39,Gold Medals,0.078,0.027
+1984 Winter,20,49,39,Plurality,0.09,0.031
+1984 Winter,20,49,39,Plurality Veto,0.09,0.031
+1984 Winter,20,49,39,Veto,0.116,0.04
+1988 Summer,20,159,237,Borda,0.046,0.007
+1988 Summer,20,159,237,Single Profile Annealing,0.046,0.007
+1988 Summer,20,159,237,All Medals,0.067,0.011
+1988 Summer,20,159,237,Gold Medals,0.067,0.011
+1988 Summer,20,159,237,Three Approval,0.069,0.011
+1988 Summer,20,159,237,Plurality,0.074,0.012
+1988 Summer,20,159,237,Plurality Veto,0.074,0.012
+1988 Summer,20,159,237,Veto,0.087,0.014
+1988 Winter,20,57,46,Borda,0.031,0.009
+1988 Winter,20,57,46,Single Profile Annealing,0.031,0.009
+1988 Winter,20,57,46,Gold Medals,0.069,0.022
+1988 Winter,20,57,46,All Medals,0.07,0.023
+1988 Winter,20,57,46,Three Approval,0.07,0.023
+1988 Winter,20,57,46,Plurality,0.084,0.026
+1988 Winter,20,57,46,Plurality Veto,0.084,0.026
+1988 Winter,20,57,46,Veto,0.107,0.034
+1992 Summer,20,169,257,Borda,0.042,0.007
+1992 Summer,20,169,257,Single Profile Annealing,0.042,0.007
+1992 Summer,20,169,257,All Medals,0.057,0.009
+1992 Summer,20,169,257,Gold Medals,0.057,0.009
+1992 Summer,20,169,257,Three Approval,0.059,0.009
+1992 Summer,20,169,257,Plurality,0.069,0.011
+1992 Summer,20,169,257,Plurality Veto,0.069,0.011
+1992 Summer,20,169,257,Veto,0.08,0.012
+1992 Winter,20,64,57,Borda,0.027,0.008
+1992 Winter,20,64,57,Single Profile Annealing,0.027,0.008
+1992 Winter,20,64,57,Three Approval,0.048,0.019
+1992 Winter,20,64,57,All Medals,0.06,0.021
+1992 Winter,20,64,57,Gold Medals,0.06,0.021
+1992 Winter,20,64,57,Plurality,0.076,0.026
+1992 Winter,20,64,57,Plurality Veto,0.076,0.026
+1992 Winter,20,64,57,Veto,0.095,0.032
+1994 Winter,20,67,61,Borda,0.026,0.008
+1994 Winter,20,67,61,Single Profile Annealing,0.026,0.009
+1994 Winter,20,67,61,Three Approval,0.027,0.01
+1994 Winter,20,67,61,All Medals,0.041,0.011
+1994 Winter,20,67,61,Gold Medals,0.041,0.011
+1994 Winter,20,67,61,Plurality,0.055,0.012
+1994 Winter,20,67,61,Plurality Veto,0.055,0.012
+1994 Winter,20,67,61,Veto,0.072,0.015
+1996 Summer,20,197,271,Borda,0.053,0.007
+1996 Summer,20,197,271,Single Profile Annealing,0.053,0.007
+1996 Summer,20,197,271,All Medals,0.058,0.006
+1996 Summer,20,197,271,Gold Medals,0.059,0.006
+1996 Summer,20,197,271,Three Approval,0.061,0.006
+1996 Summer,20,197,271,Plurality,0.069,0.007
+1996 Summer,20,197,271,Plurality Veto,0.069,0.007
+1996 Summer,20,197,271,Veto,0.08,0.008
+1998 Winter,20,72,68,Borda,0.033,0.01
+1998 Winter,20,72,68,Three Approval,0.033,0.01
+1998 Winter,20,72,68,Single Profile Annealing,0.034,0.01
+1998 Winter,20,72,68,All Medals,0.043,0.012
+1998 Winter,20,72,68,Gold Medals,0.044,0.012
+1998 Winter,20,72,68,Plurality,0.052,0.015
+1998 Winter,20,72,68,Plurality Veto,0.052,0.015
+1998 Winter,20,72,68,Veto,0.07,0.018
+2000 Summer,20,200,300,Borda,0.057,0.008
+2000 Summer,20,200,300,Single Profile Annealing,0.057,0.008
+2000 Summer,20,200,300,All Medals,0.059,0.008
+2000 Summer,20,200,300,Gold Medals,0.059,0.008
+2000 Summer,20,200,300,Three Approval,0.059,0.008
+2000 Summer,20,200,300,Plurality,0.073,0.01
+2000 Summer,20,200,300,Plurality Veto,0.073,0.01
+2000 Summer,20,200,300,Veto,0.086,0.01
+2002 Winter,20,77,78,Borda,0.033,0.008
+2002 Winter,20,77,78,Single Profile Annealing,0.033,0.009
+2002 Winter,20,77,78,Three Approval,0.053,0.014
+2002 Winter,20,77,78,All Medals,0.054,0.014
+2002 Winter,20,77,78,Gold Medals,0.054,0.014
+2002 Winter,20,77,78,Plurality,0.067,0.015
+2002 Winter,20,77,78,Plurality Veto,0.067,0.015
+2002 Winter,20,77,78,Veto,0.087,0.021
+2004 Summer,20,201,301,Borda,0.056,0.006
+2004 Summer,20,201,301,Single Profile Annealing,0.056,0.006
+2004 Summer,20,201,301,All Medals,0.057,0.006
+2004 Summer,20,201,301,Gold Medals,0.058,0.006
+2004 Summer,20,201,301,Three Approval,0.06,0.006
+2004 Summer,20,201,301,Plurality,0.072,0.006
+2004 Summer,20,201,301,Plurality Veto,0.072,0.006
+2004 Summer,20,201,301,Veto,0.083,0.008
+2006 Winter,20,79,84,Borda,0.027,0.004
+2006 Winter,20,79,84,Single Profile Annealing,0.027,0.004
+2006 Winter,20,79,84,All Medals,0.046,0.009
+2006 Winter,20,79,84,Gold Medals,0.046,0.009
+2006 Winter,20,79,84,Three Approval,0.046,0.009
+2006 Winter,20,79,84,Plurality,0.054,0.011
+2006 Winter,20,79,84,Plurality Veto,0.054,0.011
+2006 Winter,20,79,84,Veto,0.072,0.013
+2008 Summer,20,204,302,All Medals,0.059,0.01
+2008 Summer,20,204,302,Borda,0.059,0.009
+2008 Summer,20,204,302,Single Profile Annealing,0.059,0.009
+2008 Summer,20,204,302,Gold Medals,0.06,0.01
+2008 Summer,20,204,302,Three Approval,0.063,0.011
+2008 Summer,20,204,302,Plurality,0.075,0.012
+2008 Summer,20,204,302,Plurality Veto,0.075,0.012
+2008 Summer,20,204,302,Veto,0.087,0.013
+2010 Winter,20,82,86,Borda,0.025,0.006
+2010 Winter,20,82,86,Single Profile Annealing,0.025,0.006
+2010 Winter,20,82,86,All Medals,0.048,0.019
+2010 Winter,20,82,86,Gold Medals,0.049,0.019
+2010 Winter,20,82,86,Three Approval,0.049,0.019
+2010 Winter,20,82,86,Plurality,0.062,0.022
+2010 Winter,20,82,86,Plurality Veto,0.062,0.022
+2010 Winter,20,82,86,Veto,0.079,0.025
+2012 Summer,20,205,302,Borda,0.059,0.008
+2012 Summer,20,205,302,Single Profile Annealing,0.059,0.008
+2012 Summer,20,205,302,All Medals,0.063,0.009
+2012 Summer,20,205,302,Gold Medals,0.064,0.009
+2012 Summer,20,205,302,Three Approval,0.067,0.009
+2012 Summer,20,205,302,Plurality,0.08,0.01
+2012 Summer,20,205,302,Plurality Veto,0.08,0.01
+2012 Summer,20,205,302,Veto,0.091,0.012
+2014 Winter,20,89,98,Borda,0.016,0.005
+2014 Winter,20,89,98,Single Profile Annealing,0.016,0.005
+2014 Winter,20,89,98,All Medals,0.042,0.016
+2014 Winter,20,89,98,Gold Medals,0.043,0.016
+2014 Winter,20,89,98,Three Approval,0.043,0.016
+2014 Winter,20,89,98,Plurality,0.051,0.018
+2014 Winter,20,89,98,Plurality Veto,0.051,0.018
+2014 Winter,20,89,98,Veto,0.065,0.022
+2016 Summer,20,207,306,Borda,0.053,0.007
+2016 Summer,20,207,306,Single Profile Annealing,0.053,0.007
+2016 Summer,20,207,306,All Medals,0.058,0.008
+2016 Summer,20,207,306,Gold Medals,0.059,0.008
+2016 Summer,20,207,306,Three Approval,0.062,0.008
+2016 Summer,20,207,306,Plurality,0.074,0.01
+2016 Summer,20,207,306,Plurality Veto,0.074,0.01
+2016 Summer,20,207,306,Veto,0.085,0.011

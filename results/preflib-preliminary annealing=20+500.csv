@@ -1,0 +1,22 @@
+Dataset,n_splits,n_alternatives,n_voters,rule_name,distance,distance_std
+F1 Seasons,100,25,18,Borda,0.108,0.024
+F1 Seasons,100,25,18,Plurality,0.449,0.018
+F1 Seasons,100,25,18,Plurality Veto,0.233,0.022
+F1 Seasons,100,25,18,Anti-Plurality,0.258,0.016
+F1 Seasons,100,25,18,Two Approval,0.36,0.024
+F1 Seasons,100,25,18,F1-2004,0.161,0.019
+F1 Seasons,100,25,18,Annealing Score Vector,0.142,0.029
+F1 Seasons,100,25,20,Borda,0.106,0.021
+F1 Seasons,100,25,20,Plurality,0.385,0.028
+F1 Seasons,100,25,20,Plurality Veto,0.19,0.025
+F1 Seasons,100,25,20,Anti-Plurality,0.267,0.023
+F1 Seasons,100,25,20,Two Approval,0.331,0.029
+F1 Seasons,100,25,20,F1-2017,0.146,0.021
+F1 Seasons,100,25,20,Annealing Score Vector,0.091,0.016
+F1 Seasons,100,24,16,Borda,0.15,0.03
+F1 Seasons,100,24,16,Plurality,0.427,0.031
+F1 Seasons,100,24,16,Plurality Veto,0.258,0.031
+F1 Seasons,100,24,16,Anti-Plurality,0.304,0.018
+F1 Seasons,100,24,16,Two Approval,0.32,0.035
+F1 Seasons,100,24,16,F1-2003,0.195,0.024
+F1 Seasons,100,24,16,Annealing Score Vector,0.164,0.038

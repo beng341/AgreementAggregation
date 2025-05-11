@@ -10,11 +10,12 @@ class NamedMethod:
     """
 
     def __init__(self, func: Callable, name: str, rule_type: Optional[str] = None,
-                 reversible: bool = False):
+                 reversible: bool = False, allows_weak_ranking: bool = False):
         self.func = func
         self.name = name
         self.rule_type = rule_type
         self.reversible = reversible
+        self.allows_weak_ranking = allows_weak_ranking
         wraps(func)(self)
 
     def __get__(self, obj, cls=None):
@@ -25,6 +26,7 @@ class NamedMethod:
         bound_method.name = self.name
         bound_method.rule_type = self.rule_type
         bound_method.reversible = self.reversible
+        bound_method.allows_weak_ranking = self.allows_weak_ranking
         return bound_method
 
     def __call__(self, *args: Any, **kwargs: Any) -> Any:
@@ -33,7 +35,7 @@ class NamedMethod:
 
 
 def method_name(name: str, *, rule_type: Optional[str] = None,
-                reversible: bool = False) -> Callable[[T], T]:
+                reversible: bool = False, allows_weak_ranking = False) -> Callable[[T], T]:
     """
     A decorator that assigns multiple accessible properties to a method.
 
@@ -41,6 +43,7 @@ def method_name(name: str, *, rule_type: Optional[str] = None,
         name: The string name to assign to the method
         rule_type: Optional type classification for the method
         reversible: Whether the method's operation can be reversed
+        allows_weak_ranking: Whether the method incorporates some ability to handle ties in rankings.
     """
 
     def decorator(func: T) -> T:

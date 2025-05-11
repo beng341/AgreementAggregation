@@ -21,8 +21,11 @@ distribution_names = {
         "preflib": "PrefLib"
 }
 rule_names = {
-        'Annealing Score Vector': 'Optimized Scores',
-        'Anti-Plurality': 'Veto'
+        'Annealing Score Vector': 'Best Positional Scores',
+        'Single Profile Annealing': 'Best Positional Scores',
+        'Optimized Scores': 'Best Positional Scores',
+        'Anti-Plurality': 'Veto',
+        'Plurality Veto': 'Plurality + Veto',
         # 'Kemeny': '4',
         # 'Anti-Plurality': '+',
         # 'Borda': '^',
@@ -50,6 +53,7 @@ fixed_colours = {
     'PL MLE': '#ee95f1',
     'Plurality': '#000080',
     'Plurality Veto': '#00278e',
+    'Plurality + Veto': '#00278e',
     'Random': '#beb7fe',
     'Six Approval': '#b624ff',
     'Three Approval': '#ffd800',
@@ -72,6 +76,7 @@ fixed_markers = {
     'PL MLE': 'x',
     'Plurality': '<',
     'Plurality Veto': 'P',
+    'Plurality + Veto': 'P',
     'Random': '*',
     'Six Approval': '|',
     'Five Approval': '^',
@@ -106,23 +111,169 @@ fixed_linestyles = {
     'Monotonicity': '-.',
     'Homogeneity': '--',
 }
-# linestyle_tuple = [
-#      ('loosely dotted',        (0, (1, 10))),
-#      ('dotted',                (0, (1, 5))),
-#      ('densely dotted',        (0, (1, 1))),
-#
-#      ('long dash with offset', (5, (10, 3))),
-#      ('loosely dashed',        (0, (5, 10))),
-#      ('dashed',                (0, (5, 5))),
-#      ('densely dashed',        (0, (5, 1))),
-#
-#      ('loosely dashdotted',    (0, (3, 10, 1, 10))),
-#      ('dashdotted',            (0, (3, 5, 1, 5))),
-#      ('densely dashdotted',    (0, (3, 1, 1, 1))),
-#
-#      ('dashdotdotted',         (0, (3, 5, 1, 5, 1, 5))),
-#      ('loosely dashdotdotted', (0, (3, 10, 1, 10, 1, 10))),
-#      ('densely dashdotdotted', (0, (3, 1, 1, 1, 1, 1)))]
+
+
+rule_renaming_map = {
+    "Optimized Scores": "Best Positional Scores",
+    "Single Profile Annealing": "Best Positional Scores",
+    "Anti-Plurality": "Veto",
+    "Plurality Veto": "Plurality + Veto",
+    "Gold Medals": "Leximax",
+    "All Medals": "Medal Count",
+    "F1": "F1 (rule used)",
+    "F1_rule-1991": "F1 ('91-'02)",
+    "F1_rule-2003": "F1 ('03-'09)",
+    "F1_rule-2010": "F1 ('10-'18)",
+}
+# rule_colour_dict = {
+#     'Optimized Scores': [0.89019608, 0.46666667, 0.76078431, 1.],
+#     'Veto': [0.83921569, 0.15294118, 0.15686275, 1.],
+#     'Borda': [0.12156863, 0.46666667, 0.70588235, 1.],
+#     'F1 (rule used)': [0.54901961, 0.3372549, 0.29411765, 1.],
+#     'Plurality': [1., 0.49803922, 0.05490196, 1.],
+#     'Plurality + Veto': [0.17254902, 0.62745098, 0.17254902, 1.],
+#     'Two Approval': [0.58039216, 0.40392157, 0.74117647, 1.],
+#     'Empirical': [0.58039216, 0.40392157, 0.74117647, 1.]
+# }
+rule_colour_dict = {'Best Positional Scores': [0.0, 0.0, 0.0, 1.0],
+ 'Borda': [0.50256, 0.0, 0.56922, 1.0],
+ 'Borda Min-Max': [0.0, 0.0, 0.68208, 1.0],
+ 'Empirical': [0.8, 0.8, 0.8, 1.0],
+ 'F1': [0.90253, 0.94356, 0.0, 1.0],
+ "F1 ('03-'09)": [1.0, 0.04615, 0.0, 1.0],
+ "F1 ('10-'18)": [0.83592, 0.0, 0.0, 1.0],
+ "F1 ('91-'02)": [1.0, 0.72308, 0.0, 1.0],
+ 'Kemeny': [0.0, 0.2872, 0.8667, 1.0],
+ 'PL MLE': [0.0, 0.61026, 0.83593, 1.0],
+ 'Plurality': [0.0, 0.6667, 0.57435, 1.0],
+ 'Plurality + Veto': [0.0, 0.63076, 0.0, 1.0],
+ 'Two Approval': [0.22563, 1.0, 0.0, 1.0],
+ 'Veto': [0.0, 0.83592, 0.0, 1.0]}
+rule_marker_dict = {
+    "Best Positional Scores": "*",
+    "Borda": "+",
+    "Borda Min-Max": "3",
+    "Kemeny": "1",
+    "PL MLE": "2",
+    "Plurality": "d",
+    "Plurality + Veto": "D",
+    "Veto": "s",
+    "Two Approval": "^",
+    "F1": "o",
+    "F1 ('91-'02)": "1",
+    "F1 ('03-'09)": "2",
+    "F1 ('10-'18)": "3",
+    'Empirical': "2"
+}
+
+
+def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None, cache=None, alpha=None, force_alpha=False):
+    """
+    Get a consistent color for a series name from a colormap, excluding specified colors.
+
+    Parameters:
+    -----------
+    series_name : str
+        The name of the series
+    colormap : str or matplotlib.colors.Colormap
+        The colormap to select colors from
+    excluded_colors : list of tuples
+        List of RGB or RGBA colors to exclude
+    cache : dict, optional
+        Dictionary to use for caching colors. If None, no caching is performed.
+
+    Returns:
+    --------
+    color : tuple
+        RGBA color tuple
+    """
+    # Check cache first if provided
+    if cache is not None and series_name in cache:
+        if force_alpha:
+            color = cache[series_name]
+            color = (color[0], color[1], color[2], alpha)
+            cache[series_name] = color
+        return cache[series_name]
+
+    # Convert string colormap to colormap object if needed
+    cmap = plt.colormaps.get_cmap(colormap) if isinstance(colormap, str) else colormap
+
+    # Initialize excluded colors set
+    excluded = set() if excluded_colors is None else set(tuple(c) for c in excluded_colors)
+
+    # Try to find a color that's not excluded
+    seed = 0
+    while True:
+        # Get a value between 0 and 1 based on the series name and seed
+        hash_input = f"{series_name}_{seed}"
+        hash_value = int(hashlib.md5(hash_input.encode()).hexdigest(), 16)
+        position = (hash_value % 10000) / 10000.0
+
+        # Get color from colormap
+        color = cmap(position)
+
+        if alpha is not None and (cache is None or force_alpha):
+            # override default alpha of 1.0
+            color = (color[0], color[1], color[2], alpha)
+
+        # Check if color is excluded
+        if tuple(color) not in excluded:
+            # Cache if requested and return
+            if cache is not None:
+                cache[series_name] = color
+            if alpha and force_alpha:
+                color = (color[0], color[1], color[2], alpha)
+            return color
+
+        # Try a different seed if this color is excluded
+        seed += 1
+
+        # Safety valve to prevent infinite loops
+        if seed > 100:
+            print(f"Warning: Could not find non-excluded color for '{series_name}' after 100 attempts")
+            if cache is not None:
+                cache[series_name] = color
+            return color
+
+
+def get_consistent_marker(series_name, marker_list=None, cache=None):
+    """
+    Get a consistent marker for a series name.
+
+    Parameters:
+    -----------
+    series_name : str
+        The name of the series
+    marker_list : list
+        List of markers to choose from. If None, uses a default list.
+    cache : dict, optional
+        Dictionary to use for caching markers. If None, no caching is performed.
+
+    Returns:
+    --------
+    marker : str
+        Matplotlib marker string
+    """
+    # Check cache first if provided
+    if cache is not None and series_name in cache:
+        return cache[series_name]
+
+    # Default marker list if none provided
+    if marker_list is None:
+        marker_list = ['o', 's', '^', 'D', 'v', 'p', '*', 'X', '+', 'x', "1", "4"]
+
+    # Generate a consistent index based on the series name
+    hash_value = int(hashlib.md5(series_name.encode()).hexdigest(), 16)
+    marker_idx = hash_value % len(marker_list)
+
+    # Get the marker
+    marker = marker_list[marker_idx]
+
+    # Cache if requested
+    if cache is not None:
+        cache[series_name] = marker
+
+    return marker
 
 
 def add_series_data_to_axis(ax, data, scatter=False):
@@ -135,8 +286,17 @@ def add_series_data_to_axis(ax, data, scatter=False):
     for series_label, series_data in data["series"].items():
         x_values = series_data["x_values"]
         y_values = series_data["y_values"]
-        colour = _hex_colour_for_label(series_label)
-        line_colour = _hex_to_rgba(h=colour, alpha=0.6)
+        # colour = _hex_colour_for_label(series_label)
+        # line_colour = _hex_to_rgba(h=colour, alpha=0.6)
+        line_alpha = 0.6
+        # cache = {name: _hex_to_rgba(colour, alpha=line_alpha) for name, colour in fixed_colours.items()}
+        line_colour = get_consistent_color(series_name=series_label,
+                                           colormap="gist_ncar",
+                                           # cache=rule_colour_dict,
+                                           cache=rule_colour_dict,
+                                           alpha=line_alpha,
+                                           force_alpha=True)
+
         if "marker" in series_data:
             marker = series_data["marker"]
         else:
@@ -155,6 +315,7 @@ def add_series_data_to_axis(ax, data, scatter=False):
                        # markerfacecolor=marker_colour,
                        color=line_colour
                        )
+            print(f"Plotting {series_label} with colour: {line_colour}")
         else:
             ax.plot(x_values,
                     y_values,
@@ -227,6 +388,41 @@ def _plot_ground_truth_vs_kt_distance(df):
 
     return plot_data
 
+
+def organize_legend_handles(ax):
+    """
+    Give a pyplot plt object, sort the legend labels and remove duplicates.
+    :param ax:
+    :return:
+    """
+    handles, labels = ax.get_legend_handles_labels()
+    # handles, labels = plot.gca().get_legend_handles_labels()
+    labels_to_handles = {l: h for l, h in zip(labels, handles)}
+    unique_labels = sorted(set(labels))
+
+    # Put optimized rule(s) first, if they exist
+    best_labels = sorted([l for l in unique_labels if "Best" in l])
+
+    # Put "F1" items second, if they exist
+    f1_labels = sorted([l for l in unique_labels if "F1" in l])
+
+    # Put Olympic items third, if they exist
+    olympic_labels = [l for l in unique_labels if "Leximax" in l] + [l for l in unique_labels if "Medal Count" in l]
+
+    used_labels = best_labels + f1_labels + olympic_labels
+
+    # Put any remaining items last
+    remaining_labels = sorted([l for l in unique_labels
+                               if l not in used_labels])
+
+    # Combine all categories in the specified order
+    ordered_labels = used_labels + remaining_labels
+
+    handles, labels = zip(*[(labels_to_handles[l], l) for l in ordered_labels])
+
+    # handles, labels = zip(*[(labels_to_handles[l], l) for l in unique_labels])
+
+    return handles, labels
 
 def plot_kt_distance_vs_ground_truth_single_plot(show=False, out_folder="plots", out_name="kt_vs_truth.png"):
     """
@@ -330,7 +526,10 @@ def plot_kt_distance_vs_ground_truth_multiple_voter_combos(show=False, out_folde
 
 
 def plot_kt_distance_vs_ground_truth():
-    filename = "results-final/experiment-ground_truth_vs_split_distance-testing-nsplits=10.csv"
+    conference = True  # changes formatting of the figure
+    filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
+    # filename = "results-final/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
+
     df = pd.read_csv(filename)
 
     # Define preference distributions to plot
@@ -339,7 +538,11 @@ def plot_kt_distance_vs_ground_truth():
 
     # Create figure and subplots
     n_cols = max(2, len(pref_dists))
-    fig, axes = plt.subplots(1, n_cols, figsize=(10, 6), sharey=True, sharex=False)
+    if conference:
+        # fig, axes = plt.subplots(1, n_cols, figsize=(10, 6), sharey=True, sharex=False)
+        fig, axes = plt.subplots(1, n_cols, figsize=(14, 5), sharey=False, sharex=False)
+    if not conference:
+        fig, axes = plt.subplots(1, n_cols, figsize=(14, 6), sharey=True, sharex=False)
 
     plt.yscale("log")
     plt.xscale("log")
@@ -388,8 +591,10 @@ def plot_kt_distance_vs_ground_truth():
                 all_points.append((x, y))
                 plot_data["series"][rule]["x_values"].append(x)
                 plot_data["series"][rule]["y_values"].append(y)
-                if rule in fixed_markers:
-                    plot_data["series"][rule]["marker"] = fixed_markers[rule]
+                plot_data["series"][rule]["marker"] = get_consistent_marker(rule,
+                                                                            cache=rule_marker_dict)
+                # if rule in fixed_markers:
+                #     plot_data["series"][rule]["marker"] = fixed_markers[rule]
 
         add_series_data_to_axis(ax=axes[idx], data=plot_data, scatter=True)
 
@@ -403,9 +608,11 @@ def plot_kt_distance_vs_ground_truth():
         axes[idx].tick_params(axis='both', labelsize=16)
 
         if pref_dist == "MALLOWS-0.4":
-            axes[idx].set_xlim((0.03, 0.13))
+            axes[idx].set_xlim((0.025, 0.115))
+            axes[idx].set_ylim((0.023, 0.3))
         elif pref_dist == "plackett_luce":
-            axes[idx].set_xlim((0.039, 0.13))
+            axes[idx].set_xlim((0.038, 0.13))
+            axes[idx].set_ylim((0.055, 0.35))
 
         # x_ticks = [0.04, 0.07, 0.10, 0.13]
         # axes[idx].set_xticks(x_ticks)
@@ -432,6 +639,7 @@ def plot_kt_distance_vs_ground_truth():
         label = f"Best Fit: b = {round(intercept, 2)}, m = {round(slope, 2)}"
         axes[idx].plot(x, line_of_best_fit, label=label, color="orange", linestyle="--", alpha=0.5)
 
+
         handles, labels = axes[idx].get_legend_handles_labels()
         handles = [handles[-1]]
         labels = [labels[-1]]
@@ -445,28 +653,55 @@ def plot_kt_distance_vs_ground_truth():
         plt.sca(ax)
 
         plt.tick_params(
-            axis='x',  # changes apply to the x-axis
+            axis='both',  # changes apply to the x-axis
             which='minor',  # both major and minor ticks are affected
             bottom=False,  # ticks along the bottom edge are off
             top=False,  # ticks along the top edge are off
+            left=False,  # ticks along the left edge are off
+            right=False,  # ticks along the right edge are off
             labelbottom=False)  # labels along the bottom edge are off
+        ax.minorticks_off()
 
         ax.xaxis.set_ticks([0.04, 0.08, 0.12])
-        ax.yaxis.set_ticks([0.05, 0.10, 0.20, 0.30])
+        ax.yaxis.set_ticks([0.10, 0.20, 0.30])
 
-    # fig.suptitle('Reference Distance vs Split Distance', fontsize=18)
-    fig.supylabel("KT Distance To Ground Truth", fontsize=20, y=0.6)
-    fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.5, y=0.19)
 
-    handles, labels = axes[0].get_legend_handles_labels()
-    handles, labels = handles[:-1], labels[:-1]
-    # fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.295, 0.924))
-    fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=15)
-    # fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.334, 0.924), fontsize=12)
-    # fig.legend(handles, labels, ncols=4, bbox_to_anchor=(0.9, 0.1), fontsize=12)
+    handles, labels = organize_legend_handles(axes[0])
+    labels = list(labels)
+    for idx in range(len(labels)):
+        if labels[idx] == "Best Positional Scores":
+            labels[idx] = "Best Positional\nScores"
+    # handles, labels = axes[0].get_legend_handles_labels()
+    handles, labels = handles[1:], labels[1:]
 
-    plt.tight_layout(rect=(0, 0, 1, 1))  # l b r t
-    fig.subplots_adjust(bottom=0.3)
+    # Conference Formatting:
+    if conference:
+        # # fig.suptitle('Reference Distance vs Split Distance', fontsize=18)
+        # fig.supylabel("KT Distance To Ground Truth", fontsize=20, y=0.6)
+        # fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.5, y=0.19)
+        # # fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=15)
+        # plt.tight_layout(rect=(0, 0, 1, 1))  # l b r t
+        # fig.subplots_adjust(bottom=0.3)
+        fig.supylabel("KT Distance To Ground Truth", fontsize=20, y=0.55)
+        fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.5, y=0.02)
+        # fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.295, 0.924))
+        # fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=15)
+        fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.985, 0.94), fontsize=15)
+        # fig.legend(handles, labels, ncols=4, bbox_to_anchor=(0.9, 0.1), fontsize=12)
+        plt.tight_layout(rect=(0, 0, 1, 1))  # l b r t
+        fig.subplots_adjust(right=0.8)
+
+    # ArXiV Formatting:
+    if not conference:
+        fig.supylabel("KT Distance To Ground Truth", fontsize=20, y=0.55)
+        fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.5, y=0.02)
+        # fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.295, 0.924))
+        # fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=15)
+        fig.legend(handles, labels, ncols=1, bbox_to_anchor=(1, 0.94), fontsize=15)
+        # fig.legend(handles, labels, ncols=4, bbox_to_anchor=(0.9, 0.1), fontsize=12)
+        plt.tight_layout(rect=(0, 0, 1, 1))  # l b r t
+        fig.subplots_adjust(right=0.8)
+
     plt.show()
 
     return fig, axes
@@ -658,7 +893,7 @@ def _organize_preflib_data_for_plot(df):
     return grouped_df
 
 
-def plot_axiom_evaluation_results(show=False, n_splits=20, out_folder="plots", out_name="axiom_evaluation_results.png"):
+def plot_axiom_evaluation_results(show=False, n_splits=50, out_folder="plots", out_name="axiom_evaluation_results.png"):
     """
     Make plot with top row showing the violations for each axiom as number of alternatives increases and bottom
     row showing the breakdown of least violating rules for each axiom.
@@ -684,7 +919,8 @@ def plot_axiom_evaluation_results(show=False, n_splits=20, out_folder="plots", o
     # merge preflib and other violation data
     df = pd.concat([df, preflib_df])
     # update names of some axioms
-    df = df.replace({'Weak Consistency': 'Union Consistency', 'Reversal Symmetry': 'Reversal Consistency'})
+    # df = df.replace({'Weak Consistency': 'Union Consistency', 'Reversal Symmetry': 'Reversal Consistency'})
+    df = df.replace({'Weak Consistency': 'Union Consistency', 'Reversal Consistency': 'Reversal Symmetry'})
 
     unique_pref_dists = [
         "IC",
@@ -924,7 +1160,7 @@ def plot_axiom_histograms(show=False, out_folder="plots", out_name="axiom_rule_h
     return fig, axes
 
 
-def get_colormap_colors(cmap_name, num_colors):
+def get_colormap_colors(cmap_name, num_colors, hex=False):
     # Get the colormap
     cmap = plt.get_cmap(cmap_name, num_colors)
 
@@ -933,28 +1169,59 @@ def get_colormap_colors(cmap_name, num_colors):
     for i in range(num_colors):
         color = cmap(i / (num_colors - 1))  # Normalize i to get colors in order
         # Convert to hex format
-        hex_color = "#{:02x}{:02x}{:02x}".format(
-            int(color[0] * 255), int(color[1] * 255), int(color[2] * 255)
-        )
-        # print(hex_color)
-        colours.append(hex_color)
+        if hex:
+            color = "#{:02x}{:02x}{:02x}".format(
+                int(color[0] * 255), int(color[1] * 255), int(color[2] * 255)
+            )
+        else:
+            color = [round(float(color[0]), 5),
+                     round(float(color[1]), 5),
+                     round(float(color[2]), 5),
+                     round(float(color[3]), 5)]
+        colours.append(color)
     return colours
 
 
 def print_colormap_with_dict_values(dic, cmap_name):
     colours = get_colormap_colors(cmap_name, len(dic))
 
-    colour_map = dict(zip(dic.values(), colours))
+    colour_map = dict(zip(dic.keys(), colours))
     pprint.pprint(colour_map)
+
+    return colour_map
 
 
 if __name__ == "__main__":
+
+    rule_marker_dict = {
+        "Best Positional Scores": "*",
+        "Borda": "+",
+        "Borda Min-Max": "3",
+        "Kemeny": "1",
+        "PL MLE": "2",
+        "Plurality": "d",
+        "Plurality + Veto": "D",
+        "Veto": "s",
+        "Two Approval": "^",
+        "F1": "o",
+        "F1 ('91-'02)": "1",
+        "F1 ('03-'09)": "2",
+        "F1 ('10-'18)": "3",
+        'Empirical': "2"
+    }
+    colour_map = print_colormap_with_dict_values(dic=rule_marker_dict, cmap_name="tab20")
+    rule_colour_dict = colour_map
+
+
     plot_kt_distance_vs_ground_truth()
+    # plot_axiom_evaluation_results(show=True)
+
+
     # plot_preflib_scatter(show=False)
 
-    n_splits = 50
-    out_name = f"axiom_evaluation_results-n_splits={n_splits}.png"
-    plot_axiom_evaluation_results(show=False, n_splits=n_splits, out_name=out_name)
+    # n_splits = 50
+    # out_name = f"axiom_evaluation_results-n_splits={n_splits}.png"
+    # plot_axiom_evaluation_results(show=False, n_splits=n_splits, out_name=out_name)
 
     # plot_axiom_histograms(show=True)
     # axdict = [axioms.weak_consistency.name,

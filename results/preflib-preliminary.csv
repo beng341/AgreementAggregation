@@ -1,0 +1,169 @@
+Dataset,n_splits,n_alternatives,n_voters,rule_name,distance,distance_std
+F1 Seasons (2004),200,25,18,Borda,0.111,0.022
+F1 Seasons (2004),200,25,18,Plurality,0.445,0.018
+F1 Seasons (2004),200,25,18,Plurality Veto,0.231,0.022
+F1 Seasons (2004),200,25,18,Anti-Plurality,0.257,0.013
+F1 Seasons (2004),200,25,18,Two Approval,0.361,0.024
+F1 Seasons (2004),200,25,18,F1-2004,0.161,0.02
+F1 Seasons (2017),200,25,20,Borda,0.109,0.019
+F1 Seasons (2017),200,25,20,Plurality,0.384,0.023
+F1 Seasons (2017),200,25,20,Plurality Veto,0.185,0.024
+F1 Seasons (2017),200,25,20,Anti-Plurality,0.265,0.026
+F1 Seasons (2017),200,25,20,Two Approval,0.336,0.026
+F1 Seasons (2017),200,25,20,F1-2017,0.146,0.02
+F1 Seasons (2003),200,24,16,Borda,0.152,0.026
+F1 Seasons (2003),200,24,16,Plurality,0.43,0.03
+F1 Seasons (2003),200,24,16,Plurality Veto,0.264,0.031
+F1 Seasons (2003),200,24,16,Anti-Plurality,0.307,0.018
+F1 Seasons (2003),200,24,16,Two Approval,0.32,0.034
+F1 Seasons (2003),200,24,16,F1-2003,0.195,0.027
+F1 Seasons (1991),200,41,16,Borda,0.143,0.019
+F1 Seasons (1991),200,41,16,Plurality,0.442,0.013
+F1 Seasons (1991),200,41,16,Plurality Veto,0.21,0.025
+F1 Seasons (1991),200,41,16,Anti-Plurality,0.254,0.028
+F1 Seasons (1991),200,41,16,Two Approval,0.399,0.015
+F1 Seasons (1991),200,41,16,F1-1991,0.071,0.054
+F1 Seasons (2005),200,27,19,Borda,0.072,0.012
+F1 Seasons (2005),200,27,19,Plurality,0.202,0.007
+F1 Seasons (2005),200,27,19,Plurality Veto,0.077,0.014
+F1 Seasons (2005),200,27,19,Anti-Plurality,0.096,0.013
+F1 Seasons (2005),200,27,19,Two Approval,0.164,0.017
+F1 Seasons (2005),200,27,19,F1-2005,0.106,0.011
+F1 Seasons (2006),200,27,18,Borda,0.138,0.021
+F1 Seasons (2006),200,27,18,Plurality,0.413,0.016
+F1 Seasons (2006),200,27,18,Plurality Veto,0.197,0.022
+F1 Seasons (2006),200,27,18,Anti-Plurality,0.249,0.017
+F1 Seasons (2006),200,27,18,Two Approval,0.387,0.017
+F1 Seasons (2006),200,27,18,F1-2006,0.162,0.023
+F1 Seasons (1992),200,37,16,Borda,0.137,0.023
+F1 Seasons (1992),200,37,16,Plurality,0.44,0.015
+F1 Seasons (1992),200,37,16,Plurality Veto,0.188,0.031
+F1 Seasons (1992),200,37,16,Anti-Plurality,0.228,0.034
+F1 Seasons (1992),200,37,16,Two Approval,0.383,0.011
+F1 Seasons (1992),200,37,16,F1-1992,0.158,0.037
+F1 Seasons (1996),200,24,16,Borda,0.17,0.033
+F1 Seasons (1996),200,24,16,Plurality,0.395,0.019
+F1 Seasons (1996),200,24,16,Plurality Veto,0.238,0.017
+F1 Seasons (1996),200,24,16,Anti-Plurality,0.317,0.009
+F1 Seasons (1996),200,24,16,Two Approval,0.36,0.014
+F1 Seasons (1996),200,24,16,F1-1996,0.148,0.025
+F1 Seasons (2002),200,23,17,Borda,0.1,0.016
+F1 Seasons (2002),200,23,17,Plurality,0.21,0.006
+F1 Seasons (2002),200,23,17,Plurality Veto,0.143,0.009
+F1 Seasons (2002),200,23,17,Anti-Plurality,0.177,0.011
+F1 Seasons (2002),200,23,17,Two Approval,0.174,0.014
+F1 Seasons (2002),200,23,17,F1-2002,0.089,0.015
+F1 Seasons (2001),200,26,17,Borda,0.098,0.015
+F1 Seasons (2001),200,26,17,Plurality,0.203,0.015
+F1 Seasons (2001),200,26,17,Plurality Veto,0.11,0.017
+F1 Seasons (2001),200,26,17,Anti-Plurality,0.14,0.015
+F1 Seasons (2001),200,26,17,Two Approval,0.165,0.012
+F1 Seasons (2001),200,26,17,F1-2001,0.085,0.014
+F1 Seasons (1995),200,35,17,Borda,0.068,0.011
+F1 Seasons (1995),200,35,17,Plurality,0.216,0.007
+F1 Seasons (1995),200,35,17,Plurality Veto,0.079,0.011
+F1 Seasons (1995),200,35,17,Anti-Plurality,0.095,0.01
+F1 Seasons (1995),200,35,17,Two Approval,0.186,0.009
+F1 Seasons (1995),200,35,17,F1-1995,0.091,0.032
+F1 Seasons (1999),200,24,16,Borda,0.277,0.038
+F1 Seasons (1999),200,24,16,Plurality,0.385,0.038
+F1 Seasons (1999),200,24,16,Plurality Veto,0.311,0.043
+F1 Seasons (1999),200,24,16,Anti-Plurality,0.356,0.015
+F1 Seasons (1999),200,24,16,Two Approval,0.355,0.021
+F1 Seasons (1999),200,24,16,F1-1999,0.19,0.03
+F1 Seasons (1993),200,35,16,Borda,0.154,0.024
+F1 Seasons (1993),200,35,16,Plurality,0.426,0.013
+F1 Seasons (1993),200,35,16,Plurality Veto,0.164,0.034
+F1 Seasons (1993),200,35,16,Anti-Plurality,0.204,0.038
+F1 Seasons (1993),200,35,16,Two Approval,0.397,0.002
+F1 Seasons (1993),200,35,16,F1-1993,0.152,0.047
+F1 Seasons (1994),200,46,16,Borda,0.165,0.024
+F1 Seasons (1994),200,46,16,Plurality,0.458,0.003
+F1 Seasons (1994),200,46,16,Plurality Veto,0.194,0.025
+F1 Seasons (1994),200,46,16,Anti-Plurality,0.187,0.025
+F1 Seasons (1994),200,46,16,Two Approval,0.445,0.007
+F1 Seasons (1994),200,46,16,F1-1994,0.044,0.031
+F1 Seasons (2000),200,23,17,Borda,0.109,0.017
+F1 Seasons (2000),200,23,17,Plurality,0.195,0.01
+F1 Seasons (2000),200,23,17,Plurality Veto,0.175,0.009
+F1 Seasons (2000),200,23,17,Anti-Plurality,0.228,0.0
+F1 Seasons (2000),200,23,17,Two Approval,0.174,0.004
+F1 Seasons (2000),200,23,17,F1-2000,0.081,0.018
+F1 Seasons (2009),200,25,17,Borda,0.07,0.017
+F1 Seasons (2009),200,25,17,Plurality,0.193,0.016
+F1 Seasons (2009),200,25,17,Plurality Veto,0.089,0.014
+F1 Seasons (2009),200,25,17,Anti-Plurality,0.12,0.01
+F1 Seasons (2009),200,25,17,Two Approval,0.175,0.012
+F1 Seasons (2009),200,25,17,F1-2009,0.093,0.012
+F1 Seasons (1997),200,28,17,Borda,0.083,0.013
+F1 Seasons (1997),200,28,17,Plurality,0.211,0.009
+F1 Seasons (1997),200,28,17,Plurality Veto,0.109,0.008
+F1 Seasons (1997),200,28,17,Anti-Plurality,0.117,0.008
+F1 Seasons (1997),200,28,17,Two Approval,0.186,0.013
+F1 Seasons (1997),200,28,17,F1-1997,0.103,0.013
+F1 Seasons (1998),200,23,16,Borda,0.17,0.03
+F1 Seasons (1998),200,23,16,Plurality,0.419,0.005
+F1 Seasons (1998),200,23,16,Plurality Veto,0.315,0.013
+F1 Seasons (1998),200,23,16,Anti-Plurality,0.389,0.018
+F1 Seasons (1998),200,23,16,Two Approval,0.342,0.025
+F1 Seasons (1998),200,23,16,F1-1998,0.184,0.022
+F1 Seasons (2010),200,27,19,Borda,0.06,0.01
+F1 Seasons (2010),200,27,19,Plurality,0.184,0.013
+F1 Seasons (2010),200,27,19,Plurality Veto,0.119,0.012
+F1 Seasons (2010),200,27,19,Anti-Plurality,0.167,0.003
+F1 Seasons (2010),200,27,19,Two Approval,0.169,0.01
+F1 Seasons (2010),200,27,19,F1-2010,0.085,0.01
+F1 Seasons (2012),200,25,20,Borda,0.138,0.027
+F1 Seasons (2012),200,25,20,Plurality,0.387,0.032
+F1 Seasons (2012),200,25,20,Plurality Veto,0.345,0.028
+F1 Seasons (2012),200,25,20,Anti-Plurality,0.46,0.0
+F1 Seasons (2012),200,25,20,Two Approval,0.319,0.03
+F1 Seasons (2012),200,25,20,F1-2012,0.143,0.021
+F1 Seasons (2011),200,28,19,Borda,0.046,0.01
+F1 Seasons (2011),200,28,19,Plurality,0.209,0.01
+F1 Seasons (2011),200,28,19,Plurality Veto,0.125,0.008
+F1 Seasons (2011),200,28,19,Anti-Plurality,0.159,0.002
+F1 Seasons (2011),200,28,19,Two Approval,0.175,0.007
+F1 Seasons (2011),200,28,19,F1-2011,0.083,0.009
+F1 Seasons (2015),200,22,19,Borda,0.062,0.011
+F1 Seasons (2015),200,22,19,Plurality,0.191,0.009
+F1 Seasons (2015),200,22,19,Plurality Veto,0.135,0.007
+F1 Seasons (2015),200,22,19,Anti-Plurality,0.185,0.002
+F1 Seasons (2015),200,22,19,Two Approval,0.187,0.003
+F1 Seasons (2015),200,22,19,F1-2015,0.066,0.012
+F1 Seasons (2016),200,24,21,Borda,0.054,0.01
+F1 Seasons (2016),200,24,21,Plurality,0.211,0.001
+F1 Seasons (2016),200,24,21,Plurality Veto,0.157,0.001
+F1 Seasons (2016),200,24,21,Anti-Plurality,0.191,0.001
+F1 Seasons (2016),200,24,21,Two Approval,0.157,0.012
+F1 Seasons (2016),200,24,21,F1-2016,0.071,0.01
+F1 Seasons (2008),200,22,18,Borda,0.151,0.025
+F1 Seasons (2008),200,22,18,Plurality,0.398,0.03
+F1 Seasons (2008),200,22,18,Plurality Veto,0.319,0.03
+F1 Seasons (2008),200,22,18,Anti-Plurality,0.396,0.02
+F1 Seasons (2008),200,22,18,Two Approval,0.327,0.031
+F1 Seasons (2008),200,22,18,F1-2008,0.16,0.026
+F1 Seasons (2014),200,24,19,Borda,0.048,0.009
+F1 Seasons (2014),200,24,19,Plurality,0.195,0.009
+F1 Seasons (2014),200,24,19,Plurality Veto,0.121,0.019
+F1 Seasons (2014),200,24,19,Anti-Plurality,0.158,0.019
+F1 Seasons (2014),200,24,19,Two Approval,0.189,0.011
+F1 Seasons (2014),200,24,19,F1-2014,0.069,0.009
+F1 Seasons (2013),200,23,19,Borda,0.064,0.013
+F1 Seasons (2013),200,23,19,Plurality,0.211,0.014
+F1 Seasons (2013),200,23,19,Plurality Veto,0.193,0.014
+F1 Seasons (2013),200,23,19,Anti-Plurality,0.217,0.01
+F1 Seasons (2013),200,23,19,Two Approval,0.163,0.009
+F1 Seasons (2013),200,23,19,F1-2013,0.068,0.011
+F1 Seasons (2007),200,26,17,Borda,0.062,0.011
+F1 Seasons (2007),200,26,17,Plurality,0.189,0.011
+F1 Seasons (2007),200,26,17,Plurality Veto,0.11,0.008
+F1 Seasons (2007),200,26,17,Anti-Plurality,0.153,0.002
+F1 Seasons (2007),200,26,17,Two Approval,0.185,0.002
+F1 Seasons (2007),200,26,17,F1-2007,0.09,0.011
+UK Labour,200,5,266,Borda,0.023,0.042
+UK Labour,200,5,266,Plurality,0.009,0.031
+UK Labour,200,5,266,Plurality Veto,0.019,0.04
+UK Labour,200,5,266,Anti-Plurality,0.05,0.051
+UK Labour,200,5,266,Two Approval,0.036,0.048
+UK Labour,200,5,266,UK Labour (IRV),0.035,0.049

@@ -1,0 +1,163 @@
+,Dataset,n_splits,n_alternatives,n_voters,rule_name,distance,distance_std
+0,F1 Seasons,100,25,18,Borda,0.108,0.023
+1,F1 Seasons,100,25,18,Plurality,0.444,0.018
+2,F1 Seasons,100,25,18,Plurality Veto,0.23,0.02
+3,F1 Seasons,100,25,18,Anti-Plurality,0.254,0.011
+4,F1 Seasons,100,25,18,Two Approval,0.359,0.023
+5,F1 Seasons,100,25,18,F1-2004,0.16,0.019
+6,F1 Seasons,100,25,20,Borda,0.108,0.019
+7,F1 Seasons,100,25,20,Plurality,0.382,0.027
+8,F1 Seasons,100,25,20,Plurality Veto,0.186,0.024
+9,F1 Seasons,100,25,20,Anti-Plurality,0.267,0.022
+10,F1 Seasons,100,25,20,Two Approval,0.335,0.025
+11,F1 Seasons,100,25,20,F1-2017,0.144,0.02
+12,F1 Seasons,100,24,16,Borda,0.155,0.029
+13,F1 Seasons,100,24,16,Plurality,0.43,0.03
+14,F1 Seasons,100,24,16,Plurality Veto,0.259,0.028
+15,F1 Seasons,100,24,16,Anti-Plurality,0.307,0.019
+16,F1 Seasons,100,24,16,Two Approval,0.325,0.036
+17,F1 Seasons,100,24,16,F1-2003,0.2,0.027
+18,F1 Seasons,100,41,16,Borda,0.145,0.019
+19,F1 Seasons,100,41,16,Plurality,0.443,0.012
+20,F1 Seasons,100,41,16,Plurality Veto,0.212,0.023
+21,F1 Seasons,100,41,16,Anti-Plurality,0.253,0.031
+22,F1 Seasons,100,41,16,Two Approval,0.395,0.011
+23,F1 Seasons,100,41,16,F1-1991,0.073,0.05
+24,F1 Seasons,100,27,19,Borda,0.071,0.012
+25,F1 Seasons,100,27,19,Plurality,0.203,0.008
+26,F1 Seasons,100,27,19,Plurality Veto,0.073,0.013
+27,F1 Seasons,100,27,19,Anti-Plurality,0.098,0.015
+28,F1 Seasons,100,27,19,Two Approval,0.163,0.015
+29,F1 Seasons,100,27,19,F1-2005,0.103,0.014
+30,F1 Seasons,100,27,18,Borda,0.139,0.025
+31,F1 Seasons,100,27,18,Plurality,0.417,0.017
+32,F1 Seasons,100,27,18,Plurality Veto,0.195,0.02
+33,F1 Seasons,100,27,18,Anti-Plurality,0.253,0.02
+34,F1 Seasons,100,27,18,Two Approval,0.389,0.018
+35,F1 Seasons,100,27,18,F1-2006,0.163,0.023
+36,F1 Seasons,100,37,16,Borda,0.135,0.026
+37,F1 Seasons,100,37,16,Plurality,0.441,0.017
+38,F1 Seasons,100,37,16,Plurality Veto,0.185,0.027
+39,F1 Seasons,100,37,16,Anti-Plurality,0.232,0.037
+40,F1 Seasons,100,37,16,Two Approval,0.383,0.011
+41,F1 Seasons,100,37,16,F1-1992,0.158,0.036
+42,F1 Seasons,100,24,16,Borda,0.166,0.031
+43,F1 Seasons,100,24,16,Plurality,0.398,0.021
+44,F1 Seasons,100,24,16,Plurality Veto,0.239,0.019
+45,F1 Seasons,100,24,16,Anti-Plurality,0.317,0.009
+46,F1 Seasons,100,24,16,Two Approval,0.362,0.017
+47,F1 Seasons,100,24,16,F1-1996,0.149,0.026
+48,F1 Seasons,100,23,17,Borda,0.097,0.019
+49,F1 Seasons,100,23,17,Plurality,0.211,0.007
+50,F1 Seasons,100,23,17,Plurality Veto,0.143,0.009
+51,F1 Seasons,100,23,17,Anti-Plurality,0.176,0.009
+52,F1 Seasons,100,23,17,Two Approval,0.173,0.015
+53,F1 Seasons,100,23,17,F1-2002,0.089,0.017
+54,F1 Seasons,100,26,17,Borda,0.1,0.014
+55,F1 Seasons,100,26,17,Plurality,0.201,0.014
+56,F1 Seasons,100,26,17,Plurality Veto,0.11,0.016
+57,F1 Seasons,100,26,17,Anti-Plurality,0.144,0.018
+58,F1 Seasons,100,26,17,Two Approval,0.164,0.011
+59,F1 Seasons,100,26,17,F1-2001,0.086,0.014
+60,F1 Seasons,100,35,17,Borda,0.069,0.013
+61,F1 Seasons,100,35,17,Plurality,0.216,0.008
+62,F1 Seasons,100,35,17,Plurality Veto,0.08,0.01
+63,F1 Seasons,100,35,17,Anti-Plurality,0.097,0.011
+64,F1 Seasons,100,35,17,Two Approval,0.186,0.01
+65,F1 Seasons,100,35,17,F1-1995,0.087,0.029
+66,F1 Seasons,100,24,16,Borda,0.275,0.046
+67,F1 Seasons,100,24,16,Plurality,0.385,0.039
+68,F1 Seasons,100,24,16,Plurality Veto,0.305,0.039
+69,F1 Seasons,100,24,16,Anti-Plurality,0.357,0.016
+70,F1 Seasons,100,24,16,Two Approval,0.351,0.018
+71,F1 Seasons,100,24,16,F1-1999,0.189,0.032
+72,F1 Seasons,100,35,16,Borda,0.152,0.022
+73,F1 Seasons,100,35,16,Plurality,0.423,0.009
+74,F1 Seasons,100,35,16,Plurality Veto,0.165,0.032
+75,F1 Seasons,100,35,16,Anti-Plurality,0.204,0.04
+76,F1 Seasons,100,35,16,Two Approval,0.397,0.003
+77,F1 Seasons,100,35,16,F1-1993,0.154,0.05
+78,F1 Seasons,100,46,16,Borda,0.166,0.023
+79,F1 Seasons,100,46,16,Plurality,0.458,0.001
+80,F1 Seasons,100,46,16,Plurality Veto,0.192,0.025
+81,F1 Seasons,100,46,16,Anti-Plurality,0.192,0.023
+82,F1 Seasons,100,46,16,Two Approval,0.445,0.007
+83,F1 Seasons,100,46,16,F1-1994,0.047,0.033
+84,F1 Seasons,100,23,17,Borda,0.11,0.019
+85,F1 Seasons,100,23,17,Plurality,0.195,0.011
+86,F1 Seasons,100,23,17,Plurality Veto,0.175,0.009
+87,F1 Seasons,100,23,17,Anti-Plurality,0.228,0.0
+88,F1 Seasons,100,23,17,Two Approval,0.174,0.005
+89,F1 Seasons,100,23,17,F1-2000,0.083,0.018
+90,F1 Seasons,100,25,17,Borda,0.07,0.016
+91,F1 Seasons,100,25,17,Plurality,0.191,0.016
+92,F1 Seasons,100,25,17,Plurality Veto,0.088,0.012
+93,F1 Seasons,100,25,17,Anti-Plurality,0.119,0.009
+94,F1 Seasons,100,25,17,Two Approval,0.179,0.012
+95,F1 Seasons,100,25,17,F1-2009,0.092,0.01
+96,F1 Seasons,100,28,17,Borda,0.084,0.014
+97,F1 Seasons,100,28,17,Plurality,0.212,0.009
+98,F1 Seasons,100,28,17,Plurality Veto,0.11,0.009
+99,F1 Seasons,100,28,17,Anti-Plurality,0.116,0.009
+100,F1 Seasons,100,28,17,Two Approval,0.184,0.012
+101,F1 Seasons,100,28,17,F1-1997,0.103,0.013
+102,F1 Seasons,100,23,16,Borda,0.172,0.029
+103,F1 Seasons,100,23,16,Plurality,0.419,0.005
+104,F1 Seasons,100,23,16,Plurality Veto,0.316,0.014
+105,F1 Seasons,100,23,16,Anti-Plurality,0.385,0.015
+106,F1 Seasons,100,23,16,Two Approval,0.342,0.026
+107,F1 Seasons,100,23,16,F1-1998,0.186,0.024
+108,F1 Seasons,100,27,19,Borda,0.059,0.01
+109,F1 Seasons,100,27,19,Plurality,0.186,0.014
+110,F1 Seasons,100,27,19,Plurality Veto,0.117,0.012
+111,F1 Seasons,100,27,19,Anti-Plurality,0.168,0.005
+112,F1 Seasons,100,27,19,Two Approval,0.169,0.01
+113,F1 Seasons,100,27,19,F1-2010,0.085,0.01
+114,F1 Seasons,100,25,20,Borda,0.144,0.031
+115,F1 Seasons,100,25,20,Plurality,0.383,0.032
+116,F1 Seasons,100,25,20,Plurality Veto,0.354,0.032
+117,F1 Seasons,100,25,20,Anti-Plurality,0.46,0.0
+118,F1 Seasons,100,25,20,Two Approval,0.315,0.029
+119,F1 Seasons,100,25,20,F1-2012,0.144,0.02
+120,F1 Seasons,100,28,19,Borda,0.047,0.01
+121,F1 Seasons,100,28,19,Plurality,0.208,0.009
+122,F1 Seasons,100,28,19,Plurality Veto,0.125,0.007
+123,F1 Seasons,100,28,19,Anti-Plurality,0.159,0.002
+124,F1 Seasons,100,28,19,Two Approval,0.175,0.007
+125,F1 Seasons,100,28,19,F1-2011,0.082,0.011
+126,F1 Seasons,100,22,19,Borda,0.06,0.011
+127,F1 Seasons,100,22,19,Plurality,0.191,0.01
+128,F1 Seasons,100,22,19,Plurality Veto,0.138,0.009
+129,F1 Seasons,100,22,19,Anti-Plurality,0.185,0.0
+130,F1 Seasons,100,22,19,Two Approval,0.188,0.004
+131,F1 Seasons,100,22,19,F1-2015,0.067,0.011
+132,F1 Seasons,100,24,21,Borda,0.054,0.01
+133,F1 Seasons,100,24,21,Plurality,0.211,0.001
+134,F1 Seasons,100,24,21,Plurality Veto,0.157,0.001
+135,F1 Seasons,100,24,21,Anti-Plurality,0.191,0.001
+136,F1 Seasons,100,24,21,Two Approval,0.158,0.014
+137,F1 Seasons,100,24,21,F1-2016,0.069,0.01
+138,F1 Seasons,100,22,18,Borda,0.151,0.026
+139,F1 Seasons,100,22,18,Plurality,0.395,0.03
+140,F1 Seasons,100,22,18,Plurality Veto,0.316,0.027
+141,F1 Seasons,100,22,18,Anti-Plurality,0.397,0.02
+142,F1 Seasons,100,22,18,Two Approval,0.326,0.033
+143,F1 Seasons,100,22,18,F1-2008,0.165,0.027
+144,F1 Seasons,100,24,19,Borda,0.047,0.011
+145,F1 Seasons,100,24,19,Plurality,0.196,0.009
+146,F1 Seasons,100,24,19,Plurality Veto,0.116,0.017
+147,F1 Seasons,100,24,19,Anti-Plurality,0.158,0.02
+148,F1 Seasons,100,24,19,Two Approval,0.187,0.01
+149,F1 Seasons,100,24,19,F1-2014,0.071,0.008
+150,F1 Seasons,100,23,19,Borda,0.065,0.011
+151,F1 Seasons,100,23,19,Plurality,0.212,0.014
+152,F1 Seasons,100,23,19,Plurality Veto,0.192,0.015
+153,F1 Seasons,100,23,19,Anti-Plurality,0.216,0.01
+154,F1 Seasons,100,23,19,Two Approval,0.163,0.01
+155,F1 Seasons,100,23,19,F1-2013,0.069,0.011
+156,F1 Seasons,100,26,17,Borda,0.063,0.012
+157,F1 Seasons,100,26,17,Plurality,0.189,0.011
+158,F1 Seasons,100,26,17,Plurality Veto,0.109,0.008
+159,F1 Seasons,100,26,17,Anti-Plurality,0.153,0.002
+160,F1 Seasons,100,26,17,Two Approval,0.185,0.001
+161,F1 Seasons,100,26,17,F1-2007,0.09,0.012

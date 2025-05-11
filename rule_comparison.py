@@ -1,5 +1,6 @@
 import itertools
 import os
+import pprint
 import random
 import numpy as np
 import pref_voting.profiles
@@ -9,7 +10,7 @@ from utils import voting_utils as vu
 import pandas as pd
 
 
-def make_split_indices(rankings, n_splits, split_type="equal_size"):
+def make_split_indices(rankings, n_splits, split_type="equal_prob"):
     """
     Make list of pairs, where each pair contains two lists of indices. Each list of indices corresponds to the voters
     in that split. Used to ensure consistent splits when comparing different rules.
@@ -32,8 +33,8 @@ def make_split_indices(rankings, n_splits, split_type="equal_size"):
             # s1, s2 = [rankings[r1] for r1 in reviewers1], [rankings[r2] for r2 in reviewers2]
         elif split_type == "equal_prob":
             splits = np.random.choice([1, 2], size=len(all_reviewers))
-            reviewers1 = np.array(all_reviewers)[splits == 1]
-            reviewers2 = np.array(all_reviewers)[splits == 2]
+            reviewers1 = np.array(all_reviewers)[splits == 1].tolist()
+            reviewers2 = np.array(all_reviewers)[splits == 2].tolist()
             all_splits.append((reviewers1, reviewers2))
             # s1, s2 = [rankings[r1] for r1 in reviewers1], [rankings[r2] for r2 in reviewers2]
         else:
@@ -49,6 +50,18 @@ def splits_from_split_indices(rankings, split_indices):
     :return:
     """
     return rankings[split_indices[0]], rankings[split_indices[1]]
+
+
+def splits_from_split_indices_no_numpy(rankings, split_indices):
+    """
+    Given a complete list of rankings/voters, return the two lists of rankings corresponding to the given split indices.
+    :param rankings:
+    :param split_indices: A tuple containing two lists of indices which partition the rankings into two sets.
+    :return:
+    """
+    r0 = [rankings[idx] for idx in split_indices[0]]
+    r1 = [rankings[idx] for idx in split_indices[1]]
+    return r0, r1
 
 
 def split_data(rankings, n, m, split_type="equal_size"):
@@ -78,6 +91,10 @@ def split_data(rankings, n, m, split_type="equal_size"):
         reviewers2 = np.array(all_reviewers)[splits == 2]
         # reviewers2 = set(reviewers2.tolist())
         s1, s2 = [rankings[r1] for r1 in reviewers1], [rankings[r2] for r2 in reviewers2]
+        if s1 == []:
+            s1 = [[tuple(i for i in range(m))]]
+        if s2 == []:
+            s2 = [[tuple(i for i in range(m))]]
     else:
         raise ValueError(f"Unexpected value for split_type: {split_type}")
     # reviewers = [reviewers1, reviewers2]
@@ -115,7 +132,7 @@ def split_data(rankings, n, m, split_type="equal_size"):
     return s1, s2
 
 
-def kt_distance_between_rankings(r1, r2, weights=None):
+def kt_distance_between_rankings(r1, r2, weights=None, rank_map1=None, rank_map2=None):
     """
     Find the Kendall-Tau distance between the two given rankings.
     :param r1:
@@ -123,7 +140,7 @@ def kt_distance_between_rankings(r1, r2, weights=None):
     :param weights: Unsupported. Do not use.
     :return:
     """
-    dist = vu.kendall_tau_distance(r1, r2, weights=weights)
+    dist = vu.kendall_tau_distance(r1, r2, weights=weights, rank_map1=rank_map1, rank_map2=rank_map2)
     return dist
 
 
@@ -139,7 +156,7 @@ def kt_distance_one_profile_one_rule(profile, n_splits, rule, m=None, **kwargs):
     n = len(profile)
     if m is None:
         m = [num for order in profile for num in order]
-        m = max(m)+1
+        m = max(m) + 1
     for _ in range(n_splits):
         s1, s2 = split_data(profile, n=n, m=m)
 
@@ -172,7 +189,7 @@ def kt_distance_one_profile_one_rule(profile, n_splits, rule, m=None, **kwargs):
             min_occurrences = min(np.count_nonzero(s1 == a), np.count_nonzero(s2 == a))
             total_occurrences = np.count_nonzero(profile == a)
             total_occurrences += 0.00001
-            weights.append(((gamma**min_occurrences)-1) / ((gamma**total_occurrences)-1))
+            weights.append(((gamma ** min_occurrences) - 1) / ((gamma ** total_occurrences) - 1))
 
         dist = kt_distance_between_rankings(ranking1, ranking2, weights=weights)
 
@@ -242,54 +259,66 @@ def evaluate_one_rule(rule, profile, splits, m, k, l, reference_ranking=None, sp
     :return: Mean KT distance between each split. If reference_ranking is not None, also return average distance from
     the outcome on each split to the reference ranking.
     """
+    debugging = False
+    if debugging:
+        print("\n############################")
+        print(f"Evaluating {rule.name}")
+        print("############################\n")
 
     all_kt_dists = []
-
     all_reference_distances = []
 
-    # for split_idx in range(n_splits):
+    all_s1 = []
+    all_s2 = []
     for split in splits:
-
         s1, s2 = splits_from_split_indices(profile, split)
+        all_s1.append(s1)
+        all_s2.append(s2)
 
-        # reviewers, M, weights_old = vu.reviewer_split(profile, split[0], split[1], n=len(profile), m=m, k=k, l=l, gamma=2)
+    in_annealing = False
+    kwargs = {"m": m, "k": k}  # pass number of alternatives and length of each preference order
+    if rule is vu.annealing_ranking_from_splits:
+        in_annealing = True
+        kwargs = {"m": m, "k": k, "n_splits": len(splits), "return_vector": True}
+        # get mean kt distance between splits
+        _, annealed_vector = rule(profile, all_s1, all_s2, **kwargs)
+        kwargs = {"m": m, "k": k}
+        rule = lambda prf, **kw: vu.scores_to_tuple_ranking(
+            vu.positional_scoring_scores(prf, score_vector=annealed_vector, **kw))
 
-        kwargs = {"m": m, "k": k}   # pass number of alternatives and length of each preference order
-        if rule is vu.annealing_ranking:
+    for s1, s2 in zip(all_s1, all_s2):
+        if rule is vu.annealing_ranking or rule is vu.annealing_ranking_from_splits:
             kwargs["n_splits"] = len(splits)
-        # elif rule is vu.kemeny_gurobi_lazy:
-        #     kwargs = {"m": m}
-        # else:
-        #     kwargs = {"m": m, "k": k}
 
-        # find rankings
         ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
         ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
 
-        gamma = 2
-        # calculate weight based on how balanced each ranking is
-        proposal_split = np.zeros((m, 2))
-        for ranking in s1:
-            for cand in ranking:
-                proposal_split[cand][0] += 1
-        for ranking in s2:
-            for cand in ranking:
-                proposal_split[cand][1] += 1
-
-        proposal_split = np.min(proposal_split, 1)
-        weights = ((gamma ** proposal_split) - 1) / (gamma ** (int(l / 2)) - 1)
-        # weights = None
-        # weights = []
-        # for a in range(m):
-        #     # count how many times a appears in both splits
-        #     min_occurrences = min(np.count_nonzero(s1 == a), np.count_nonzero(s2 == a))
-        #     total_occurrences = np.count_nonzero(profile == a)
-        #     weights.append(((gamma**min_occurrences)-1) / ((gamma**total_occurrences)-1))
+        weights = vu._weight_of_splits(m=m, l=l, s1=s1, s2=s2)
 
         # find distance between the rankings
         # dist_unweighted = kt_distance_between_rankings(ranking1, ranking2)
         dist = kt_distance_between_rankings(ranking1, ranking2, weights=weights)
         all_kt_dists.append(dist)
+
+        if debugging:
+            print(f"Split 1:")
+            pprint.pprint(s1)
+            print(f"with ranking {ranking1}")
+
+            print(f"Split 2:")
+            pprint.pprint(s2)
+            print(f"with ranking {ranking2}")
+
+            print(f"Weights are {weights}")
+            print()
+
+        if debugging and in_annealing:
+            kwargs2 = {"m": m, "k": k}
+            ranking1_borda = vu.profile_ranking_from_rule(vu.borda_ranking, s1, **kwargs2)
+            ranking2_borda = vu.profile_ranking_from_rule(vu.borda_ranking, s2, **kwargs2)
+            borda_dist = kt_distance_between_rankings(ranking1_borda, ranking2_borda, weights=weights)
+            if borda_dist < dist:
+                print("Borda is better than annealing")
 
         if reference_ranking is not None:
             # measure distance between rule output on complete profile (no splits) and reference ranking
@@ -298,6 +327,7 @@ def evaluate_one_rule(rule, profile, splits, m, k, l, reference_ranking=None, sp
             ref_dist = kt_distance_between_rankings(reference_ranking, ref_output)
             all_reference_distances.append(ref_dist)
 
+    # aggregate all distances together
     kt_mean = np.mean(all_kt_dists)
     kt_std = np.std(all_kt_dists)
     if reference_ranking is not None:
@@ -306,7 +336,15 @@ def evaluate_one_rule(rule, profile, splits, m, k, l, reference_ranking=None, sp
     else:
         ref_kt_mean = 0
         ref_kt_std = 0
-    return kt_mean, kt_std, ref_kt_mean, ref_kt_std
+
+    if debugging:
+        print(f"Found mean KT dist =  {kt_mean}")
+        print(f"Found KT dist to reference = {ref_kt_mean}")
+
+    if in_annealing:
+        return kt_mean, kt_std, ref_kt_mean, ref_kt_std, annealed_vector
+    else:
+        return kt_mean, kt_std, ref_kt_mean, ref_kt_std
 
 
 def compare_rules(rules, profiles, n_splits, reference_ranking=None, split_type="equal_size", **kwargs):
@@ -324,10 +362,6 @@ def compare_rules(rules, profiles, n_splits, reference_ranking=None, split_type=
     if isinstance(profiles, list):
         pass
     elif "n" in kwargs and "dist" in kwargs and "m" in kwargs and isinstance(profiles, int):
-        # profiles = [du.generate_profile(distribution=kwargs["dist"],
-        #                                 num_voters=kwargs["n"],
-        #                                 num_candidates=kwargs["m"],
-        #                                 **kwargs) for _ in range(profiles)]
 
         assignments = vu.generate_assignments(n=kwargs["n"], m=kwargs["m"], k=kwargs["k"], l=kwargs["l"])
         profiles = du.generate_profiles(distribution=kwargs["dist"],
@@ -350,6 +384,7 @@ def compare_rules(rules, profiles, n_splits, reference_ranking=None, split_type=
                                  split_type=split_type) for profile in profiles]
 
     results_by_rule = dict()
+    annealing_results = []
     for rule in rules:
         print(f"Beginning to evaluate {rule.name}")
         all_dist_means, all_ref_dist_means = [], []
@@ -360,25 +395,32 @@ def compare_rules(rules, profiles, n_splits, reference_ranking=None, split_type=
             continue
 
         for p_idx, profile in enumerate(profiles):
-
             # Find distance between each split for current rule
-            kt_dist_mean, kt_dist_std, ref_kt_dist_mean, ref_kt_dist_std = evaluate_one_rule(rule=rule,
-                                                                                             profile=profile,
-                                                                                             splits=splits[p_idx],
-                                                                                             m=kwargs["m"],
-                                                                                             k=kwargs["k"],
-                                                                                             l=kwargs["l"],
-                                                                                             reference_ranking=reference_ranking,
-                                                                                             split_type=split_type,
-                                                                                             weighted=False)
-            all_dist_means.append(kt_dist_mean)
-            all_dist_stds.append(kt_dist_std)
-
-            all_ref_dist_means.append(ref_kt_dist_mean)
-            all_ref_dist_stds.append(ref_kt_dist_std)
+            # result_values = kt_dist_mean, kt_dist_std, ref_kt_dist_mean, ref_kt_dist_std
+            # OR (if using annealing)
+            # result_values = kt_dist_mean, kt_dist_std, ref_kt_dist_mean, ref_kt_dist_std, annealing_vector
+            result_values = evaluate_one_rule(rule=rule,
+                                              profile=profile,
+                                              splits=splits[p_idx],
+                                              m=kwargs["m"],
+                                              k=kwargs["k"],
+                                              l=kwargs["l"],
+                                              reference_ranking=reference_ranking,
+                                              split_type=split_type,
+                                              weighted=False)
+            all_dist_means.append(result_values[0])
+            all_dist_stds.append(result_values[1])
+            all_ref_dist_means.append(result_values[2])
+            all_ref_dist_stds.append(result_values[3])
+            if len(result_values) > 4:
+                score_vec = vu.prettify_positional_scores(result_values[4], rounding=3)
+                annealing_results.append([rule.name, kwargs["dist"], n_splits, len(profile), kwargs["m"], kwargs["k"], score_vec, result_values[0]])
         results_by_rule[rule.name] = (all_dist_means, all_dist_stds, all_ref_dist_means, all_ref_dist_stds)
 
-    return results_by_rule
+    if len(annealing_results) == 0:
+        return results_by_rule
+    else:
+        return results_by_rule, annealing_results
 
 
 def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dists, all_rules, n_profiles, n_splits,
@@ -393,43 +435,42 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
     result_rows = []
 
     profile_set_idx = 0
+    annealing_results = []
+    anneal_filename = f"anneal_score_vectors.csv"
+    anneal_path = os.path.join(path, "annealing_vectors")
     for n, m, pref_dist, split_type in itertools.product(all_n, all_m, all_dists, split_types):
         for pr in range(parameter_reps):
             print(f"Trial {pr} of {parameter_reps} with n={n}, m={m}, pref_dist={pref_dist} and ALL rules.")
 
             reference_ranking = [(i,) for i in range(m)]
-
             args = dict()
-            # if pref_dist == "plackett_luce":
-            #     alpha = 0.5
-            #     alphas = [np.exp(alpha * i) for i in range(m, 0, -1)]
-            #     args["alphas"] = alphas
 
-            # profiles = [du.generate_profile(distribution=pref_dist,
-            #                                 num_voters=n,
-            #                                 num_candidates=m,
-            #                                 **args) for _ in range(n_profiles)]
-
-            results_by_rule = compare_rules(all_rules,
-                                            profiles=n_profiles,
-                                            n_splits=n_splits,
-                                            reference_ranking=reference_ranking,
-                                            split_type=split_type,
-                                            n=n,
-                                            m=m,
-                                            k=k,
-                                            l=l,
-                                            dist=pref_dist,
-                                            **args)
+            results = compare_rules(all_rules,
+                                    profiles=n_profiles,
+                                    n_splits=n_splits,
+                                    reference_ranking=reference_ranking,
+                                    split_type=split_type,
+                                    n=n,
+                                    m=m,
+                                    k=k,
+                                    l=l,
+                                    dist=pref_dist,
+                                    **args)
+            if isinstance(results, tuple):
+                # we are in annealing and have also returned a list of score vectors which should be saved
+                # in a separate file
+                results, annealed_scores = results
+                annealing_results += annealed_scores
+                # [rule.name, kwargs["dist"], n_splits, len(profile), kwargs["m"], kwargs["k"], score_vec]
 
             # Add a result row for each rule evaluated on the profiles
-            for rule_name, (dist_means, dist_stds, ref_dist_means, ref_dist_stds) in results_by_rule.items():
+            for rule_name, (dist_means, dist_stds, ref_dist_means, ref_dist_stds) in results.items():
                 dist_mean, dist_std = np.mean(dist_means), np.mean(dist_stds)
                 ref_dist_mean, ref_dist_stds = np.mean(ref_dist_means), np.mean(ref_dist_stds)
 
                 result_rows.append(
                     [n, m, n_profiles, profile_set_idx, n_splits, split_type, pref_dist, rule_name,
-                     round(dist_mean, 3), round(dist_std, 3), round(ref_dist_mean, 3), round(ref_dist_stds, 3)])
+                     round(dist_mean, 5), round(dist_std, 5), round(ref_dist_mean, 5), round(ref_dist_stds, 5)])
 
             # track which set of profiles we are on
             profile_set_idx += 1
@@ -443,6 +484,13 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
                 os.makedirs(path)
             df.to_csv(os.path.join(path, filename), index=False)
 
+            if not os.path.exists(anneal_path):
+                os.makedirs(anneal_path)
+            anneal_columns = ["Rule Name", "Distribution", "n_splits", "n", "m", "k", "Annealed Scores", "Split Distance"]
+            annealing_df = pd.DataFrame(annealing_results, columns=anneal_columns)
+            annealing_df.sort_values(by=["Distribution", "Split Distance"], ascending=True, inplace=True)
+            annealing_df.to_csv(os.path.join(anneal_path, anneal_filename), index=False)
+
     df = pd.DataFrame(result_rows, columns=columns)
     # df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
 
@@ -451,36 +499,39 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
 
 def compare_basic_ground_truth_vs_split_distance():
     all_dists = ["MALLOWS-0.4", "plackett_luce"]
-    all_n = [100]  # Each number of voters/reviewers to experiment over
-    all_m = [100]  # Each number of alternatives/issues to experiment over
-    k = 10  # papers per reviewer (length of each ranking)
-    l = k   # reviewers per paper (voters per candidate)
-    splits_per_profile = 10  # On each profile, find pairwise distance between this many random splits
-    n_profiles = 1  # Number of profiles tested during each repetition of parameters
-    parameter_repetitions = 50  # Run this many trials over all combinations of other parameters
-    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-complete.csv"
+    all_n = [100]  # Each number of voters/reviewers to experiment over; 100 for paper experiments
+    all_m = [100]  # Each number of alternatives/issues to experiment over; 100 for paper experiments
+    k = 10  # papers per reviewer (length of each ranking); 10 for paper experiments
+    l = k  # reviewers per paper (voters per candidate)
+    splits_per_profile = 10  # On each profile, find pairwise distance between this many random splits; 10 for paper
+    split_types = ["equal_prob"]    # IJCAI used "equal_size"; now moving to "equal_prob"
+    # split_types = ["equal_size"]    # IJCAI used "equal_size"; now moving to "equal_prob"
+    n_profiles = 1  # Number of profiles tested during each repetition of parameters; 1 for paper
+    parameter_repetitions = 50  # Run this many trials over all combinations of other parameters; 50 for paper
+    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-neurips.csv"
 
     all_rules = [
-        vu.annealing_ranking,
+        vu.annealing_ranking_from_splits,
         vu.kemeny_gurobi_lazy,
         vu.choix_pl_ranking,
+        vu.borda_ranking,
         vu.borda_minmax_ranking,
         vu.plurality_ranking,
         vu.plurality_veto_ranking,
         vu.antiplurality_ranking,
-        vu.borda_ranking,
         vu.two_approval_ranking,
-        # vu.copeland_ranking,
-        # vu.dowdall_ranking,
-        # vu.three_approval,
-        # vu.four_approval,
-        # vu.five_approval,
-        # vu.six_approval,
-        # vu.random_ranking,
+        # # vu.copeland_ranking,
+        # # vu.dowdall_ranking,
+        # # vu.three_approval,
+        # # vu.four_approval,
+        # # vu.five_approval,
+        # # vu.six_approval,
+        # # vu.random_ranking,
     ]
     df = evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dists, all_rules,
                                                          n_profiles=n_profiles,
                                                          n_splits=splits_per_profile,
+                                                         split_types=split_types,
                                                          parameter_reps=parameter_repetitions,
                                                          save_results=True,
                                                          path="results",
@@ -498,7 +549,6 @@ def compare_top_shuffling_ground_truth_vs_split_distance():
     splits_per_profile = 20  # On each profile, find pairwise distance between this many random splits
     n_profiles = 5  # Number of profiles tested during each repetition of parameters
     parameter_reps = 20  # Run this many trials over all combinations of other parameters
-
 
     all_n = [50, 20, 10]  # Each number of voters/reviewers to experiment over
     all_m = [20]  # Each number of alternatives/issues to experiment over
@@ -605,9 +655,10 @@ def rule_picking_rule(profile, possible_rules, n_splits, split_type="equal_size"
     :return: The function corresponding to the rule with the minimal KT distance averaged over all splits on the
     given profile.
     """
-    rule_dists = {rule: [] for rule in possible_rules}   # track kt dist of each rule output across each split
+    rule_dists = {rule: [] for rule in possible_rules}  # track kt dist of each rule output across each split
 
-    kwargs = {"m": len(profile[0]), "k": len(profile[0])}  # pass number of alternatives and length of each preference order
+    kwargs = {"m": len(profile[0]),
+              "k": len(profile[0])}  # pass number of alternatives and length of each preference order
 
     for rule in possible_rules:
         splits = make_split_indices(profile, n_splits)
@@ -631,7 +682,7 @@ def rule_picking_rule(profile, possible_rules, n_splits, split_type="equal_size"
         mean_dists = {rule: np.mean(rule_dists[rule]) for rule in possible_rules}
         best_dist = min(mean_dists.values())
         epsilon = 0.00001
-        best_rules = [rule for rule, dist in mean_dists.items() if dist-best_dist < epsilon]
+        best_rules = [rule for rule, dist in mean_dists.items() if dist - best_dist < epsilon]
 
         best_rules = sorted(best_rules)[0]
         num_best_rules = len(best_rules)
@@ -649,7 +700,7 @@ def generate_binary_matrix(n, m, assignments_per_reviewer, reviewers_per_assignm
 
     assert n == m
     assert assignments_per_reviewer == reviewers_per_assignment
-    assert n == assignments_per_reviewer**2
+    assert n == assignments_per_reviewer ** 2
     matrix = np.zeros((n, m), dtype=int)
 
     ones_per_col = reviewers_per_assignment
@@ -678,7 +729,6 @@ def generate_binary_matrix(n, m, assignments_per_reviewer, reviewers_per_assignm
                     break
 
     return matrix
-
 
 
 if __name__ == "__main__":

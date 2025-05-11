@@ -1,0 +1,91 @@
+num_voters,num_alternatives,Num Profiles,profile_set_idx,Splits Per Profile,split type,preference distribution,voting rule,KT Distance Between Splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Single Profile Annealing,0.08687,0.0204,0.12381,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Kemeny,0.09242,0.01726,0.10635,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,PL MLE,0.08834,0.0232,0.11587,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Borda,0.08819,0.02035,0.10556,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Borda Min-Max,0.14311,0.03059,0.10635,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Plurality,0.12105,0.03199,0.26825,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Plurality Veto,0.1068,0.03163,0.16032,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Veto,0.13002,0.03336,0.24127,0.0
+36,36,1,0,10,equal_prob,MALLOWS-0.4,Two Approval,0.10376,0.02578,0.17143,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Single Profile Annealing,0.08504,0.01025,0.1381,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Kemeny,0.10238,0.01983,0.15238,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,PL MLE,0.09746,0.01505,0.14286,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Borda,0.09084,0.01138,0.1381,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Borda Min-Max,0.14361,0.01711,0.13254,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Plurality,0.15589,0.02115,0.31746,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Plurality Veto,0.11832,0.01396,0.20714,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Veto,0.13152,0.01742,0.25635,0.0
+36,36,1,1,10,equal_prob,MALLOWS-0.4,Two Approval,0.12892,0.01707,0.1881,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Single Profile Annealing,0.06541,0.01325,0.11825,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Kemeny,0.08753,0.01348,0.1,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,PL MLE,0.08335,0.01426,0.12381,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Borda,0.07936,0.01379,0.1,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Borda Min-Max,0.13452,0.02013,0.12222,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Plurality,0.12677,0.0231,0.26587,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Plurality Veto,0.09853,0.02229,0.15952,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Veto,0.10402,0.02144,0.25238,0.0
+36,36,1,2,10,equal_prob,MALLOWS-0.4,Two Approval,0.10947,0.02151,0.19921,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Single Profile Annealing,0.06381,0.01692,0.13016,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Kemeny,0.08441,0.01764,0.11111,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,PL MLE,0.07569,0.01736,0.12222,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Borda,0.06812,0.0162,0.12857,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Borda Min-Max,0.13237,0.01426,0.13254,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Plurality,0.12655,0.02754,0.2127,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Plurality Veto,0.09179,0.02223,0.13651,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Veto,0.11992,0.02586,0.25714,0.0
+36,36,1,3,10,equal_prob,MALLOWS-0.4,Two Approval,0.0926,0.01982,0.17857,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Single Profile Annealing,0.06408,0.01811,0.13095,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Kemeny,0.07712,0.017,0.09048,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,PL MLE,0.06619,0.01424,0.12063,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Borda,0.0672,0.01842,0.13016,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Borda Min-Max,0.12144,0.03444,0.1373,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Plurality,0.10086,0.02361,0.25397,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Plurality Veto,0.08232,0.0239,0.16746,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Veto,0.11319,0.03067,0.22778,0.0
+36,36,1,4,10,equal_prob,MALLOWS-0.4,Two Approval,0.09057,0.02071,0.15873,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Single Profile Annealing,0.09284,0.01614,0.18175,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Kemeny,0.10148,0.02182,0.19365,0.0
+36,36,1,5,10,equal_prob,plackett_luce,PL MLE,0.09732,0.01826,0.17778,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Borda,0.09825,0.01745,0.17619,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Borda Min-Max,0.1479,0.02233,0.17857,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Plurality,0.13082,0.0224,0.32302,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Plurality Veto,0.10261,0.01999,0.21667,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Veto,0.1169,0.0227,0.2381,0.0
+36,36,1,5,10,equal_prob,plackett_luce,Two Approval,0.1132,0.0169,0.24048,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Single Profile Annealing,0.09036,0.0153,0.17302,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Kemeny,0.1028,0.02748,0.16984,0.0
+36,36,1,6,10,equal_prob,plackett_luce,PL MLE,0.09754,0.02178,0.1619,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Borda,0.09482,0.01814,0.18492,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Borda Min-Max,0.13029,0.02583,0.17381,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Plurality,0.13374,0.02926,0.31746,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Plurality Veto,0.11469,0.02723,0.22857,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Veto,0.13126,0.02861,0.22619,0.0
+36,36,1,6,10,equal_prob,plackett_luce,Two Approval,0.09887,0.02128,0.21111,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Single Profile Annealing,0.1001,0.03552,0.17222,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Kemeny,0.10839,0.04172,0.14444,0.0
+36,36,1,7,10,equal_prob,plackett_luce,PL MLE,0.11388,0.04312,0.13016,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Borda,0.1164,0.0422,0.15397,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Borda Min-Max,0.14712,0.04472,0.15952,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Plurality,0.15267,0.0529,0.3,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Plurality Veto,0.13221,0.04646,0.20635,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Veto,0.13443,0.04232,0.23254,0.0
+36,36,1,7,10,equal_prob,plackett_luce,Two Approval,0.13653,0.04682,0.24524,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Single Profile Annealing,0.06386,0.01597,0.13175,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Kemeny,0.07526,0.02447,0.18254,0.0
+36,36,1,8,10,equal_prob,plackett_luce,PL MLE,0.06712,0.01728,0.17143,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Borda,0.06777,0.0199,0.15159,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Borda Min-Max,0.11617,0.03052,0.17222,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Plurality,0.10916,0.03068,0.28175,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Plurality Veto,0.08281,0.02359,0.20079,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Veto,0.08515,0.01978,0.25397,0.0
+36,36,1,8,10,equal_prob,plackett_luce,Two Approval,0.0929,0.02739,0.24206,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Single Profile Annealing,0.08004,0.01831,0.14762,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Kemeny,0.10291,0.02652,0.23492,0.0
+36,36,1,9,10,equal_prob,plackett_luce,PL MLE,0.08761,0.02152,0.17143,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Borda,0.08686,0.02209,0.16111,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Borda Min-Max,0.12858,0.02595,0.17619,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Plurality,0.13456,0.0305,0.31905,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Plurality Veto,0.10612,0.02487,0.2127,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Veto,0.11446,0.02878,0.24048,0.0
+36,36,1,9,10,equal_prob,plackett_luce,Two Approval,0.11934,0.02616,0.17778,0.0

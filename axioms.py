@@ -199,7 +199,7 @@ def consistency(profile_set, possible_rules, **kwargs):
     return strong_possible_violations, strong_total_violations, strong_nonviolating_rule_names, weak_possible_violations, weak_total_violations, weak_nonviolating_rule_names
 
 
-@method_name("Reversal Consistency")
+@method_name("Reversal Symmetry")
 def reversal_symmetry(profile_set, possible_rules, **kwargs):
     possible_violations, total_violations = len(profile_set), 0
     nonviolating_rule_names = collections.Counter()
