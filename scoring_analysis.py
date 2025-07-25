@@ -7,7 +7,7 @@ from utils import data_utils as du
 from utils import voting_utils as vu
 import rule_comparison as rc
 import numpy as np
-from scipy.stats import hmean, gmean, pmean, mode
+from scipy.stats import hmean, gmean, pmean, mode, sem
 
 
 def lehmer_mean(values, p):
@@ -55,7 +55,7 @@ def score_data_kt_distance(review_scores):
             # make 1 random split and save each set of scores for later
             random.shuffle(scores)
             first_split_size = len(scores) // 2
-            first_split_size = 3
+            # first_split_size = 3
             first_split = scores[:first_split_size]
             second_split = scores[first_split_size:first_split_size*2]
             # second_split = scores[first_split_size:]
@@ -88,32 +88,14 @@ def score_data_kt_distance(review_scores):
         "min": min,
         "max": max,
         "median": np.median,
-        "hmean": hmean,
+        # "hmean": hmean,
         "gmean": gmean,
-        "midrange": lambda x: (max(x) + min(x))/2,
-        "product": np.prod
-        # "mode": lambda x: mode(x)[0],
-        # "p = -100": lambda x: pmean(x, -100),
-        # # "pmean-1": lambda x: pmean(x, -1),
-        # # "pmean0": lambda x: pmean(x, 0),
-        # # "pmean1": lambda x: pmean(x, 1),
-        # "pmean2": lambda x: pmean(x, 2),
-        # "pmean3": lambda x: pmean(x, 3),
-        # "pmean4": lambda x: pmean(x, 4),
-        # "p = 100": lambda x: pmean(x, 100),
-        # "lehmer p = -100": lambda x: lehmer_mean(x, p=-100),
-        # "lehmer p = -10": lambda x: lehmer_mean(x, p=-10),
-        # "lehmer p = -2": lambda x: lehmer_mean(x, p=-1),
-        # "lehmer p = -1": lambda x: lehmer_mean(x, p=-1),
-        # "lehmer p = 0": lambda x: lehmer_mean(x, p=0),
-        # "lehmer p = 1": lambda x: lehmer_mean(x, p=1),
-        # "lehmer p = 2": lambda x: lehmer_mean(x, p=2),
-        # "lehmer p = 10": lambda x: lehmer_mean(x, p=10),
-        # "lehmer p = 100": lambda x: lehmer_mean(x, p=100),
+        # "midrange": lambda x: (max(x) + min(x))/2,
+        # "product": np.prod
     }
 
     all_distances = {k: [] for k, v in aggregation_functions.items()}
-    n_splits = 100
+    n_splits = 1000
     for _ in range(n_splits):
         distances = single_split_distance(r_scores=review_scores)
         for k, dist in distances.items():
@@ -122,12 +104,13 @@ def score_data_kt_distance(review_scores):
     review_counts = Counter()
     for paper, scores in review_scores.items():
         review_counts[len(scores)] += 1
-    print(f"X:y; y proposals have X reviewers")
-    print(review_counts)
-    print()
+    # print(f"X:y; y proposals have X reviewers")
+    # print(review_counts)
+    # print()
 
     mean_distances = {k: np.mean(v) for k, v in all_distances.items()}
     std_distances = {k: np.std(v) for k, v in all_distances.items()}
+    std_distances = {k: sem(v) for k, v in all_distances.items()}
 
     results = {k: f"{round(mean_distances[k], 3)} ± {round(std_distances[k], 3)}" for k in aggregation_functions.keys()}
 
@@ -207,16 +190,4 @@ def ordinal_data_kt_distance(voter_rankings):
 
 if __name__ == "__main__":
     astro_scores, proposal_scores, proposal_ranks, voter_rankings = du.parse_astronomy_csv()
-
-    # ordinal_data_kt_distance(voter_rankings)
-
-
-    # print("Distances on astronomy dataset for score data:")
     score_data_kt_distance(proposal_scores)
-    #
-    #
-    # print("\n\n")
-    #
-    # print("Distances on astronomy dataset for ordinal data")
-    # score_data_kt_distance(proposal_ranks)
-

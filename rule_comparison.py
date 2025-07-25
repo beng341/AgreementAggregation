@@ -20,6 +20,7 @@ def make_split_indices(rankings, n_splits, split_type="equal_prob"):
     :return:
     """
     n = len(rankings)
+    m = len(rankings[0])
     all_reviewers = [i for i in range(n)]
 
     all_splits = []
@@ -35,8 +36,11 @@ def make_split_indices(rankings, n_splits, split_type="equal_prob"):
             splits = np.random.choice([1, 2], size=len(all_reviewers))
             reviewers1 = np.array(all_reviewers)[splits == 1].tolist()
             reviewers2 = np.array(all_reviewers)[splits == 2].tolist()
+            # if reviewers1 == []:
+            #     reviewers1 = tuple(i for i in range(m))
+            # if reviewers2 == []:
+            #     reviewers2 = tuple(i for i in range(m))
             all_splits.append((reviewers1, reviewers2))
-            # s1, s2 = [rankings[r1] for r1 in reviewers1], [rankings[r2] for r2 in reviewers2]
         else:
             raise ValueError(f"Unexpected value for split_type: {split_type}")
     return all_splits
@@ -66,7 +70,6 @@ def splits_from_split_indices_no_numpy(rankings, split_indices):
 
 def split_data(rankings, n, m, split_type="equal_size"):
     """
-    See: reviewer_split() in Emin's code.
     Split some given set of preference orders (a.k.a. reviews over papers) into two sets of preference orders.
     Assume for now that we have complete rankings and return the unweighted splits.
     Each split is a list of preference orders, each order representing one voter/reviewer.
@@ -661,7 +664,7 @@ def rule_picking_rule(profile, possible_rules, n_splits, split_type="equal_size"
               "k": len(profile[0])}  # pass number of alternatives and length of each preference order
 
     for rule in possible_rules:
-        splits = make_split_indices(profile, n_splits)
+        splits = make_split_indices(profile, n_splits, split_type=split_type)
         for split in splits:
             # print(f"Evaluating split {split_idx} of {rule}")
             s1, s2 = splits_from_split_indices(profile, split_indices=split)
@@ -732,14 +735,5 @@ def generate_binary_matrix(n, m, assignments_per_reviewer, reviewers_per_assignm
 
 
 if __name__ == "__main__":
-    # # Generate the matrix
-    # random_binary_matrix = generate_binary_matrix(n=100, m=100, assignments_per_reviewer=10, reviewers_per_assignment=10)
-    #
-    # # Verify constraints
-    # print("Row ones:", np.sum(random_binary_matrix, axis=1))
-    # print("Column ones:", np.sum(random_binary_matrix, axis=0))
 
     df = compare_basic_ground_truth_vs_split_distance()
-
-    # df = compare_top_shuffling_ground_truth_vs_split_distance()
-    # df.to_csv("results/testing_split_distance-testing.csv")

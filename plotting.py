@@ -12,34 +12,34 @@ from matplotlib.ticker import ScalarFormatter
 import matplotlib
 
 distribution_names = {
-        "MALLOWS-RELPHI-R": "Mallows",
-        "MALLOWS-0.4": "Mallows",
-        "URN-R": "Urn",
-        "plackett_luce": "Plackett Luce",
-        "single_peaked_conitzer": "Single-Peaked",
-        "IC": "Impartial Culture",
-        "preflib": "PrefLib"
+    "MALLOWS-RELPHI-R": "Mallows",
+    "MALLOWS-0.4": "Mallows",
+    "URN-R": "Urn",
+    "plackett_luce": "Plackett Luce",
+    "single_peaked_conitzer": "Single-Peaked",
+    "IC": "Impartial Culture",
+    "preflib": "PrefLib"
 }
 rule_names = {
-        'Annealing Score Vector': 'Best Positional Scores',
-        'Single Profile Annealing': 'Best Positional Scores',
-        'Optimized Scores': 'Best Positional Scores',
-        'Anti-Plurality': 'Veto',
-        'Plurality Veto': 'Plurality + Veto',
-        # 'Kemeny': '4',
-        # 'Anti-Plurality': '+',
-        # 'Borda': '^',
-        # 'Borda Min-Max': '<',
-        # 'Dowdall': '3',
-        # 'PL MLE': 'd',
-        # 'Plurality': 'x',
-        # 'Plurality Veto': 'P',
-        # 'Random': '*',
-        # 'Six Approval': '|',
-        # 'Five Approval': '^',
-        # 'Four Approval': '<',
-        # 'Three Approval': '>',
-        # 'Two Approval': '*',
+    'Annealing Score Vector': 'Best Positional Scores',
+    'Single Profile Annealing': 'Best Positional Scores',
+    'Optimized Scores': 'Best Positional Scores',
+    'Anti-Plurality': 'Veto',
+    'Plurality Veto': 'Plurality + Veto',
+    # 'Kemeny': '4',
+    # 'Anti-Plurality': '+',
+    # 'Borda': '^',
+    # 'Borda Min-Max': '<',
+    # 'Dowdall': '3',
+    # 'PL MLE': 'd',
+    # 'Plurality': 'x',
+    # 'Plurality Veto': 'P',
+    # 'Random': '*',
+    # 'Six Approval': '|',
+    # 'Five Approval': '^',
+    # 'Four Approval': '<',
+    # 'Three Approval': '>',
+    # 'Two Approval': '*',
 }
 
 fixed_colours = {
@@ -58,7 +58,7 @@ fixed_colours = {
     'Six Approval': '#b624ff',
     'Three Approval': '#ffd800',
     'Two Approval': '#d8ff21',
-    'Monotonicity': '#2ca02c', #17becf
+    'Monotonicity': '#2ca02c',  # 17becf
     'Reversal Consistency': '#e377c2',
     'Strong Consistency': '#d62728',
     'Union Consistency': '#1f77b4',
@@ -112,13 +112,13 @@ fixed_linestyles = {
     'Homogeneity': '--',
 }
 
-
 rule_renaming_map = {
     "Optimized Scores": "Best Positional Scores",
     "Single Profile Annealing": "Best Positional Scores",
     "Anti-Plurality": "Veto",
     "Plurality Veto": "Plurality + Veto",
     "Gold Medals": "Leximax",
+    "Empirical": "IRV",
     "All Medals": "Medal Count",
     "F1": "F1 (rule used)",
     "F1_rule-1991": "F1 ('91-'02)",
@@ -135,25 +135,48 @@ rule_renaming_map = {
 #     'Two Approval': [0.58039216, 0.40392157, 0.74117647, 1.],
 #     'Empirical': [0.58039216, 0.40392157, 0.74117647, 1.]
 # }
-rule_colour_dict = {'Best Positional Scores': [0.0, 0.0, 0.0, 1.0],
- 'Borda': [0.50256, 0.0, 0.56922, 1.0],
- 'Borda Min-Max': [0.0, 0.0, 0.68208, 1.0],
- 'Empirical': [0.8, 0.8, 0.8, 1.0],
- 'F1': [0.90253, 0.94356, 0.0, 1.0],
- "F1 ('03-'09)": [1.0, 0.04615, 0.0, 1.0],
- "F1 ('10-'18)": [0.83592, 0.0, 0.0, 1.0],
- "F1 ('91-'02)": [1.0, 0.72308, 0.0, 1.0],
- 'Kemeny': [0.0, 0.2872, 0.8667, 1.0],
- 'PL MLE': [0.0, 0.61026, 0.83593, 1.0],
- 'Plurality': [0.0, 0.6667, 0.57435, 1.0],
- 'Plurality + Veto': [0.0, 0.63076, 0.0, 1.0],
- 'Two Approval': [0.22563, 1.0, 0.0, 1.0],
- 'Veto': [0.0, 0.83592, 0.0, 1.0]}
+# rule_colour_dict = {
+#     'Plurality': [0.01719, 0.99787, 0.09494, 1.0],
+#     'F1': [1.0, 0.89913, 0.0, 1.0],
+#     'Best Positional Scores': [0.0, 0.0, 0.502, 1.0],
+#     'Borda': [0.0, 0.29423, 0.21344, 1.0],
+#     'Two Approval': [0.84845, 1.0, 0.13263, 1.0],
+#     "F1 ('03-'09)": [1.0, 0.27389, 0.00252, 1.0],
+#     'Plurality + Veto': [0.40425, 0.82895, 0.0, 1.0],
+#     'Empirical': [0.86016, 0.06991, 1.0, 1.0],
+#     'Empirical Rule': [0.9961, 0.9725, 0.9961, 1.0],
+#     "F1 ('10-'18)": [1.0, 0.0, 0.22527, 1.0],
+#     'Borda Min-Max': [0.0, 0.26972, 1.0, 1.0],
+#     'Kemeny': [0.0, 0.8757, 1.0, 1.0],
+#     'Leximax': [0.95161, 0.68298, 0.95811, 1.0],
+#     "F1 ('91-'02)": [1.0, 0.74498, 0.04801, 1.0],
+#     'PL MLE': [0.0, 0.9844, 0.69776, 1.0],
+#     'Medal Count': [0.78717, 0.36397, 0.96171, 1.0],
+#     'Veto': [0.56401, 1.0, 0.08683, 1.0]}
+rule_colour_dict = {'Best Positional Scores': [0.0, 0.26972, 1.0, 1.0],
+                    'Borda': [0.0, 0.8757, 1.0, 1.0],
+                    'Borda Min-Max': [1.0, 0.74498, 0.04801, 1.0],
+                    'Empirical': [0.56401, 1.0, 0.08683, 1.0],
+                    'IRV': [0.66401, 0.6, 0.38683, 1.0],
+                    # 'Empirical Rule': [0.84845, 1.0, 0.13263, 1.0],
+                    'F1': [0.0, 0.29423, 0.21344, 1.0],
+                    "F1 ('03-'09)": [0.01719, 0.90787, 0.09494, 1.0],
+                    "F1 ('10-'18)": [1.0, 0.89913, 0.0, 1.0],
+                    "F1 ('91-'02)": [0.96016, 0.26991, 0.1, 1.0],
+                    'Kemeny': [1.0, 0.27389, 0.00252, 1.0],
+                    'Leximax': [1.0, 0.0, 0.22527, 1.0],
+                    'Medal Count': [0.95161, 0.68298, 0.95811, 1.0],
+                    'PL MLE': [0.78717, 0.36397, 0.96171, 1.0],
+                    'Plurality': [0.0, 0.0, 0.502, 1.0],
+                    # 'Plurality + Veto': [0.9961, 0.9725, 0.9961, 1.0],
+                    'Plurality + Veto': [0.9961, 0.2725, 0.4961, 1.0],
+                    'Two Approval': [0.0, 0.9844, 0.69776, 1.0],
+                    'Veto': [0.40425, 0.82895, 0.0, 1.0]}
 rule_marker_dict = {
     "Best Positional Scores": "*",
-    "Borda": "+",
+    "Borda": "P",
     "Borda Min-Max": "3",
-    "Kemeny": "1",
+    "Kemeny": "x",
     "PL MLE": "2",
     "Plurality": "d",
     "Plurality + Veto": "D",
@@ -163,11 +186,29 @@ rule_marker_dict = {
     "F1 ('91-'02)": "1",
     "F1 ('03-'09)": "2",
     "F1 ('10-'18)": "3",
-    'Empirical': "2"
+    'Empirical Rule': "2",
+    'IRV': "o",
+    "Medal Count": "o",
+    "Leximax": "x",
+}
+excluded_colours = {
+    (0.9961, 0.9725, 0.9961, 0.6),
+    (0.9961, 0.9725, 0.9961, 1.0),
+    (0.60752, 1.0, 0.1249, 0.6),
+    (0.60752, 1.0, 0.1249, 1.0),
+    (0.40425, 0.82895, 0.0, 0.6),
+    (0.40425, 0.82895, 0.0, 1.0),
+(2e-05, 0.99675, 0.12307, 0.6),
+(2e-05, 0.99675, 0.12307, 1.0),
+(0.53613, 1.0, 0.06242, 0.6),
+(0.53613, 1.0, 0.06242, 1.0),
+(1.0, 0.93237, 0.0, 0.6),
+(1.0, 0.93237, 0.0, 1.0)
 }
 
 
-def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None, cache=None, alpha=None, force_alpha=False):
+def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None, cache=None, alpha=None,
+                         force_alpha=False):
     """
     Get a consistent color for a series name from a colormap, excluding specified colors.
 
@@ -187,8 +228,15 @@ def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None
     color : tuple
         RGBA color tuple
     """
+
+    # Initialize excluded colors set
+    if excluded_colors:
+        excluded = set() if excluded_colors is None else set(tuple(c) for c in excluded_colors)
+    else:
+        excluded = excluded_colours
+
     # Check cache first if provided
-    if cache is not None and series_name in cache:
+    if cache is not None and series_name in cache and tuple(cache[series_name]) not in excluded:
         if force_alpha:
             color = cache[series_name]
             color = (color[0], color[1], color[2], alpha)
@@ -197,9 +245,6 @@ def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None
 
     # Convert string colormap to colormap object if needed
     cmap = plt.colormaps.get_cmap(colormap) if isinstance(colormap, str) else colormap
-
-    # Initialize excluded colors set
-    excluded = set() if excluded_colors is None else set(tuple(c) for c in excluded_colors)
 
     # Try to find a color that's not excluded
     seed = 0
@@ -211,6 +256,10 @@ def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None
 
         # Get color from colormap
         color = cmap(position)
+        color = [round(float(color[0]), 5),
+                 round(float(color[1]), 5),
+                 round(float(color[2]), 5),
+                 round(float(color[3]), 5)]
 
         if alpha is not None and (cache is None or force_alpha):
             # override default alpha of 1.0
@@ -223,6 +272,7 @@ def get_consistent_color(series_name, colormap='gist_ncar', excluded_colors=None
                 cache[series_name] = color
             if alpha and force_alpha:
                 color = (color[0], color[1], color[2], alpha)
+            print(f"Assigning {series_name} to {color}.")
             return color
 
         # Try a different seed if this color is excluded
@@ -403,13 +453,15 @@ def organize_legend_handles(ax):
     # Put optimized rule(s) first, if they exist
     best_labels = sorted([l for l in unique_labels if "Best" in l])
 
+    irv_labels = sorted([l for l in unique_labels if "IRV" in l])
+
     # Put "F1" items second, if they exist
     f1_labels = sorted([l for l in unique_labels if "F1" in l])
 
     # Put Olympic items third, if they exist
     olympic_labels = [l for l in unique_labels if "Leximax" in l] + [l for l in unique_labels if "Medal Count" in l]
 
-    used_labels = best_labels + f1_labels + olympic_labels
+    used_labels = best_labels + irv_labels + f1_labels + olympic_labels
 
     # Put any remaining items last
     remaining_labels = sorted([l for l in unique_labels
@@ -423,6 +475,7 @@ def organize_legend_handles(ax):
     # handles, labels = zip(*[(labels_to_handles[l], l) for l in unique_labels])
 
     return handles, labels
+
 
 def plot_kt_distance_vs_ground_truth_single_plot(show=False, out_folder="plots", out_name="kt_vs_truth.png"):
     """
@@ -528,7 +581,6 @@ def plot_kt_distance_vs_ground_truth_multiple_voter_combos(show=False, out_folde
 def plot_kt_distance_vs_ground_truth():
     conference = True  # changes formatting of the figure
     filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
-    # filename = "results-final/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
 
     df = pd.read_csv(filename)
 
@@ -639,7 +691,6 @@ def plot_kt_distance_vs_ground_truth():
         label = f"Best Fit: b = {round(intercept, 2)}, m = {round(slope, 2)}"
         axes[idx].plot(x, line_of_best_fit, label=label, color="orange", linestyle="--", alpha=0.5)
 
-
         handles, labels = axes[idx].get_legend_handles_labels()
         handles = [handles[-1]]
         labels = [labels[-1]]
@@ -664,7 +715,6 @@ def plot_kt_distance_vs_ground_truth():
 
         ax.xaxis.set_ticks([0.04, 0.08, 0.12])
         ax.yaxis.set_ticks([0.10, 0.20, 0.30])
-
 
     handles, labels = organize_legend_handles(axes[0])
     labels = list(labels)
@@ -784,101 +834,6 @@ def plot_kt_distance_vs_ground_truth_multiple_shuffle_amounts(show=False, out_fo
         plt.savefig(os.path.join(out_folder, out_name), dpi=300)
 
 
-def plot_preflib_scatter(show=True, out_folder="plots", out_name="axiom_evaluation_results-preflib.png"):
-    """
-    Make scatterplots for each axiom showing whether each election violates or does not violate the axiom.
-    One row for each num_splits.
-    :param show:
-    :param out_folder:
-    :param out_name:
-    :return:
-    """
-
-    # In each subplot in top row, have one series for each number of voters
-    filename = "results/axiom_experiment-preflib.csv"
-    df = pd.read_csv(filename)
-
-    df = df[df["n_voters"] != "all"]
-    df = df[df["n_candidates"] != "all"]
-
-    # Get unique axiom names for subplots
-    unique_axioms = df['axiom_name'].unique()
-    n_axioms = len(unique_axioms)
-
-    df['n_voters'] = df['n_voters'].apply(int)
-    df['n_candidates'] = df['n_candidates'].apply(int)
-
-    max_num_voters = max(df["n_voters"])
-    max_num_candidates = max(df["n_candidates"])
-
-    # Create figure with subplots
-    fig, axes = plt.subplots(2, n_axioms, figsize=(5 * n_axioms, 8))
-
-    # plt.subplots_adjust(hspace=0.3, wspace=0.3)
-
-    # Function to assign colors based on total_violations
-    def get_colour(data):
-        return ['red' if v == 1 else 'green' for v in data['total_violations']]
-
-    def get_alpha(data):
-        return [0.3 if v == 1 else 0.15 for v in data['total_violations']]
-
-    # Create subplots for n_splits = 20
-    for idx, axiom in enumerate(unique_axioms):
-        filtered_data = df[(df['axiom_name'] == axiom) & (df['n_splits'] == 20)]
-        colour = get_colour(filtered_data)
-        alpha = get_alpha(filtered_data)
-        axes[0, idx].scatter(filtered_data['n_voters'], filtered_data['n_candidates'], c=colour, marker=".",
-                             alpha=alpha)
-        axes[0, idx].set_title(f'{axiom}')
-        # axes[0, idx].set_xlabel('Number of Voters')
-        # axes[0, idx].set_ylabel('Number of Candidates')
-        # axes[0, idx].grid(True)
-
-    # Create subplots for n_splits = 40
-    for idx, axiom in enumerate(unique_axioms):
-        filtered_data = df[(df['axiom_name'] == axiom) & (df['n_splits'] == 40)]
-        colour = get_colour(filtered_data)
-        alpha = get_alpha(filtered_data)
-        axes[1, idx].scatter(filtered_data['n_voters'], filtered_data['n_candidates'], c=colour, marker=".",
-                             alpha=alpha)
-        # axes[1, idx].set_title(f'{axiom}\n(n_splits=40)')
-        # axes[1, idx].set_xlabel('Number of Voters')
-        # axes[1, idx].set_ylabel('Number of Candidates')
-        # axes[1, idx].grid(True)
-
-    for coord, ax in np.ndenumerate(axes):
-        ax.set_xlim((-1, max_num_voters + 1))
-        ax.set_xticks([x for x in range(0, max_num_voters + 9, 10)])
-
-        ax.set_ylim((4, max_num_candidates + 1))
-        ax.set_yticks([y for y in range(5, max_num_candidates + 1, 5)])
-
-        ax.grid(alpha=0.15)
-
-    axes[0, 0].set_ylabel("20 splits")
-    axes[1, 0].set_ylabel("40 splits")
-
-    fig.supylabel("Number of Candidates")
-    fig.supxlabel("Number of Voters")
-    fig.suptitle("Axiom Violations on Preflib Data")
-    plt.tight_layout()
-
-    # Add a legend
-    legend_elements = [plt.Line2D([0], [0], marker='o', color='w',
-                                  markerfacecolor='red', markersize=10, label='Violation'),
-                       plt.Line2D([0], [0], marker='o', color='w',
-                                  markerfacecolor='green', markersize=10, label='No Violation')]
-    fig.legend(handles=legend_elements, loc='center right', bbox_to_anchor=(0.98, 0.5))
-
-    # plt.suptitle('Voters vs Candidates by Axiom and Number of Splits', fontsize=16, y=1.05)
-
-    if show:
-        plt.show()
-    else:
-        plt.savefig(os.path.join(out_folder, out_name))
-
-
 def _organize_preflib_data_for_plot(df):
     """
     Aggregate the individual elections in preflib data so it is suitable for plotting with other axiom data.
@@ -904,7 +859,7 @@ def plot_axiom_evaluation_results(show=False, n_splits=50, out_folder="plots", o
     """
 
     # In each subplot in top row, have one series for each number of voters
-    filename = "results-final/axiom_experiment-final.csv"
+    filename = "results/axiom_experiment-final.csv"
     df = pd.read_csv(filename)
     # manually update possible violations count for new calculation
     df["possible_violations"] = 500
@@ -1160,7 +1115,7 @@ def plot_axiom_histograms(show=False, out_folder="plots", out_name="axiom_rule_h
     return fig, axes
 
 
-def get_colormap_colors(cmap_name, num_colors, hex=False):
+def get_colormap_colors(cmap_name, num_colors, hex=False, alpha=None):
     # Get the colormap
     cmap = plt.get_cmap(cmap_name, num_colors)
 
@@ -1174,16 +1129,18 @@ def get_colormap_colors(cmap_name, num_colors, hex=False):
                 int(color[0] * 255), int(color[1] * 255), int(color[2] * 255)
             )
         else:
+            if not alpha:
+                alpha = 1.0
             color = [round(float(color[0]), 5),
                      round(float(color[1]), 5),
                      round(float(color[2]), 5),
-                     round(float(color[3]), 5)]
+                     alpha]
         colours.append(color)
     return colours
 
 
-def print_colormap_with_dict_values(dic, cmap_name):
-    colours = get_colormap_colors(cmap_name, len(dic))
+def print_colormap_with_dict_values(dic, cmap_name, alpha=None):
+    colours = get_colormap_colors(cmap_name, num_colors=len(dic), alpha=alpha)
 
     colour_map = dict(zip(dic.keys(), colours))
     pprint.pprint(colour_map)
@@ -1192,46 +1149,29 @@ def print_colormap_with_dict_values(dic, cmap_name):
 
 
 if __name__ == "__main__":
-
-    rule_marker_dict = {
-        "Best Positional Scores": "*",
-        "Borda": "+",
-        "Borda Min-Max": "3",
-        "Kemeny": "1",
-        "PL MLE": "2",
-        "Plurality": "d",
-        "Plurality + Veto": "D",
-        "Veto": "s",
-        "Two Approval": "^",
-        "F1": "o",
-        "F1 ('91-'02)": "1",
-        "F1 ('03-'09)": "2",
-        "F1 ('10-'18)": "3",
-        'Empirical': "2"
-    }
-    colour_map = print_colormap_with_dict_values(dic=rule_marker_dict, cmap_name="tab20")
-    rule_colour_dict = colour_map
-
+    # rule_marker_dict = {
+    #     "Best Positional Scores": "*",
+    #     "Borda": "+",
+    #     "Borda Min-Max": "3",
+    #     "Kemeny": "1",
+    #     "PL MLE": "2",
+    #     "Plurality": "d",
+    #     "Plurality + Veto": "D",
+    #     "Veto": "s",
+    #     "Two Approval": "^",
+    #     "F1": "o",
+    #     "F1 ('91-'02)": "1",
+    #     "F1 ('03-'09)": "2",
+    #     "F1 ('10-'18)": "3",
+    #     'Empirical': "2",
+    #     "Medal Count": "o",
+    #     "Leximax": "x",
+    #     "Empirical Rule": "2"
+    # }
+    # colour_map = print_colormap_with_dict_values(dic=rule_colour_dict,
+    #                                              cmap_name="gist_ncar",
+    #                                              alpha=1.0)
+    # rule_colour_dict = colour_map
 
     plot_kt_distance_vs_ground_truth()
     # plot_axiom_evaluation_results(show=True)
-
-
-    # plot_preflib_scatter(show=False)
-
-    # n_splits = 50
-    # out_name = f"axiom_evaluation_results-n_splits={n_splits}.png"
-    # plot_axiom_evaluation_results(show=False, n_splits=n_splits, out_name=out_name)
-
-    # plot_axiom_histograms(show=True)
-    # axdict = [axioms.weak_consistency.name,
-    #               axioms.strong_consistency.name,
-    #               axioms.reversal_symmetry.name,
-    #               axioms.monotonicity.name,
-    #           axioms.homogeneity.name]
-    # axdict = {n:n for n in axdict}
-    # print_colormap_with_dict_values(axdict, "tab10")
-
-    # plot_kt_distance_vs_ground_truth_single_plot(show=True)
-    # plot_kt_distance_vs_ground_truth_multiple_voter_combos(show=True)
-    # plot_kt_distance_vs_ground_truth_multiple_shuffle_amounts(show=True)

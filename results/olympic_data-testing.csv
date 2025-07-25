@@ -1,9 +1,0 @@
-Game,n_splits,n_countries,n_events,rule_name,distance,distance_std
-1992 Summer,100,169,257,Borda,0.045,0.008
-1992 Summer,100,169,257,Single Profile Annealing,0.045,0.008
-1992 Summer,100,169,257,All Medals,0.06,0.01
-1992 Summer,100,169,257,Gold Medals,0.06,0.01
-1992 Winter,100,64,57,Borda,0.027,0.008
-1992 Winter,100,64,57,Single Profile Annealing,0.027,0.008
-1992 Winter,100,64,57,All Medals,0.065,0.024
-1992 Winter,100,64,57,Gold Medals,0.065,0.024

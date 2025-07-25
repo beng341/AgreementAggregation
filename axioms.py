@@ -63,7 +63,7 @@ def strong_consistency(profile_set, possible_rules, **kwargs):
     nonviolating_rule_names = collections.Counter()
 
     for P in profile_set:
-        all_splits = rc.make_split_indices(P, kwargs["n_splits"])
+        all_splits = rc.make_split_indices(P, kwargs["n_splits"], split_type="equal_size")
         for split in all_splits:
             s1, s2 = rc.splits_from_split_indices(P, split_indices=split)
             z1 = rc.rule_picking_rule(s1, possible_rules, kwargs["n_splits"])
@@ -95,7 +95,7 @@ def weak_consistency(profile_set, possible_rules, **kwargs):
     nonviolating_rule_names = collections.Counter()
 
     for P in profile_set:
-        all_splits = rc.make_split_indices(P, kwargs["n_splits"])
+        all_splits = rc.make_split_indices(P, kwargs["n_splits"], split_type="equal_size")
         for split in all_splits:
             s1, s2 = rc.splits_from_split_indices(P, split_indices=split)
             z1 = rc.rule_picking_rule(s1, possible_rules, kwargs["n_splits"])
@@ -140,7 +140,7 @@ def consistency(profile_set, possible_rules, **kwargs):
     for P in profile_set:
         splits_to_evaluate = 1  # Faster for testing, should maybe do all n_splits for publishing
         # splits_to_evaluate = kwargs["n_splits"]
-        all_splits = rc.make_split_indices(P, splits_to_evaluate)
+        all_splits = rc.make_split_indices(P, splits_to_evaluate, split_type="equal_size")
         for split in all_splits:
             s1, s2 = rc.splits_from_split_indices(P, split_indices=split)
             z1 = rc.rule_picking_rule(s1, possible_rules, kwargs["n_splits"])
@@ -459,5 +459,5 @@ def test_axioms_on_saved_profiles(output_file="results/axiom_experiment-preflib.
 
 
 if __name__ == "__main__":
-    # run_axiom_experiment(output_file="results/axiom_experiment.csv")
+    run_axiom_experiment(output_file="results/axiom_experiment.csv")
     test_axioms_on_saved_profiles(output_file="results/axiom_experiment-preflib.csv")

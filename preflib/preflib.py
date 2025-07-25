@@ -134,7 +134,8 @@ def load_formula_1_elections():
     :return:
     """
     # F1 race data comes in two formats: Complete and incomplete. For now, use only the imputed complete preferences.
-    file_pattern = "preflib/useful_data/F1/*.soc"
+    # file_pattern = "preflib/useful_data/F1/*.soc"
+    file_pattern = "preflib/F1/*.soc"
     from preflibtools.instances import OrdinalInstance
 
     preference_files = []
@@ -190,6 +191,15 @@ def load_formula_1_elections():
 
         profile_rules.append((f"F1 Seasons ({year})", profile, f1_rule, m))
 
+    # print some statistics about the amount of data here
+    pref_orders = [pr[1] for pr in profile_rules]
+    num_races = [len(po) for po in pref_orders]
+    print(f"# Races Per Year: Min={min(num_races)}, Max={max(num_races)}, Mean={np.mean(num_races)}, Mode={max(num_races, key=num_races.count)}")
+
+    num_racers = [pr[3] for pr in profile_rules]
+    print(f"# Drivers Per Year: Min={min(num_racers)}, Max={max(num_racers)}, Mean={np.mean(num_racers)}, Mode={max(num_racers, key=num_racers.count)}")
+
+
     return profile_rules
 
 
@@ -220,7 +230,8 @@ def load_city_election_data(max_count=None, max_n_voters=None):
 
     :return:
     """
-    file_pattern = "preflib/useful_data/City Data/*.toc"
+    file_pattern = "preflib/City Data/*.toc"
+    # file_pattern = "preflib/useful_data/City Data/*.toc"
     from preflibtools.instances import OrdinalInstance
 
     preference_files = []

@@ -769,7 +769,7 @@ def print_pvalues():
     Dependent variables: "KT Distance Between Splits", "Distance from Central Vote"
     :return:
     """
-    df = pd.read_csv("results/experiment-ground_truth_vs_split_distance-testing-nsplits=10.csv")
+    df = pd.read_csv("results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv")
     filtered_df = df[df["preference distribution"] == "MALLOWS-0.4"]
 
     # col = "KT Distance Between Splits"
@@ -986,9 +986,9 @@ if __name__ == "__main__":
 
     # compare_best_distances()
 
-    olympics_event_detail, olympics_weak_rankings_dict = load_olympic_rankings()
+    # olympics_event_detail, olympics_weak_rankings_dict = load_olympic_rankings()
 
-    # print_pvalues()
+    print_pvalues()
 
     # astro_dict, proposal_scores = parse_astronomy_csv()
     # astronomy_stats(astro_dict)

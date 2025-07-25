@@ -39,7 +39,7 @@ def evaluate_olympics_data():
 
     results.sort_values(by=["Game", "distance"], ascending=True, inplace=True)
 
-    results.to_csv("results/olympic_data-neurips-updated.csv", index=False)
+    results.to_csv("results/olympic_data-neurips.csv", index=False)
 
 
 def evaluate_rankings_olympics(rankings, include_annealing=False, include_kemeny=False):
@@ -398,29 +398,29 @@ def evaluate_preflib_data():
             "winning_ranking", "annealed_scores"]
     preflib_results = []
 
-    out_path = "preflib/analysis_results-neurips-testingcity.csv"
+    out_path = "preflib/analysis_results-neurips.csv"
 
     # #########################
-    # # Formula 1 Racing
-    # #########################
-    # f1_profiles = preflib.load_formula_1_elections()
-    # for (data_name, profile, rule, m) in f1_profiles:
-    #
-    #     weak_ranking = du.weak_ranking_from_strict_ranking(profile, m)
-    #     row_results, dict_results = evaluate_rankings(rankings=weak_ranking,
-    #                                                   num_alternatives=m,
-    #                                                   normalize=False,
-    #                                                   # include_rule=rule,
-    #                                                   include_rule=None,
-    #                                                   include_annealing=True
-    #                                                   )
-    #     for row in row_results:
-    #         preflib_results.append([data_name] + row)
-    #
-    #     # If including a rule, check how often other rules match it
-    #
-    # df = pd.DataFrame(columns=cols, data=preflib_results)
-    # df.to_csv(out_path, index=False)
+    # Formula 1 Racing
+    #########################
+    f1_profiles = preflib.load_formula_1_elections()
+    for (data_name, profile, rule, m) in f1_profiles:
+
+        weak_ranking = du.weak_ranking_from_strict_ranking(profile, m)
+        row_results, dict_results = evaluate_rankings(rankings=weak_ranking,
+                                                      num_alternatives=m,
+                                                      normalize=False,
+                                                      # include_rule=rule,
+                                                      include_rule=None,
+                                                      include_annealing=True
+                                                      )
+        for row in row_results:
+            preflib_results.append([data_name] + row)
+
+        # If including a rule, check how often other rules match it
+
+    df = pd.DataFrame(columns=cols, data=preflib_results)
+    df.to_csv(out_path, index=False)
 
     # #########################
     # # UK Labour Election Data

@@ -400,7 +400,8 @@ def borda_minmax_ranking(profile, **kwargs):
 
 
 def antiplurality_ranking_vector(m):
-    score_vector = [0 for _ in range(m - 1)] + [-1]
+    # score_vector = [0 for _ in range(m - 1)] + [-1]
+    score_vector = [1 for _ in range(m - 1)] + [0]
     return score_vector
 
 

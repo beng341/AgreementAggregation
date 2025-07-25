@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MultipleLocator
 import re
 import numpy as np
 from collections import Counter
@@ -9,7 +10,7 @@ from plotting import rule_renaming_map, rule_colour_dict, rule_marker_dict
 
 def scatter_plot_olympics():
     # Load the CSV file
-    df = pd.read_csv('results/olympic_data-neurips-updated.csv')
+    df = pd.read_csv('results/olympic_data-neurips.csv')
 
     # df = df.replace('Plurality Veto', 'Plurality + Veto')
     # df = df.replace('Single Profile Annealing', 'Optimized Scores')
@@ -42,10 +43,9 @@ def scatter_plot_olympics():
         if rule not in rules_to_display:
             continue
         mask = df['rule_name'] == rule
-        colour = plt_util.get_consistent_color(series_name=rule,
-                                               # colormap="gist_ncar",
-                                               cache=plt_util.rule_colour_dict)
-        colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        colour = plt_util.get_consistent_color(rule,
+                                               cache=rule_colour_dict)
+        # colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
         marker = rule_marker_dict[rule] if rule in rule_marker_dict else plt_util.get_consistent_marker(rule)
         plt.scatter(
             df.loc[mask, 'Year'],
@@ -84,7 +84,7 @@ def scatter_plot_olympics():
 
 
 def bar_plot_olympics():
-    df = pd.read_csv('results/olympic_data-neurips-updated.csv')
+    df = pd.read_csv('results/olympic_data-neurips.csv')
 
     # df = df.replace('Plurality Veto', 'Plurality + Veto')
     # df = df.replace('Single Profile Annealing', 'Optimized Scores')
@@ -95,7 +95,7 @@ def bar_plot_olympics():
 
     rules_to_display = [
         'Best Positional Scores',
-        'Veto',
+        # 'Veto',
         'Borda',
         'Plurality',
         'Two Approval',
@@ -113,26 +113,20 @@ def bar_plot_olympics():
     # Extract year from the "Game" column using regular expressions
     df['Year'] = df['Game'].apply(lambda x: int(re.search(r'(\d{4})', x).group(1)))
 
+    # Sort specific rules by increasing distance
+    mean_distances = mean_distances.sort_values('mean')
     color_dict = {
-        rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        # rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        rule: plt_util.get_consistent_color(rule,
+                                            cache=rule_colour_dict)
         for rule in mean_distances['rule_name']
     }
     colors = [c for rule, c in color_dict.items()]
 
-    # # Separate 'Empirical Rule' and specific rules
-    # f1_rules = mean_distances[mean_distances['rule_name'] == 'F1']
-    # other_rules = mean_distances[mean_distances['rule_name'] != 'F1']
+    # Update annealing rule name to fit better
+    mean_distances['rule_name'] = mean_distances['rule_name'].apply(lambda x: x if x != "Best Positional Scores" else "Best Positional\nScores")
 
-    # Sort specific rules by increasing distance
-    mean_distances = mean_distances.sort_values('mean')
-
-    # # Combine back with 'Empirical Rule' first
-    # if not other_rules.empty:
-    #     mean_distances = pd.concat([f1_rules, specific_rules_data]).reset_index(drop=True)
-    # else:
-    #     mean_distances = specific_rules_data
-
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(10, 4.5))
     plt.grid(True, alpha=0.3, axis="y")
     bars = plt.bar(
         mean_distances['rule_name'], mean_distances['mean'],
@@ -145,8 +139,8 @@ def bar_plot_olympics():
     plt.xticks(rotation=45, ha='right')
     # plt.xlabel("Rule Name", fontsize=20)
     plt.ylabel("Distance", fontsize=20)
-    plt.ylim((0.21, 0.4))
-    plt.gca().tick_params(axis='both', which='major', labelsize=11.5)
+    plt.ylim((0.24, 0.38))
+    plt.gca().tick_params(axis='both', which='major', labelsize=15)
 
     # Add the actual average values on top of each bar
     for bar in bars:
@@ -184,7 +178,9 @@ def scatter_plot_f1():
     # Plot each rule_name with different colors and markers
     for rule in unique_rules:
         mask = df['rule_name'] == rule
-        colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        # colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        colour = plt_util.get_consistent_color(rule,
+                                               cache=rule_colour_dict)
         marker = rule_marker_dict[rule] if rule in rule_marker_dict else plt_util.get_consistent_marker(rule)
         plt.scatter(
             df.loc[mask, 'Year'],
@@ -228,95 +224,225 @@ def bar_plot_f1():
     # Extract year from the "Game" column using regular expressions
     df['Year'] = df['Dataset'].apply(lambda x: int(re.search(r'(\d{4})', x).group(1)))
 
-    non_f1_mask = ~df['rule_name'].str.contains('F1', na=False)
-    f1_special_mask = (
-            df['rule_name'].str.contains('F1', na=False) &
-            (
-                    ((df['Year'] >= 2010) &
-                     (df['Year'] <= 2018) &
-                     (df['rule_name'] == "F1 ('10-'18)")) |
-                    ((df['Year'] >= 1991) &
-                     (df['Year'] <= 2002) &
-                     (df['rule_name'] == "F1 ('91-'02)")) |
-                    ((df['Year'] >= 2003) &
-                     (df['Year'] <= 2009) &
-                     (df['rule_name'] == "F1 ('03-'09)"))
-            )
-    )
-    # optimized_mask = (
-    #         df['rule_name'].str.contains('Best', na=False) &
-    #         (
-    #                 (df['Year'] >= 2010) &
-    #                  (df['Year'] <= 2018)
-    #         )
-    # )
-    final_mask = non_f1_mask | f1_special_mask
-    # final_mask = f1_special_mask | optimized_mask
-    # Apply the mask to filter the dataframe
-    df = df[final_mask]
+
+
+    filter_f1_by_active_year = True
+    if filter_f1_by_active_year:
+        non_f1_mask = ~df['rule_name'].str.contains('F1', na=False)
+        f1_special_mask = (
+                df['rule_name'].str.contains('F1', na=False) &
+                (
+                        ((df['Year'] >= 2010) &
+                         (df['Year'] <= 2018) &
+                         (df['rule_name'] == "F1 ('10-'18)")) |
+                        ((df['Year'] >= 1991) &
+                         (df['Year'] <= 2002) &
+                         (df['rule_name'] == "F1 ('91-'02)")) |
+                        ((df['Year'] >= 2003) &
+                         (df['Year'] <= 2009) &
+                         (df['rule_name'] == "F1 ('03-'09)"))
+                )
+        )
+        # optimized_mask = (
+        #         df['rule_name'].str.contains('Best', na=False) &
+        #         (
+        #                 (df['Year'] >= 2010) &
+        #                  (df['Year'] <= 2018)
+        #         )
+        # )
+        final_mask = non_f1_mask | f1_special_mask
+        # final_mask = f1_special_mask | optimized_mask
+        # Apply the mask to filter the dataframe
+        df = df[final_mask]
+
+    # add column to label which set of years each row is in
+    bins = [1990, 2002, 2009, 2018]
+    period_labels = ["'91-'02", "'03-'09", "'10-'18"]
+    df["period"] = pd.cut(df["Year"], bins=bins, labels=period_labels, include_lowest=True)
 
     # mean_distances = df.groupby('rule_name')['distance'].mean().reset_index()
-    mean_distances = df.groupby('rule_name')['distance'].agg(['mean', 'sem']).reset_index()
+    mean_distances = df.groupby(['period', 'rule_name'])['distance'].agg(['mean', 'sem']).reset_index()
+
+    # mean_distances = df.groupby('rule_name')['distance'].agg(['mean', 'sem']).reset_index()
     mean_distances['sem'] = mean_distances['sem'].fillna(0)
 
-    # Separate optimized rule, F1 rules and specific rules
-    optimized_rule = mean_distances[mean_distances['rule_name'].str.contains('Best')]
-    f1_rules = mean_distances[mean_distances['rule_name'].str.contains('F1')]
-    # other_rules = mean_distances[~mean_distances['rule_name'].str.contains('F1')]
-    other_rules = mean_distances[
-        ~(mean_distances['rule_name'].str.contains('F1') | mean_distances['rule_name'].str.contains('Best'))]
+    ####################
+    # START NEW CODE
+    ####################
 
-    # Sort specific rules by increasing distance
-    f1_rules = f1_rules.sort_values("rule_name")
+    pivot_data = mean_distances.pivot_table(index='period', columns='rule_name', values='mean', aggfunc='mean')
+    pivot_data['F1'] = pivot_data["F1 ('10-'18)"].fillna(pivot_data["F1 ('91-'02)"]).fillna(pivot_data["F1 ('03-'09)"])
+    pivot_data = pivot_data.drop(["F1 ('10-'18)", "F1 ('91-'02)", "F1 ('03-'09)"], axis=1)
 
-    rule_order = ["F1 ('91-'02)", "F1 ('03-'09)", "F1 ('10-'18)"]
-    f1_rules['rule_name'] = pd.Categorical(f1_rules['rule_name'], rule_order)
-    f1_rules = f1_rules.sort_values('rule_name')
-    specific_rules_data = other_rules.sort_values('rule_name')
-    # specific_rules_data = other_rules.sort_
+    pivot_sem = mean_distances.pivot_table(index='period', columns='rule_name', values='sem', aggfunc='mean')
+    temp_data = pivot_sem[["F1 ('10-'18)", "F1 ('91-'02)", "F1 ('03-'09)"]].replace(0, np.nan)
+    pivot_sem['F1'] = temp_data["F1 ('10-'18)"].fillna(temp_data["F1 ('91-'02)"]).fillna(temp_data["F1 ('03-'09)"])
+    pivot_sem = pivot_sem.drop(["F1 ('10-'18)", "F1 ('91-'02)", "F1 ('03-'09)"], axis=1)
 
-    # Combine back with F1 rules first
-    if not other_rules.empty:
-        mean_distances = pd.concat([optimized_rule, f1_rules, specific_rules_data]).reset_index(drop=True)
-    else:
-        mean_distances = specific_rules_data
+    rule_order = ["F1", "Best Positional Scores", "Borda", "Two Approval", "Plurality + Veto", "Plurality", "Veto"]
+    pivot_data = pivot_data.reindex(columns=rule_order)
+    pivot_sem = pivot_sem.reindex(columns=rule_order)
+
+    # Get the periods and rule names
+    periods = pivot_data.index
+    rule_names = pivot_data.columns
+    n_periods = len(periods)
+    n_rules = len(rule_names)
+
+    # Set up the plot
+    fig, ax = plt.subplots(figsize=(10, 4.5))
+
+    # Set the width of bars and positions
+    bar_width = 0.9 / n_rules  # Adjust width based on number of rule names
 
     color_dict = {
         # rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
         rule: plt_util.get_consistent_color(rule,
                                             cache=rule_colour_dict)
-        for rule in mean_distances['rule_name']
+        for rule in pivot_data.columns
     }
-    colors = [c for rule, c in color_dict.items()]
 
-    plt.figure(figsize=(10, 6))
-    plt.grid(True, alpha=0.3, axis="y")
-    bars = plt.bar(
-        mean_distances['rule_name'], mean_distances['mean'],
-        yerr=mean_distances["sem"],
-        color=colors,
-        # error_kw={'elinewidth': 1.5, 'alpha': 0.5}
-    )
+    all_bars = []
+    # Create bars for each rule_name
+    for i, period in enumerate(periods):
+        positions = []
+        values = []
+        errors = []
+        colors = []
+        # rule_names = []
+        for j, rule_name in enumerate(rule_names):
+            # Get values for this rule_name, handling missing combinations
+            # values = [pivot_data.loc[period, rule_name] if not pd.isna(pivot_data.loc[period, rule_name])
+            #           else 0 for period in periods]
+            val = pivot_data.loc[period, rule_name] if not pd.isna(pivot_data.loc[period, rule_name]) else None
+            err = pivot_sem.loc[period, rule_name] if not pd.isna(pivot_sem.loc[period, rule_name]) else None
+            if val is None:
+                continue
 
-    # plt.title('Split Distance on F1 Races', fontsize=18)
+            # values = [pivot_data.loc[period, rule_name] for rule_name in rule_names if not pd.isna(pivot_data.loc[period, rule_name])]
+
+            # Calculate position for this set of bars
+            # positions = x + (i - n_rules / 2 + 0.5) * bar_width
+            position = i + (j - n_rules/2)*bar_width
+            values.append(val)
+            errors.append(err)
+            positions.append(position)
+            # rule_names.append(rule_name)
+            colors.append(color_dict[rule_name])
+
+        # Create the bars
+        bars = ax.bar(positions, values, bar_width, color=colors, yerr=errors, label=period, alpha=0.8)
+        all_bars += bars
+
+        rule_name_labels = [
+            rule_names[idx] if rule_names[idx] != "Best Positional Scores" else "Best Positional\nScores" for idx in
+            range(len(rule_names))]
+        # Add labels underneath each bar for rule names
+        for j, (pos, val) in enumerate(zip(positions, values)):
+            # if val > 0:  # Only add label if there's actually a bar
+            # You can customize what text to show - here showing the rule_name
+            plt.text(pos, 0.072, rule_name_labels[j],
+                    ha='center', va='top', rotation=85, fontsize=12)
+
     plt.xticks(rotation=45, ha='right')
+    plt.xticks([], [])
     # plt.xlabel("Rule Name", fontsize=20)
-    plt.ylabel("Distance", fontsize=20)
+    plt.ylabel("Distance", fontsize=16)
     plt.ylim((0.08, 0.54))
-    plt.gca().tick_params(axis='both', which='major', labelsize=13)
+    plt.gca().tick_params(axis='both', which='major', labelsize=16)
+
+    for period_idx in [1, 2, 3]:
+        plt.text(x=period_idx-1, y=0.52, s=f"F1 {period_labels[period_idx - 1]}",
+                 ha='center', va='top', rotation=0,
+                 # fontweight="bold",
+                 fontsize=16
+                 )
 
     # Add the actual average values on top of each bar
-    for bar in bars:
+    for bar in all_bars:
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width() / 2., height + 0.03 * max(mean_distances['mean']),
-                 f'{height:.2f}', ha='center', va='bottom', size=13)
+                 f'{height:.2f}', ha='center', va='bottom', size=10)
 
-    plt.tight_layout()
+    # plt.subplots_adjust(bottom=0.5)
+    plt.tight_layout(rect=[0, 0.0, 1, 1])
+
     # plt.show()
-    plt.savefig("preflib/plots/F1_bar-filtered-optimized.png")
+    plt.savefig("preflib/plots/F1_bar.png")
+
+    ####################
+    # END NEW CODE
+    ####################
+
+    # # Separate optimized rule, F1 rules and specific rules
+    # optimized_rule = mean_distances[mean_distances['rule_name'].str.contains('Best')]
+    # f1_rules = mean_distances[mean_distances['rule_name'].str.contains('F1')]
+    # # other_rules = mean_distances[~mean_distances['rule_name'].str.contains('F1')]
+    # other_rules = mean_distances[
+    #     ~(mean_distances['rule_name'].str.contains('F1') | mean_distances['rule_name'].str.contains('Best'))]
+    #
+    # # Sort specific rules by increasing distance
+    # f1_rules = f1_rules.sort_values("rule_name")
+    #
+    # rule_order = ["F1 ('91-'02)", "F1 ('03-'09)", "F1 ('10-'18)"]
+    # f1_rules['rule_name'] = pd.Categorical(f1_rules['rule_name'], rule_order)
+    # f1_rules = f1_rules.sort_values('rule_name')
+    # # specific_rules_data = other_rules.sort_values('rule_name')
+    # specific_rules_data = other_rules.sort_values('mean')
+    # # specific_rules_data = other_rules.sort_
+    #
+    # # Combine back with F1 rules first
+    # if not other_rules.empty:
+    #     mean_distances = pd.concat([f1_rules, optimized_rule, specific_rules_data]).reset_index(drop=True)
+    # else:
+    #     mean_distances = specific_rules_data
+    #
+    # color_dict = {
+    #     # rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+    #     rule: plt_util.get_consistent_color(rule,
+    #                                         cache=rule_colour_dict)
+    #     for rule in mean_distances['rule_name']
+    # }
+    # colors = [c for rule, c in color_dict.items()]
+    #
+    # # Update annealing rule name to fit better
+    # mean_distances['rule_name'] = mean_distances['rule_name'].apply(lambda x: x if x != "Best Positional Scores" else "Best Positional\nScores")
+    #
+    # plt.figure(figsize=(10, 4.5))
+    # plt.grid(True, alpha=0.3, axis="y")
+    # bars = plt.bar(
+    #     mean_distances['rule_name'], mean_distances['mean'],
+    #     yerr=mean_distances["sem"],
+    #     color=colors,
+    #     # error_kw={'elinewidth': 1.5, 'alpha': 0.5}
+    # )
+    #
+    # # plt.title('Split Distance on F1 Races', fontsize=18)
+    # plt.xticks(rotation=45, ha='right')
+    # # plt.xlabel("Rule Name", fontsize=20)
+    # plt.ylabel("Distance", fontsize=26)
+    # plt.ylim((0.08, 0.54))
+    # plt.gca().tick_params(axis='both', which='major', labelsize=20)
+    #
+    # # Add the actual average values on top of each bar
+    # for bar in bars:
+    #     height = bar.get_height()
+    #     plt.text(bar.get_x() + bar.get_width() / 2., height + 0.03 * max(mean_distances['mean']),
+    #              f'{height:.2f}', ha='center', va='bottom', size=18)
+    #
+    # plt.tight_layout()
+    # # plt.show()
+    # plt.savefig("preflib/plots/F1_bar.png")
 
 
-def scatter_plot_preflib():
+def scatter_plot_preflib(include_zero_valued_elections=True, exclude_elections_above_max_y=None, show_num_voters_and_cands=False):
+    """
+
+    :param include_zero_valued_elections: If False, do not include elections where every rule has a split distance of 0.
+    :param exclude_elections_above_max_y: If set to a value, do not include any elections where any rule has a max split
+    distance greater than the given value.
+    :return:
+    """
     # Load the CSV file
     df = pd.read_csv('preflib/analysis_results-neurips.csv')
 
@@ -333,11 +459,42 @@ def scatter_plot_preflib():
     # # Extract year from the "Game" column using regular expressions
     # df['Year'] = df['Dataset'].apply(lambda x: int(re.search(r'(\d{4})', x).group(1)))
     # df['rule_name'] = df['rule_name'].replace(regex=r'City*', value='Empirical')
-    df['rule_name'] = df['rule_name'].apply(lambda x: "Empirical" if "City" in str(x) else x)
-    df['rule_name'] = df['rule_name'].apply(lambda x: "Empirical" if "UK Labour" in str(x) else x)
+    df['rule_name'] = df['rule_name'].apply(lambda x: "IRV" if "City" in str(x) else x)
+    df['rule_name'] = df['rule_name'].apply(lambda x: "IRV" if "UK Labour" in str(x) else x)
+
+    elections_to_remove = []
+    for election in df["Dataset"].unique():
+        max_distance = df[df["Dataset"] == election]["distance"].max()
+        min_distance = df[df["Dataset"] == election]["distance"].min()
+
+        if not include_zero_valued_elections and (max_distance == min_distance == 0):
+            elections_to_remove.append(election)
+        if exclude_elections_above_max_y and max_distance > exclude_elections_above_max_y:
+            elections_to_remove.append(election)
+    df = df[~df['Dataset'].isin(elections_to_remove)]
 
     mean_distances = df.groupby(['Dataset', 'rule_name', 'n_alternatives', 'n_voters'])['distance'].mean().reset_index()
     mean_distances = mean_distances.sort_values('Dataset')
+
+    city_order = ["Burlington",
+                  "Aspen",
+                  "Berkeley",
+                  "Minneapolis",
+                  "Oakland",
+                  "Pierce",
+                  "San Francisco",
+                  "San Leandro",
+                  ]
+
+    # Create a function that returns the position of the first matching substring, or a large number if none match
+    def get_sort_key(dataset_name):
+        for i, substring in enumerate(city_order):
+            if substring in dataset_name:
+                return i
+        return len(city_order)  # If no match, put at the end
+
+    mean_distances['sort_key'] = mean_distances['Dataset'].apply(get_sort_key)
+    mean_distances = mean_distances.sort_values('sort_key').drop('sort_key', axis=1)
 
     rules_to_display = [
         'Best Positional Scores',
@@ -347,25 +504,19 @@ def scatter_plot_preflib():
         'Plurality',
         'Plurality + Veto',
         'Two Approval',
-        'Empirical'
+        'IRV'
     ]
-
-    x_axis_labels = {
-        "UK Labour": "UK Labour",
-        "City (2012 Oakland City Council - District 5)": "Oakland 2012",
-        "City (Aspen City Council 2009)": "Aspen Council 2009",
-        "City (Aspen Mayor 2009)": "Aspen Mayor 2009",
-        "City (2006 Burlington Mayoral Election)": "Burlington 2006",
-        "City (2009 Burlington Mayoral Election)": "Burlington 2009",
-        "City (2010 Berkeley City Council - District 7)": "Berkely 2010",
-    }
 
     # Get unique rule_names for coloring
     unique_rules = mean_distances['rule_name'].unique()
     unique_datasets = mean_distances['Dataset'].unique()
 
-    # Create a scatter plot
-    plt.figure(figsize=(14, 6))
+
+    legend_beside_plot = False
+    if legend_beside_plot:
+        fig = plt.figure(figsize=(14, 4.5))
+    else:
+        fig = plt.figure(figsize=(10, 4.5))
 
     x_positions = np.arange(len(unique_datasets))
     dataset_to_x = dict(zip(unique_datasets, x_positions))
@@ -374,6 +525,7 @@ def scatter_plot_preflib():
     x_label_dict = {x: name for name, x in dataset_to_x.items()}
     x_labels = [x_label_dict[x] for x in x_label_dict.keys()]
 
+    # map election index to tuples of (max_dist, n_voters, n_candidates, min_dist)
     election_size_info = {}
 
     # Plot each rule_name with different colors and markers
@@ -386,10 +538,15 @@ def scatter_plot_preflib():
         n_alternatives = row['n_alternatives']
         # if len(election_size_info) == 0 or election_size_info[-1] != (row['distance'], n_voters, n_alternatives):
         if x_pos not in election_size_info:
-            election_size_info[x_pos] = (distance, n_voters, n_alternatives)
+            election_size_info[x_pos] = (distance, n_voters, n_alternatives, distance)
         else:
             if election_size_info[x_pos][0] < distance:
-                election_size_info[x_pos] = (distance, n_voters, n_alternatives)
+                # update largest distance for this election
+                election_size_info[x_pos] = (distance, n_voters, n_alternatives, election_size_info[x_pos][3])
+
+            if election_size_info[x_pos][3] > distance:
+                # update smallest distance for this election
+                election_size_info[x_pos] = (election_size_info[x_pos][0], n_voters, n_alternatives, distance)
         # election_size_info.append((row['distance'], n_voters, n_alternatives))
 
         if rule in rule_renaming_map:
@@ -397,7 +554,9 @@ def scatter_plot_preflib():
         if rule not in rules_to_display:
             continue
 
-        colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        # colour = rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        colour = plt_util.get_consistent_color(rule,
+                                               cache=rule_colour_dict)
         marker = rule_marker_dict[rule] if rule in rule_marker_dict else plt_util.get_consistent_marker(rule)
         # mask = mean_distances['rule_name'] == rule
         plt.scatter(
@@ -405,35 +564,54 @@ def scatter_plot_preflib():
             row['distance'],
             color=colour,
             marker=marker,
-            s=40,
+            s=90,
             label=rule,
-            alpha=0.7
+            alpha=1
         )
 
-    for x_pos in range(len(election_size_info)):
-        height, n_voters, n_alternatives = election_size_info[x_pos]
-        plt.text(x_pos, height, f"{n_voters}\n{n_alternatives}", ha='center', va='bottom', size=9)
+    # Add some text showing the number of voters/candidates
+    if show_num_voters_and_cands:
+        for x_pos in range(len(election_size_info)):
+            height, n_voters, n_alternatives, min_dist = election_size_info[x_pos]
+            plt.text(x_pos, height+0.005, f"{n_voters}\n{n_alternatives}", ha='center', va='bottom', size=9)
+
+    print(f"Printing labels and indices of preflib city elections:")
+    for idx, label in enumerate(x_labels):
+        height, n_voters, n_alternatives, min_dist = election_size_info[idx]
+        print(f"{idx}, {label}, {n_voters}, {n_alternatives}, {min_dist}")
 
     # plt.xticks(x_positions, x_labels, rotation=45, ha='right')
 
-    # plt.xlim((0.015, 0.145))
-    # plt.ylim((-0.01, 0.18))
+    plt.ylim((-0.005, 0.17))
 
     # Add labels and title
-    plt.gca().tick_params(axis='both', which='major', labelsize=12)
-    plt.ylabel('Distance', fontsize=16)
-    plt.xlabel('Election', fontsize=16)
-    # plt.title('Split Distance of Political Elections', fontsize=18)
+    plt.gca().tick_params(axis='both', which='major', labelsize=20)
+    plt.ylabel('Distance', fontsize=26)
+    plt.xlabel('Election', fontsize=26)
 
-    handles, labels = plt_util.organize_legend_handles(plt.gca())
+    plt.gca().xaxis.set_minor_locator(MultipleLocator(1))
+    plt.gca().tick_params(axis='x', which='minor', bottom=True)
 
-    # map each unique label to a corresponding handle, doesn't matter which of the matching handles
+    if legend_beside_plot:
+        handles, labels = plt_util.organize_legend_handles(plt.gca())
+        plt.legend(handles, labels, ncols=1, bbox_to_anchor=(1.335, 1.03), fontsize=15)
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout(rect=[0, 0, 1, 1])
+    else:
+        handles, labels = plt_util.organize_legend_handles(plt.gca())
+        # plt.legend(handles, labels, ncols=6, bbox_to_anchor=(0.4, 0.01), fontsize=15)
+        fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=20)
+        # fig.legend(handles, labels, ncols=6,
+        #            loc="upper center",
+        #            bbox_to_anchor=(0.53, 0.97),
+        #            fontsize=14.5)
+        plt.grid(True, alpha=0.3)
+        # plt.subplots_adjust(bottom=0.5)
+        plt.tight_layout(rect=[0, 0.2, 1, 1])
 
-    plt.legend(handles, labels, ncols=1, bbox_to_anchor=(1.28, 1.024), fontsize=15)
-    plt.grid(True, alpha=0.3)
 
     # Show the plot
-    plt.tight_layout(rect=[0, 0, 1, 1])
+    # plt.tight_layout(rect=[0, 0, 1, 1])
     # plt.show()
     plt.savefig("preflib/plots/preflib_scatter.png")
 
@@ -451,6 +629,9 @@ def bar_plot_preflib():
     # specific_rules = ['Borda', 'Plurality', 'Plurality Veto', 'Anti-Plurality', "Annealing Score Vector",
     #                   'Two Approval']
 
+    for old_name, new_name in rule_renaming_map.items():
+        df = df.replace(to_replace=old_name, value=new_name)
+
     rules_to_display = [
         'Best Positional Scores',
         'Veto',
@@ -458,7 +639,7 @@ def bar_plot_preflib():
         'Plurality',
         'Plurality + Veto',
         'Two Approval',
-        'Empirical'
+        'IRV'
     ]
 
     # color_dict = {
@@ -472,14 +653,14 @@ def bar_plot_preflib():
     # }
 
     # Create a new column to group by
-    df['rule_group'] = df['rule_name'].apply(lambda x: x if x in rules_to_display else 'Empirical Rule')
+    df['rule_group'] = df['rule_name'].apply(lambda x: x if x in rules_to_display else 'IRV')
 
     # Calculate average distance for each rule group
     avg_by_rule = df.groupby('rule_group')['distance'].mean().reset_index()
 
     # Separate 'Empirical Rule' and specific rules
-    other_rules = avg_by_rule[avg_by_rule['rule_group'] == 'Empirical Rule']
-    specific_rules_data = avg_by_rule[avg_by_rule['rule_group'] != 'Empirical Rule']
+    other_rules = avg_by_rule[avg_by_rule['rule_group'] == 'IRV']
+    specific_rules_data = avg_by_rule[avg_by_rule['rule_group'] != 'IRV']
 
     # Sort specific rules by increasing distance
     specific_rules_data = specific_rules_data.sort_values('distance')
@@ -491,7 +672,9 @@ def bar_plot_preflib():
         avg_by_rule = specific_rules_data
 
     color_dict = {
-        rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        # rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        rule: plt_util.get_consistent_color(rule,
+                                            cache=rule_colour_dict)
         for rule in avg_by_rule['rule_group']
     }
     colors = [c for rule, c in color_dict.items()]
@@ -591,10 +774,14 @@ def count_min_distance_ties(data="preflib"):
 
 if __name__ == "__main__":
     bar_plot_f1()
-    scatter_plot_f1()
-    scatter_plot_olympics()
-    bar_plot_olympics()
-    bar_plot_preflib()
-    scatter_plot_preflib()
+    # scatter_plot_f1()
+    # scatter_plot_olympics()
+    # bar_plot_olympics()
+    # bar_plot_preflib()
+    # scatter_plot_preflib(
+    #     include_zero_valued_elections=False,
+    #     exclude_elections_above_max_y=0.3,
+    #     show_num_voters_and_cands=False
+    # )
 
     # count_min_distance_ties()

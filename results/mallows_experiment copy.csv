@@ -1,8 +1,0 @@
-num_voters,num_alternatives,preference distribution,voting rule,KT Distance - 50 splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
-50,6,MALLOWS-RELPHI-R,Borda,1.765,0.78,7.77,0.0
-50,6,MALLOWS-RELPHI-R,Dowdall,1.945,0.785,7.15,0.0
-50,6,MALLOWS-RELPHI-R,Top Cycle,1.947,0.709,7.75,0.0
-50,6,MALLOWS-RELPHI-R,Plurality,2.053,0.799,7.545,0.0
-50,6,MALLOWS-RELPHI-R,Copeland,2.059,0.794,7.675,0.0
-50,6,MALLOWS-RELPHI-R,<function borda_ranking at 0x16d9c8e00>,2.204,0.812,7.605,0.0
-50,6,MALLOWS-RELPHI-R,Anti-Plurality,3.695,1.083,7.805,0.0

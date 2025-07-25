@@ -1,2 +1,0 @@
-num_voters,num_alternatives,preference distribution,voting rule,KT Distance - 50 splits,KT Distance Std,Distance from Central Vote,Central Vote Distance Std
-50,6,MALLOWS-RELPHI-R,<function borda_ranking at 0x17fac4e00>,2.088,0.818,7.745,0.0
