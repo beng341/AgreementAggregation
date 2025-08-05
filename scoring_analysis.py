@@ -34,6 +34,17 @@ def lehmer_mean(values, p):
 
     return numerator / denominator
 
+def tmean(vals):
+    """
+    Trimmed mean - Mean after removing the minimum and maximum values
+    :param vals:
+    :return:
+    """
+    if len(vals) <= 2:
+        raise ValueError(f"Too few values to test. Got only {len(vals)}")
+    svals = sorted(vals)
+    return np.mean(svals[1:-1])
+
 
 def score_data_kt_distance(review_scores):
     """
@@ -47,9 +58,11 @@ def score_data_kt_distance(review_scores):
     def single_split_distance(r_scores):
         data_splits = dict()
 
+        length_counts = Counter([len(scores) for paper, scores in r_scores.items()])
+
         # split reviews on each paper
         for paper, scores in r_scores.items():
-            if len(scores) < 6:
+            if len(scores) < 8:
                 continue
 
             # make 1 random split and save each set of scores for later
@@ -64,8 +77,10 @@ def score_data_kt_distance(review_scores):
             # # Only use balanced splits of reviewers
             # assert len(first_split) == len(second_split)
 
-        split_1 = [data_splits[paper][0] for paper in range(len(data_splits)) if paper in data_splits]
-        split_2 = [data_splits[paper][1] for paper in range(len(data_splits)) if paper in data_splits]
+        # split_1 = [data_splits[paper][0] for paper_idx, paper in range(len(data_splits)) if paper in data_splits]
+        # split_2 = [data_splits[paper][1] for paper in range(len(data_splits)) if paper in data_splits]
+        split_1 = [data_splits[paper][0] for paper in data_splits.keys() if paper in data_splits]
+        split_2 = [data_splits[paper][1] for paper in data_splits.keys() if paper in data_splits]
 
         # get scores and distances for each review
         distances = dict()
@@ -90,6 +105,7 @@ def score_data_kt_distance(review_scores):
         "median": np.median,
         # "hmean": hmean,
         "gmean": gmean,
+        "tmean": tmean
         # "midrange": lambda x: (max(x) + min(x))/2,
         # "product": np.prod
     }

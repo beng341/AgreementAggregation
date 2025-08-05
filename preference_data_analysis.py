@@ -2,12 +2,14 @@ import collections
 
 import pandas as pd
 
+import rule_comparison
 from utils import data_utils as du
 from utils import voting_utils as vu
 import rule_comparison as rc
 import numpy as np
 from preflib import preflib
 import itertools
+from scipy.stats import sem
 
 
 def evaluate_olympics_data():
@@ -187,15 +189,30 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
         # vu.six_approval,
         # vu.random_ranking,
     ]
+    all_rules = [
+        # vu.borda_minmax_ranking,
+        vu.choix_pl_ranking,
+        vu.borda_ranking,
+        vu.plurality_ranking,
+        vu.plurality_veto_ranking,
+        vu.antiplurality_ranking,
+        vu.two_approval_ranking,
+    ]
     all_rule_score_vectors = [
-        vu.f1_1991_ranking_vector(m),
-        vu.f1_2003_ranking_vector(m),
-        vu.f1_2010_ranking_vector(m),
-        vu.borda_ranking_vector(m),
-        vu.plurality_ranking_vector(m),
-        vu.plurality_veto_ranking_vector(m),
-        vu.antiplurality_ranking_vector(m),
-        vu.two_approval_ranking_vector(m),
+        # vu.f1_1991_ranking_vector(m),
+        # vu.f1_2003_ranking_vector(m),
+        # vu.f1_2010_ranking_vector(m),
+        # vu.borda_ranking_vector(m),
+        # vu.plurality_ranking_vector(m),
+        # vu.plurality_veto_ranking_vector(m),
+        # vu.antiplurality_ranking_vector(m),
+        # vu.two_approval_ranking_vector(m),
+
+        vu.borda_ranking_vector(k),
+        # vu.plurality_ranking_vector(k),
+        # vu.plurality_veto_ranking_vector(k),
+        # vu.antiplurality_ranking_vector(k),
+        # vu.two_approval_ranking_vector(k),
     ]
     all_rule_score_vectors = [vu.prettify_positional_scores(sv) for sv in all_rule_score_vectors]
     if include_rule:
@@ -364,7 +381,7 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
                 else:
                     weights.append(((gamma ** min_occurrences) - 1) / ((gamma ** (total_occurrences / 2)) - 1))
 
-                print(f"Adding weight of {weights[-1]} for alternative {a}")
+                # print(f"Adding weight of {weights[-1]} for alternative {a}")
                 # exponent = int(min_occurrences - total_occurrences / 2)
                 # approximated = gamma ** exponent
                 #
@@ -388,7 +405,8 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
 
     if return_winner:
         winning_ranking = vu.profile_ranking_from_rule(rule, profile, **kwargs)
-        return np.mean(all_distances), np.std(all_distances), winning_ranking, annealed_vector
+        # return np.mean(all_distances), np.std(all_distances), winning_ranking, annealed_vector
+        return np.mean(all_distances), sem(all_distances), winning_ranking, annealed_vector
     else:
         return np.mean(all_distances), np.std(all_distances), annealed_vector
 
@@ -466,6 +484,81 @@ def evaluate_preflib_data():
     return df
 
 
+def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
+
+    # Load ALMA data
+    df = pd.read_csv(f"{file_dir}/{file_name}")
+    out_path = f"{file_dir}/results-{file_name}"
+
+    # Format into rankings and profiles
+    profile = []
+    if file_name == "alma_output.csv":
+        # cols = ["Owner_anon", "Assignment_anon", "Rank: final individual"]
+        # rename alternatives so they are ints starting from zero
+        df['assignment'] = pd.Categorical(df['Assignment_anon']).codes
+
+        for reviewer in df["Owner_anon"].unique():
+
+            ranked_projects = df[df["Owner_anon"] == reviewer]
+            ranked_projects = ranked_projects.sort_values("Rank: final individual")
+
+            profile.append([(alt, ) for alt in ranked_projects["assignment"]])
+
+    elif file_name == "alma_data_cycle10.csv":
+        # cols = ["Reviewer id", "Submission id", "rank", "rating"]
+        # rename alternatives so they are ints starting from zero
+        df['assignment'] = pd.Categorical(df['Submission id']).codes
+
+        for reviewer in df["Reviewer id"].unique():
+
+            ranked_projects = df[df["Reviewer id"] == reviewer]
+            ranked_projects = ranked_projects.sort_values("rank")
+
+            profile.append([(alt, ) for alt in ranked_projects["assignment"]])
+    else:
+        raise ValueError(f"Unexpected path. Should be one of hardcoded values. Got: {file_name}")
+
+    print(f"# rankings {len(profile)}")
+
+    # Run ABA
+
+    num_wrong_length = 0
+    bad_orders = []
+    length = len(profile[0])
+    for idx, order in enumerate(profile):
+        if len(profile[idx]) != length:
+            num_wrong_length += 1
+            bad_orders.append(order)
+    print(f"Number of rankings out of length is: {num_wrong_length}")
+    m = max(df["assignment"]) + 1
+
+    print(f"# alternatives: {m}")
+
+    rows_to_save = []
+    row_results, dict_results = evaluate_rankings(rankings=profile,
+                                                  num_alternatives=m,
+                                                  normalize=True,
+                                                  include_rule=None,
+                                                  include_annealing=True,
+                                                  include_kemeny=False)
+
+    for row in row_results:
+        rows_to_save.append(["ALMA"] + row[:-2])
+        # preflib_results.append([data_name] + row)
+
+    cols = ["Dataset", "n_splits", "n_alternatives", "n_voters", "rule_name", "distance", "distance_std",
+            # "winning_ranking", "annealed_scores"
+            ]
+    df = pd.DataFrame(columns=cols, data=rows_to_save)
+    df.to_csv(out_path, index=False)
+
+
+
 if __name__ == "__main__":
     # evaluate_olympics_data()
-    evaluate_preflib_data()
+    # evaluate_preflib_data()
+    evaluate_alma_data(
+        file_dir="alma_data",
+        # file_name="alma_output.csv",
+        file_name="alma_data_cycle10.csv",
+    )
