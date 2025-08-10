@@ -366,13 +366,13 @@ def bar_plot_f1():
     for bar in all_bars:
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width() / 2., height + 0.03 * max(mean_distances['mean']),
-                 f'{height:.2f}', ha='center', va='bottom', size=10)
+                 f'{height:.2f}', ha='center', va='bottom', size=9)
 
     # plt.subplots_adjust(bottom=0.5)
     plt.tight_layout(rect=[0, 0.0, 1, 1])
 
     # plt.show()
-    plt.savefig("preflib/plots/F1_bar.png")
+    plt.savefig("preflib/plots/F1_bar.png", dpi=300)
 
     ####################
     # END NEW CODE
@@ -788,7 +788,7 @@ def alma_bar_plot():
     dist_std = df["distance_std"]
     data = list(zip(rule_names, distances, dist_std))
 
-    rule_order = ["PL MLE", "Single Profile Annealing", "Borda", "Plurality Veto", "Two Approval", "Plurality", "Veto"]
+    rule_order = ["PL MLE", "Single Profile Annealing", "Borda", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto", "Borda Min-Max"]
     data.sort(key=lambda x: rule_order.index(x[0]))
     rule_names, distances, dist_std = [list(t) for t in zip(*data)]
 
@@ -821,7 +821,7 @@ def alma_bar_plot():
 
     plt.xticks(rotation=45, ha='right')
     plt.ylabel("Distance", fontsize=14)
-    plt.ylim((0.06, 0.13))
+    plt.ylim((0.06, 0.15))
     plt.gca().tick_params(axis='both', which='major', labelsize=16)
 
     # Add the actual average values on top of each bar

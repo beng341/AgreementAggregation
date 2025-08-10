@@ -62,7 +62,7 @@ def score_data_kt_distance(review_scores):
 
         # split reviews on each paper
         for paper, scores in r_scores.items():
-            if len(scores) < 8:
+            if len(scores) < 6:
                 continue
 
             # make 1 random split and save each set of scores for later

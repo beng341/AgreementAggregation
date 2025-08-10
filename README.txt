@@ -1,4 +1,3 @@
-
 This repository contains code used to run the experiments, and generate the figures, for the paper "Designing Rules to Pick a Rule: Aggregation by Consistency" from Emin Berker, Ben Armstrong, Vincent Conitzer, Nihar Shah".
 
 The code is likely to be updated as we consider new experiments.

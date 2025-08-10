@@ -1,4 +1,5 @@
 import pprint
+import time
 
 import pref_voting
 import torch
@@ -357,8 +358,9 @@ def borda_minmax_ranking(profile, **kwargs):
     ranking_counts = [[0 for _ in range(k)] for _ in range(m)]
     # ranking_counts[i][j] is number of voters ranking candidate i in position j
     for ranking in profile:
-        for rank, alternative in enumerate(ranking):
-            ranking_counts[alternative][rank] += 1
+        for rank, tied_alternatives in enumerate(ranking):
+            for alternative in tied_alternatives:
+                ranking_counts[alternative][rank] += 1
 
     scores = [0 for _ in range(m)]
     removed_alternative_ranking_counts = np.zeros(m)    # track how many rankings we remove for each alternative
@@ -397,6 +399,18 @@ def borda_minmax_ranking(profile, **kwargs):
 
     ranking = scores_to_tuple_ranking(scores)
     return ranking
+
+
+@method_name(name="Trimmed Borda", rule_type="positional_scoring", reversible=False)
+def trimmed_borda_ranking(profile, **kwargs):
+    """
+    Borda's method but the top and bottom ranking that each alternative receives is removed.
+    These should be removed before the method is called (before splits are created) and this method just does Borda.
+    :param profile:
+    :param reverse_vector:
+    :return:
+    """
+    return borda_ranking(profile, reverse_vector=False, **kwargs)
 
 
 def antiplurality_ranking_vector(m):
@@ -482,6 +496,75 @@ def three_approval_ranking(profile, reverse_vector=False, **kwargs):
     assert m >= 3
     # score_vector = [1, 1, 1] + [0 for _ in range(k - 3)]
     score_vector = three_approval_ranking_vector(k)
+    if reverse_vector:
+        score_vector = list(reversed(score_vector))
+    scores = positional_scoring_scores(profile, score_vector, m=m, k=k, normalize=normalize)
+    ranking = scores_to_tuple_ranking(scores)
+    return ranking
+
+
+def seven_approval_ranking_vector(m):
+    score_vector = [1 for _ in range(7)] + [0 for _ in range(m - 7)]
+    return score_vector
+
+
+@method_name(name="Seven Approval", rule_type="positional_scoring", reversible=True, allows_weak_ranking=True)
+def seven_approval_ranking(profile, reverse_vector=False, **kwargs):
+    m = kwargs["m"]
+    k = kwargs["k"]
+    if "normalize" in kwargs:
+        normalize = kwargs["normalize"]
+    else:
+        normalize = True
+    assert m >= 7
+    # score_vector = [1, 1, 1] + [0 for _ in range(k - 3)]
+    score_vector = seven_approval_ranking_vector(k)
+    if reverse_vector:
+        score_vector = list(reversed(score_vector))
+    scores = positional_scoring_scores(profile, score_vector, m=m, k=k, normalize=normalize)
+    ranking = scores_to_tuple_ranking(scores)
+    return ranking
+
+
+def eight_approval_ranking_vector(m):
+    score_vector = [1 for _ in range(8)] + [0 for _ in range(m - 8)]
+    return score_vector
+
+
+@method_name(name="Eight Approval", rule_type="positional_scoring", reversible=True, allows_weak_ranking=True)
+def eight_approval_ranking(profile, reverse_vector=False, **kwargs):
+    m = kwargs["m"]
+    k = kwargs["k"]
+    if "normalize" in kwargs:
+        normalize = kwargs["normalize"]
+    else:
+        normalize = True
+    assert m >= 7
+    # score_vector = [1, 1, 1] + [0 for _ in range(k - 3)]
+    score_vector = eight_approval_ranking_vector(k)
+    if reverse_vector:
+        score_vector = list(reversed(score_vector))
+    scores = positional_scoring_scores(profile, score_vector, m=m, k=k, normalize=normalize)
+    ranking = scores_to_tuple_ranking(scores)
+    return ranking
+
+
+def nine_approval_ranking_vector(m):
+    score_vector = [1 for _ in range(9)] + [0 for _ in range(m - 9)]
+    return score_vector
+
+
+@method_name(name="Nine Approval", rule_type="positional_scoring", reversible=True, allows_weak_ranking=True)
+def nine_approval_ranking(profile, reverse_vector=False, **kwargs):
+    m = kwargs["m"]
+    k = kwargs["k"]
+    if "normalize" in kwargs:
+        normalize = kwargs["normalize"]
+    else:
+        normalize = True
+    assert m >= 7
+    # score_vector = [1, 1, 1] + [0 for _ in range(k - 3)]
+    score_vector = nine_approval_ranking_vector(k)
     if reverse_vector:
         score_vector = list(reversed(score_vector))
     scores = positional_scoring_scores(profile, score_vector, m=m, k=k, normalize=normalize)
@@ -1299,7 +1382,7 @@ def kemeny_gurobi(profile, time_out=None, printout_mode=False, **kwargs):
 
 
 @method_name(name="Kemeny", reversible=False)
-def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=False, **kwargs):
+def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=True, **kwargs):
     """Kemeny-Young optimal rank aggregation"""
     # (n, m, k, l) = args
     # profile = profile.rankings
@@ -1320,7 +1403,11 @@ def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=False, **kwargs):
                 G.add_edge(i, j, weight=edge_weights_np[i, j])
     G = gpcm.add_orig_edges_map(G)
     G = nx.DiGraph(G)
+    # time_out = 150
+    # t1 = time.time()
+    # print(f"Starting Kemeny with time_out={time_out}")
     elims, cost, cycle_matrix = gl.solve_problem(G, time_out=time_out, print_mode=printout_mode)
+    # print(f"Just finished Kemeny. Took {time.time() - t1}")
     for (u, v) in elims:
         edge_weights_np[u, v] = 0.0
     ranking = topological_sort_kahn(edge_weights_np)

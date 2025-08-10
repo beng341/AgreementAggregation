@@ -4,6 +4,7 @@ import pprint
 import random
 import numpy as np
 import pref_voting.profiles
+import scipy.spatial.distance
 
 from utils import data_utils as du
 from utils import voting_utils as vu
@@ -133,6 +134,45 @@ def split_data(rankings, n, m, split_type="equal_size"):
     # weights = ((gamma ** proposal_split) - 1) / (gamma ** (int(l / 2)) - 1)
     # return s1, s2, M, weights
     return s1, s2
+
+
+def jaccard_distance_between_rankings(r1, r2, weights=None, num_winners=None):
+    """
+    Quick test function to experiment with the Jaccard Index as a distance metric for a multi-winner setup.
+    Number of winners is not really a concept here yet so we hardcode it as suits our experiments.
+    :param r1:
+    :param r2:
+    :param weights:
+    :param num_winners:
+    :return:
+    """
+
+    # convert the top num_winners from each ranking into a binary set
+    flat_r1 = [tied_alt for order in r1 for tied_alt in order]
+    flat_r2 = [tied_alt for order in r2 for tied_alt in order]
+
+    if num_winners is None and len(flat_r1) < 240:
+        num_winners = len(flat_r1) // 2
+    elif num_winners is None:
+        num_winners = 240
+
+    assert max(flat_r1) == max(flat_r2)     # sanity check
+    num_candidates = max(flat_r1)+1
+    winners1 = flat_r1[:num_winners]
+    winners2 = flat_r2[:num_winners]
+
+    win_set1 = [0] * num_candidates
+    for w in winners1:
+        win_set1[w] = 1
+    win_set2 = [0] * num_candidates
+    for w in winners2:
+        win_set2[w] = 1
+
+    # compute jaccard similarity
+    dist = scipy.spatial.distance.jaccard(win_set1, win_set2, w=weights)
+    # dist = scipy.spatial.distance.jaccard(win_set1, win_set2)
+    return dist
+    # return 1-dist
 
 
 def kt_distance_between_rankings(r1, r2, weights=None, rank_map1=None, rank_map2=None):

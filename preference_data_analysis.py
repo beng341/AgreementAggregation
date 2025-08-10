@@ -130,7 +130,8 @@ def evaluate_rankings_olympics(rankings, include_annealing=False, include_kemeny
                                                                               all_s2=all_s2,
                                                                               rule=rule,
                                                                               m=num_countries,
-                                                                              use_mean_score_on_ties=False,  # rank each candidate individually
+                                                                              use_mean_score_on_ties=False,
+                                                                              # rank each candidate individually
                                                                               return_winner=True,
                                                                               normalize=False,
                                                                               all_annealing_states=all_rule_score_vectors
@@ -145,7 +146,99 @@ def evaluate_rankings_olympics(rankings, include_annealing=False, include_kemeny
     return distance_results, all_rule_distances
 
 
-def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, include_annealing=False, include_kemeny=False):
+def evaluate_rankings_alma(rankings, num_alternatives, normalize, include_rule=None, include_annealing=False,
+                           include_kemeny=False):
+    """
+    Same function as others but set up with defaults suitable for ALMA data/matching what was done in paper.
+    Evaluate the given weak rankings over many rules. Return the KT distance of each rule on the profile.
+    :param rankings: One profile containing weak rankings over alternatives. Assume, for now, that all rankings are
+    complete. Complete rankings by adding missing alternatives to tied positions at the bottom of each preference order.
+    :param num_alternatives:
+    :param include_rule: None or a function that is itself suitable as a voting rule.
+    :param include_annealing:
+    :param include_kemeny:
+    :return:
+    """
+
+    n_splits = 10
+    split_type = "equal_prob"
+
+    m = 0
+    for ranking in rankings:
+        for tup in ranking:
+            for num in tup:
+                if num > m:
+                    m = num
+    m += 1
+    n = len(rankings)
+    k = sum([len(tied_cands) for tied_cands in rankings[0]])  # assume everyone ranks equal number (?)
+
+    all_rules = [
+        vu.trimmed_borda_ranking,
+        # vu.borda_minmax_ranking,
+        # vu.choix_pl_ranking,
+        vu.borda_ranking,
+        vu.plurality_ranking,
+        vu.plurality_veto_ranking,
+        vu.antiplurality_ranking,
+        vu.two_approval_ranking,
+        vu.three_approval_ranking,
+        vu.seven_approval_ranking,
+        vu.eight_approval_ranking,
+        # vu.nine_approval_ranking,
+    ]
+    all_rule_score_vectors = [
+        vu.borda_ranking_vector(k),
+        # vu.plurality_ranking_vector(k),
+        # vu.plurality_veto_ranking_vector(k),
+        vu.antiplurality_ranking_vector(k),
+        # vu.two_approval_ranking_vector(k),
+    ]
+    all_rule_score_vectors = [vu.prettify_positional_scores(sv) for sv in all_rule_score_vectors]
+    if include_rule:
+        all_rules.append(include_rule)
+    if include_annealing:
+        all_rules.append(vu.annealing_ranking_from_splits)
+    if include_kemeny:
+        print(f"Using Kemeny. MAKE SURE TO SET TIME_OUT IN RULE. UNSET WHEN DONE.")
+        all_rules.append(vu.kemeny_gurobi_lazy)
+
+    all_rule_distances = dict()
+    distance_results = []
+
+    all_s1 = []
+    all_s2 = []
+    # all_splits = []
+    for _ in range(n_splits):
+        s1, s2 = rc.split_data(rankings, n=n, m=m, split_type=split_type)
+        # all_splits.append([s1, s2])
+        all_s1.append(s1)
+        all_s2.append(s2)
+
+    for rule in all_rules:
+        dist, std, winner, annealed_scores = kt_distance_one_profile_one_rule(profile=rankings,
+                                                                              all_s1=all_s1,
+                                                                              all_s2=all_s2,
+                                                                              rule=rule,
+                                                                              m=num_alternatives,
+                                                                              return_winner=True,
+                                                                              k=k,
+                                                                              normalize=normalize,
+                                                                              all_annealing_states=all_rule_score_vectors,
+                                                                              )
+
+        all_rule_distances[rule.name] = (dist, std)
+        distance_results.append(
+            [n_splits, num_alternatives, len(rankings), rule.name, dist, std, winner,
+             annealed_scores])
+
+        print(f"{round(dist, 5)} ± {round(std, 6)} is KT Distance of {rule.name}.")
+
+    return distance_results, all_rule_distances
+
+
+def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, include_annealing=False,
+                      include_kemeny=False):
     """
     Evaluate the given weak rankings over many rules. Return the KT distance of each rule on the profile.
     :param rankings: One profile containing weak rankings over alternatives. Assume, for now, that all rankings are
@@ -168,7 +261,7 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
                     m = num
     m += 1
     n = len(rankings)
-    k = sum([len(tied_cands) for tied_cands in rankings[0]])    # assume everyone ranks equal number (?)
+    k = sum([len(tied_cands) for tied_cands in rankings[0]])  # assume everyone ranks equal number (?)
 
     all_rules = [
         vu.plurality_ranking,
@@ -189,30 +282,15 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
         # vu.six_approval,
         # vu.random_ranking,
     ]
-    all_rules = [
-        # vu.borda_minmax_ranking,
-        vu.choix_pl_ranking,
-        vu.borda_ranking,
-        vu.plurality_ranking,
-        vu.plurality_veto_ranking,
-        vu.antiplurality_ranking,
-        vu.two_approval_ranking,
-    ]
     all_rule_score_vectors = [
-        # vu.f1_1991_ranking_vector(m),
-        # vu.f1_2003_ranking_vector(m),
-        # vu.f1_2010_ranking_vector(m),
-        # vu.borda_ranking_vector(m),
-        # vu.plurality_ranking_vector(m),
-        # vu.plurality_veto_ranking_vector(m),
-        # vu.antiplurality_ranking_vector(m),
-        # vu.two_approval_ranking_vector(m),
-
-        vu.borda_ranking_vector(k),
-        # vu.plurality_ranking_vector(k),
-        # vu.plurality_veto_ranking_vector(k),
-        # vu.antiplurality_ranking_vector(k),
-        # vu.two_approval_ranking_vector(k),
+        vu.f1_1991_ranking_vector(m),
+        vu.f1_2003_ranking_vector(m),
+        vu.f1_2010_ranking_vector(m),
+        vu.borda_ranking_vector(m),
+        vu.plurality_ranking_vector(m),
+        vu.plurality_veto_ranking_vector(m),
+        vu.antiplurality_ranking_vector(m),
+        vu.two_approval_ranking_vector(m),
     ]
     all_rule_score_vectors = [vu.prettify_positional_scores(sv) for sv in all_rule_score_vectors]
     if include_rule:
@@ -243,7 +321,8 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
                                                                               return_winner=True,
                                                                               k=k,
                                                                               normalize=normalize,
-                                                                              all_annealing_states=all_rule_score_vectors)
+                                                                              all_annealing_states=all_rule_score_vectors,
+                                                                              time_out=10)
 
         all_rule_distances[rule.name] = (dist, std)
         distance_results.append(
@@ -251,17 +330,6 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
              annealed_scores])
 
         print(f"{round(dist, 5)} ± {round(std, 6)} is KT Distance of {rule.name}.")
-
-    # if include_rule:
-    #     # Check how often each rule matches the included "actual" rule
-    #     included_rule_dist, included_rule_std = all_rule_distances[include_rule.name]
-    #
-    #     # Add binary flag if distance is lower with the potential rule
-    #
-    #     for result_list in distance_results:
-    #         if result_list[4] <= included_rule_dist
-    #
-    #     # Check how often the winner of each rule matches the winner of the included "actual" rule
 
     return distance_results, all_rule_distances
 
@@ -302,7 +370,7 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
             all_annealing_states = kwargs["all_annealing_states"]
         else:
             all_annealing_states = [
-                [(m-i-1)/m for i in range(m)]   # If not specified, start only from Borda
+                [(m - i - 1) / m for i in range(m)]  # If not specified, start only from Borda
             ]
         kwargs = {"m": m, "k": k,
                   "n_splits": len(all_s1),
@@ -321,40 +389,12 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
                                          **kw))
 
     for s1, s2 in zip(all_s1, all_s2):
-        #
-        # for _ in range(n_splits):
-        #     s1, s2 = rc.split_data(profile, n=n, m=m)
 
         kwargs = {"m": m, "k": k,
                   "normalize": normalize}
 
         ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
         ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
-
-        # # count how many times each alternative is ranked first
-        # s1_first_counts = collections.Counter()
-        # for ranking in s1:
-        #     if isinstance(ranking[0], tuple):
-        #         for alt in ranking[0]:
-        #             s1_first_counts[alt] += 1
-        #         # if len(ranking[0]) > 1:
-        #         #     print("Unexpected")
-        #         # else:
-        #         #     s1_first_counts[ranking[0]] += 1
-        #     else:
-        #         print("Unexpected")
-        # s2_first_counts = collections.Counter()
-        # for ranking in s2:
-        #     if isinstance(ranking[0], tuple):
-        #         for alt in ranking[0]:
-        #             s2_first_counts[alt] += 1
-        #         # if len(ranking[0]) > 1:
-        #         #     print("Unexpected")
-        #         # else:
-        #         #     s2_first_counts[ranking[0]] += 1
-        #     else:
-        #         print("Unexpected")
-
 
         if normalize:
             gamma = 2
@@ -380,19 +420,12 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
                     weights.append(gamma ** exponent)
                 else:
                     weights.append(((gamma ** min_occurrences) - 1) / ((gamma ** (total_occurrences / 2)) - 1))
-
-                # print(f"Adding weight of {weights[-1]} for alternative {a}")
-                # exponent = int(min_occurrences - total_occurrences / 2)
-                # approximated = gamma ** exponent
-                #
-                # exact = ((gamma ** min_occurrences) - 1) / ((gamma ** (total_occurrences / 2)) - 1)
-                # print(f"Approximate weight: {approximated}")
-                # print(f"Exact weight: {exact}")
         else:
             weights = [1] * m
-            # print(f"Using equal weights for all alternatives: {weights}")
 
-        dist = rc.kt_distance_between_rankings(ranking1, ranking2, weights=weights)
+        # dist = rc.kt_distance_between_rankings(ranking1, ranking2, weights=weights)
+        print("USING JACCARD INDEX. BEWARE!")
+        dist = rc.jaccard_distance_between_rankings(ranking1, ranking2, weights=weights)
 
         # print(f"In rule={rule}; dist={dist}")
 
@@ -406,6 +439,7 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
     if return_winner:
         winning_ranking = vu.profile_ranking_from_rule(rule, profile, **kwargs)
         # return np.mean(all_distances), np.std(all_distances), winning_ranking, annealed_vector
+        print("returning sem")
         return np.mean(all_distances), sem(all_distances), winning_ranking, annealed_vector
     else:
         return np.mean(all_distances), np.std(all_distances), annealed_vector
@@ -485,7 +519,6 @@ def evaluate_preflib_data():
 
 
 def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
-
     # Load ALMA data
     df = pd.read_csv(f"{file_dir}/{file_name}")
     out_path = f"{file_dir}/results-{file_name}"
@@ -498,11 +531,10 @@ def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
         df['assignment'] = pd.Categorical(df['Assignment_anon']).codes
 
         for reviewer in df["Owner_anon"].unique():
-
             ranked_projects = df[df["Owner_anon"] == reviewer]
             ranked_projects = ranked_projects.sort_values("Rank: final individual")
 
-            profile.append([(alt, ) for alt in ranked_projects["assignment"]])
+            profile.append([(alt,) for alt in ranked_projects["assignment"]])
 
     elif file_name == "alma_data_cycle10.csv":
         # cols = ["Reviewer id", "Submission id", "rank", "rating"]
@@ -510,53 +542,47 @@ def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
         df['assignment'] = pd.Categorical(df['Submission id']).codes
 
         for reviewer in df["Reviewer id"].unique():
-
             ranked_projects = df[df["Reviewer id"] == reviewer]
             ranked_projects = ranked_projects.sort_values("rank")
 
-            profile.append([(alt, ) for alt in ranked_projects["assignment"]])
+            profile.append([(alt,) for alt in ranked_projects["assignment"]])
     else:
         raise ValueError(f"Unexpected path. Should be one of hardcoded values. Got: {file_name}")
 
     print(f"# rankings {len(profile)}")
 
     # Run ABA
-
-    num_wrong_length = 0
-    bad_orders = []
-    length = len(profile[0])
-    for idx, order in enumerate(profile):
-        if len(profile[idx]) != length:
-            num_wrong_length += 1
-            bad_orders.append(order)
-    print(f"Number of rankings out of length is: {num_wrong_length}")
     m = max(df["assignment"]) + 1
 
     print(f"# alternatives: {m}")
 
     rows_to_save = []
-    row_results, dict_results = evaluate_rankings(rankings=profile,
-                                                  num_alternatives=m,
-                                                  normalize=True,
-                                                  include_rule=None,
-                                                  include_annealing=True,
-                                                  include_kemeny=False)
+    row_results, dict_results = evaluate_rankings_alma(rankings=profile,
+                                                       num_alternatives=m,
+                                                       normalize=True,
+                                                       include_rule=None,
+                                                       include_annealing=False,
+                                                       include_kemeny=False)
 
     for row in row_results:
         rows_to_save.append(["ALMA"] + row[:-2])
         # preflib_results.append([data_name] + row)
 
-    cols = ["Dataset", "n_splits", "n_alternatives", "n_voters", "rule_name", "distance", "distance_std",
+    cols = ["Dataset", "n_splits", "n_alternatives", "n_voters", "rule_name", "distance", "distance_sem",
             # "winning_ranking", "annealed_scores"
             ]
     df = pd.DataFrame(columns=cols, data=rows_to_save)
     df.to_csv(out_path, index=False)
 
 
-
 if __name__ == "__main__":
     # evaluate_olympics_data()
     # evaluate_preflib_data()
+    evaluate_alma_data(
+        file_dir="alma_data",
+        file_name="alma_output.csv",
+        # file_name="alma_data_cycle10.csv",
+    )
     evaluate_alma_data(
         file_dir="alma_data",
         # file_name="alma_output.csv",
