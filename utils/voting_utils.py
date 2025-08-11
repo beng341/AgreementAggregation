@@ -1484,11 +1484,11 @@ def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=False, **kwargs):
                 G.add_edge(i, j, weight=edge_weights_np[i, j])
     G = gpcm.add_orig_edges_map(G)
     G = nx.DiGraph(G)
-    time_out = 150
-    t1 = time.time()
-    print(f"Starting Kemeny with time_out={time_out}")
+    # time_out = 150
+    # t1 = time.time()
+    # print(f"Starting Kemeny with time_out={time_out}")
     elims, cost, cycle_matrix = gl.solve_problem(G, time_out=time_out, print_mode=printout_mode)
-    print(f"Just finished Kemeny. Took {time.time() - t1}")
+    # print(f"Just finished Kemeny. Took {time.time() - t1}")
     for (u, v) in elims:
         edge_weights_np[u, v] = 0.0
     ranking = topological_sort_kahn(edge_weights_np)

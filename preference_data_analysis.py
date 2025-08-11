@@ -175,16 +175,16 @@ def evaluate_rankings_alma(rankings, num_alternatives, normalize, include_rule=N
 
     all_rules = [
         vu.trimmed_borda_ranking,
-        vu.borda_minmax_ranking,
+        # vu.borda_minmax_ranking,
         # vu.choix_pl_ranking,
         vu.borda_ranking,
         vu.plurality_ranking,
         vu.plurality_veto_ranking,
         vu.antiplurality_ranking,
         vu.two_approval_ranking,
-        vu.three_approval_ranking,
-        vu.seven_approval_ranking,
-        vu.eight_approval_ranking,
+        # vu.three_approval_ranking,
+        # vu.seven_approval_ranking,
+        # vu.eight_approval_ranking,
         # vu.nine_approval_ranking,
     ]
     all_rule_score_vectors = [
@@ -569,8 +569,8 @@ def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
                                                        num_alternatives=m,
                                                        normalize=True,
                                                        include_rule=None,
-                                                       include_annealing=True,
-                                                       include_kemeny=True
+                                                       include_annealing=False,
+                                                       include_kemeny=False
                                                        )
 
     for row in row_results:

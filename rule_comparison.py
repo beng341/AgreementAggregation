@@ -150,16 +150,40 @@ def jaccard_distance_between_rankings(r1, r2, weights=None, num_winners=None):
     # convert the top num_winners from each ranking into a binary set
     flat_r1 = [tied_alt for order in r1 for tied_alt in order]
     flat_r2 = [tied_alt for order in r2 for tied_alt in order]
+    assert max(flat_r1) == max(flat_r2)     # sanity check
 
     if num_winners is None and len(flat_r1) < 240:
         num_winners = len(flat_r1) // 2
     elif num_winners is None:
         num_winners = 240
 
-    assert max(flat_r1) == max(flat_r2)     # sanity check
     num_candidates = max(flat_r1)+1
-    winners1 = flat_r1[:num_winners]
-    winners2 = flat_r2[:num_winners]
+    # winners1 = flat_r1[:num_winners]
+    # winners2 = flat_r2[:num_winners]
+
+    winners1 = []
+    for idx, order in enumerate(r1):
+        order_list = list(order)
+        if len(winners1) + len(order) > num_winners:
+            print(f"Split 1 at index {idx} overflowing list of ties has length {len(order)}. We take {num_winners-len(winners1)}.")
+            # shuffle tied winners and take random selection to get required number of winners
+            random.shuffle(order_list)
+            winners1 += order_list[:num_winners-len(winners1)]
+            break
+        elif len(winners1) + len(order) <= num_winners:
+            winners1 += order_list
+
+    winners2 = []
+    for idx, order in enumerate(r2):
+        order_list = list(order)
+        if len(winners2) + len(order) > num_winners:
+            print(f"Split 2 at index {idx} overflowing list of ties has length {len(order)}. We take {num_winners-len(winners2)}.")
+            # shuffle tied winners and take random selection to get required number of winners
+            random.shuffle(order_list)
+            winners2 += order_list[:num_winners-len(winners2)]
+            break
+        elif len(winners2) + len(order) <= num_winners:
+            winners2 += order_list
 
     win_set1 = [0] * num_candidates
     for w in winners1:
