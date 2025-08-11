@@ -333,8 +333,11 @@ def evaluate_one_rule(rule, profile, splits, m, k, l, reference_ranking=None, sp
         if rule is vu.annealing_ranking or rule is vu.annealing_ranking_from_splits:
             kwargs["n_splits"] = len(splits)
 
-        ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
-        ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
+        if rule is vu.trimmed_borda_ranking:
+            ranking1, ranking2 = vu.compute_trimmed_borda_from_splits(s1, s2, **kwargs)
+        else:
+            ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
+            ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
 
         weights = vu._weight_of_splits(m=m, l=l, s1=s1, s2=s2)
 
@@ -366,7 +369,11 @@ def evaluate_one_rule(rule, profile, splits, m, k, l, reference_ranking=None, sp
         if reference_ranking is not None:
             # measure distance between rule output on complete profile (no splits) and reference ranking
             # whole_profile = pref_voting.profiles.Profile(profile)
-            ref_output = vu.profile_ranking_from_rule(rule, profile, **kwargs)
+            if rule is vu.trimmed_borda_ranking:
+                fake_split = np.asarray([()])
+                ref_output, _ = vu.compute_trimmed_borda_from_splits(s1=profile, s2=fake_split, **kwargs)
+            else:
+                ref_output = vu.profile_ranking_from_rule(rule, profile, **kwargs)
             ref_dist = kt_distance_between_rankings(reference_ranking, ref_output)
             all_reference_distances.append(ref_dist)
 
@@ -518,21 +525,21 @@ def evaluate_splits_v_ground_truth_all_param_combos(all_n, all_m, k, l, all_dist
             # track which set of profiles we are on
             profile_set_idx += 1
 
-        # Save once in a while so not much gets lost if exiting early
-        if save_results:
-            df = pd.DataFrame(result_rows, columns=columns)
-            # df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
+            # Save once in a while so not much gets lost if exiting early
+            if save_results:
+                df = pd.DataFrame(result_rows, columns=columns)
+                # df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
 
-            if not os.path.exists(path):
-                os.makedirs(path)
-            df.to_csv(os.path.join(path, filename), index=False)
+                if not os.path.exists(path):
+                    os.makedirs(path)
+                df.to_csv(os.path.join(path, filename), index=False)
 
-            if not os.path.exists(anneal_path):
-                os.makedirs(anneal_path)
-            anneal_columns = ["Rule Name", "Distribution", "n_splits", "n", "m", "k", "Annealed Scores", "Split Distance"]
-            annealing_df = pd.DataFrame(annealing_results, columns=anneal_columns)
-            annealing_df.sort_values(by=["Distribution", "Split Distance"], ascending=True, inplace=True)
-            annealing_df.to_csv(os.path.join(anneal_path, anneal_filename), index=False)
+                if not os.path.exists(anneal_path):
+                    os.makedirs(anneal_path)
+                anneal_columns = ["Rule Name", "Distribution", "n_splits", "n", "m", "k", "Annealed Scores", "Split Distance"]
+                annealing_df = pd.DataFrame(annealing_results, columns=anneal_columns)
+                annealing_df.sort_values(by=["Distribution", "Split Distance"], ascending=True, inplace=True)
+                annealing_df.to_csv(os.path.join(anneal_path, anneal_filename), index=False)
 
     df = pd.DataFrame(result_rows, columns=columns)
     # df.sort_values(by="KT Distance Between Splits", ascending=True, inplace=True)
@@ -551,14 +558,15 @@ def compare_basic_ground_truth_vs_split_distance():
     # split_types = ["equal_size"]    # IJCAI used "equal_size"; now moving to "equal_prob"
     n_profiles = 1  # Number of profiles tested during each repetition of parameters; 1 for paper
     parameter_repetitions = 50  # Run this many trials over all combinations of other parameters; 50 for paper
-    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-neurips.csv"
+    filename = f"experiment-ground_truth_vs_split_distance-testing-nsplits={splits_per_profile}-trimmed_test.csv"
 
     all_rules = [
-        vu.annealing_ranking_from_splits,
-        vu.kemeny_gurobi_lazy,
-        vu.choix_pl_ranking,
-        vu.borda_ranking,
-        vu.borda_minmax_ranking,
+        # vu.annealing_ranking_from_splits,
+        # vu.kemeny_gurobi_lazy,
+        # vu.choix_pl_ranking,
+        # vu.borda_ranking,
+        vu.trimmed_borda_ranking,
+        # vu.borda_minmax_ranking,
         vu.plurality_ranking,
         vu.plurality_veto_ranking,
         vu.antiplurality_ranking,

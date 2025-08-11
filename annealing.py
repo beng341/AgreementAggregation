@@ -199,7 +199,6 @@ class SingleProfileScoreVectorAnnealer(Annealer):
 
     def energy(self):
         all_dists = []
-        print("Annealing is using JACCARD. BEWARE")
         for idx, (s1_rank_count, s2_rank_count) in enumerate(zip(self.all_s1_rank_counts, self.all_s2_rank_counts)):
 
             # s1 is ndarray of rank counts
@@ -260,13 +259,17 @@ class SingleProfileScoreVectorAnnealer(Annealer):
             else:
                 weights = None
 
-            # dist_fast = rc.kt_distance_between_rankings(ranking1, ranking2,
-            #                                             weights=weights,
-            #                                             # rank_map1=rank_map1,
-            #                                             # rank_map2=rank_map2
-            #                                             )
-            dist_fast = rc.jaccard_distance_between_rankings(ranking1, ranking2,
-                                                             weights=weights)
+            use_jaccard = False
+            if use_jaccard:
+                print("Annealing is using JACCARD. BEWARE")
+                dist_fast = rc.jaccard_distance_between_rankings(ranking1, ranking2,
+                                                                 weights=weights)
+            else:
+                dist_fast = rc.kt_distance_between_rankings(ranking1, ranking2,
+                                                            weights=weights,
+                                                            # rank_map1=rank_map1,
+                                                            # rank_map2=rank_map2
+                                                            )
 
             all_dists.append(dist_fast)
 

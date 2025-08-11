@@ -175,7 +175,7 @@ def evaluate_rankings_alma(rankings, num_alternatives, normalize, include_rule=N
 
     all_rules = [
         vu.trimmed_borda_ranking,
-        # vu.borda_minmax_ranking,
+        vu.borda_minmax_ranking,
         # vu.choix_pl_ranking,
         vu.borda_ranking,
         vu.plurality_ranking,
@@ -264,6 +264,8 @@ def evaluate_rankings(rankings, num_alternatives, normalize, include_rule=None, 
     k = sum([len(tied_cands) for tied_cands in rankings[0]])  # assume everyone ranks equal number (?)
 
     all_rules = [
+        vu.trimmed_borda_ranking,
+        vu.borda_minmax_ranking,
         vu.plurality_ranking,
         vu.f1_1991_ranking,
         vu.f1_2003_ranking,
@@ -393,8 +395,11 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
         kwargs = {"m": m, "k": k,
                   "normalize": normalize}
 
-        ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
-        ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
+        if rule is vu.trimmed_borda_ranking:
+            ranking1, ranking2 = vu.compute_trimmed_borda_from_splits(s1, s2, **kwargs)
+        else:
+            ranking1 = vu.profile_ranking_from_rule(rule, s1, **kwargs)
+            ranking2 = vu.profile_ranking_from_rule(rule, s2, **kwargs)
 
         if normalize:
             gamma = 2
@@ -423,9 +428,12 @@ def kt_distance_one_profile_one_rule(profile, all_s1, all_s2, rule, m, return_wi
         else:
             weights = [1] * m
 
-        # dist = rc.kt_distance_between_rankings(ranking1, ranking2, weights=weights)
-        print("USING JACCARD INDEX. BEWARE!")
-        dist = rc.jaccard_distance_between_rankings(ranking1, ranking2, weights=weights)
+        use_jaccard = False
+        if use_jaccard:
+            print("USING JACCARD INDEX. BEWARE!")
+            dist = rc.jaccard_distance_between_rankings(ranking1, ranking2, weights=weights)
+        else:
+            dist = rc.kt_distance_between_rankings(ranking1, ranking2, weights=weights)
 
         # print(f"In rule={rule}; dist={dist}")
 
@@ -561,8 +569,9 @@ def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
                                                        num_alternatives=m,
                                                        normalize=True,
                                                        include_rule=None,
-                                                       include_annealing=False,
-                                                       include_kemeny=False)
+                                                       include_annealing=True,
+                                                       include_kemeny=True
+                                                       )
 
     for row in row_results:
         rows_to_save.append(["ALMA"] + row[:-2])

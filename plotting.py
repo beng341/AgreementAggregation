@@ -581,6 +581,7 @@ def plot_kt_distance_vs_ground_truth_multiple_voter_combos(show=False, out_folde
 def plot_kt_distance_vs_ground_truth():
     conference = True  # changes formatting of the figure
     filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
+    filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-trimmed.csv"
 
     df = pd.read_csv(filename)
 
@@ -663,7 +664,7 @@ def plot_kt_distance_vs_ground_truth():
             axes[idx].set_xlim((0.025, 0.115))
             axes[idx].set_ylim((0.023, 0.3))
         elif pref_dist == "plackett_luce":
-            axes[idx].set_xlim((0.038, 0.13))
+            axes[idx].set_xlim((0.035, 0.13))
             axes[idx].set_ylim((0.055, 0.35))
 
         # x_ticks = [0.04, 0.07, 0.10, 0.13]
@@ -733,7 +734,7 @@ def plot_kt_distance_vs_ground_truth():
         # plt.tight_layout(rect=(0, 0, 1, 1))  # l b r t
         # fig.subplots_adjust(bottom=0.3)
         fig.supylabel("KT Distance To Ground Truth", fontsize=20, y=0.55)
-        fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.5, y=0.02)
+        fig.supxlabel("KT Distance Between Splits", fontsize=20, x=0.45, y=0.02)
         # fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.295, 0.924))
         # fig.legend(handles, labels, ncols=3, loc="outside lower center", fontsize=15)
         fig.legend(handles, labels, ncols=1, bbox_to_anchor=(0.985, 0.94), fontsize=15)

@@ -776,8 +776,8 @@ def count_min_distance_ties(data="preflib"):
     print(f"Empirical rule is tied in {empirical_tie_counts} elections.")
 
 
-def alma_bar_plot():
-    file_name = "alma_data_cycle10"
+def alma_bar_plot(file_name="alma_data_cycle10"):
+    # file_name = "alma_data_cycle10"
     # file_name = "alma_output"
     folder = "alma_data"
     data_path = f"{folder}/results-{file_name}.csv"
@@ -785,10 +785,11 @@ def alma_bar_plot():
 
     rule_names = df["rule_name"]
     distances = df["distance"]
-    dist_std = df["distance_std"]
+    dist_std = df["distance_sem"]
     data = list(zip(rule_names, distances, dist_std))
 
-    rule_order = ["PL MLE", "Single Profile Annealing", "Borda", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto", "Borda Min-Max"]
+    rule_order = ["Trimmed Borda", "Single Profile Annealing", "Borda", "PL MLE", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto",]
+    data = [tup for tup in data if tup[0] in rule_order]
     data.sort(key=lambda x: rule_order.index(x[0]))
     rule_names, distances, dist_std = [list(t) for t in zip(*data)]
 
@@ -821,7 +822,7 @@ def alma_bar_plot():
 
     plt.xticks(rotation=45, ha='right')
     plt.ylabel("Distance", fontsize=14)
-    plt.ylim((0.06, 0.15))
+    plt.ylim((0.05, 0.13))
     plt.gca().tick_params(axis='both', which='major', labelsize=16)
 
     # Add the actual average values on top of each bar
@@ -851,4 +852,5 @@ if __name__ == "__main__":
 
     # count_min_distance_ties()
 
-    alma_bar_plot()
+    alma_bar_plot(file_name="alma_data_cycle10")
+    alma_bar_plot(file_name="alma_output")

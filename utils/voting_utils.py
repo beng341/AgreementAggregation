@@ -395,7 +395,7 @@ def borda_minmax_ranking(profile, **kwargs):
                 alternative_frequencies[alt] += 1
     alternative_frequencies += removed_alternative_ranking_counts
 
-    scores = normalize_positional_scores(profile, scores, m, frequencies=alternative_frequencies)
+    # scores = normalize_positional_scores(profile, scores, m, frequencies=alternative_frequencies)
 
     ranking = scores_to_tuple_ranking(scores)
     return ranking
@@ -410,7 +410,88 @@ def trimmed_borda_ranking(profile, **kwargs):
     :param reverse_vector:
     :return:
     """
+    if profile is not None:
+        import warnings
+        warnings.warn("Not actually expected to call this at the moment. You should use "
+                        "compute_trimmed_borda_from_splits()")
     return borda_ranking(profile, reverse_vector=False, **kwargs)
+
+
+def compute_trimmed_borda_from_splits(s1, s2, **kwargs):
+    m = kwargs["m"]
+    k = kwargs["k"]
+    score_vector = [(k - i - 1) / k for i in range(k)]
+
+    # profile = s1 + s2
+    if isinstance(s1, np.ndarray) and isinstance(s2, np.ndarray):
+        use_numpy = True
+        real_s1 = s1.tolist()
+        real_s1 = [[(alt, ) for alt in order] for order in real_s1]
+        real_s2 = s2.tolist()
+        real_s2 = [[(alt, ) for alt in order] for order in real_s2]
+        profile = [(order, idx) for idx, order in enumerate(real_s1 + real_s2)]
+    else:
+        use_numpy = False
+        profile = [(order, idx) for idx, order in enumerate(s1+s2)]
+
+    random.shuffle(profile)
+
+    # track highest/lowest rank each alternative has received and the order index which gave it
+    to_remove_high = {} # map alternative to (rank, profile_index); update for a lower rank
+    to_remove_low = {}
+    # count number of voters ranking each alternative at each rank
+    # ranking_counts = [[0 for _ in range(k)] for _ in range(m)]
+    # ranking_counts[i][j] is number of voters ranking candidate i in position j
+    for ranking, idx in profile:
+        for rank, tied_alternatives in enumerate(ranking):
+            for alternative in tied_alternatives:
+                if alternative in to_remove_high:
+                    if rank < to_remove_high[alternative][0]:
+                        to_remove_high[alternative] = (rank, idx)
+                else:
+                    to_remove_high[alternative] = (rank, idx)
+                if alternative in to_remove_low:
+                    if rank > to_remove_low[alternative][0]:
+                        to_remove_low[alternative] = (rank, idx)
+                else:
+                    to_remove_low[alternative] = (rank, idx)
+
+                # ranking_counts[alternative][rank] += 1
+
+    # construct rank matrices for each alternative, removing indices as required
+    s1_scores = [0 for _ in range(m)]
+    s1_ranking_counts = np.zeros(m)
+    s2_scores = [0 for _ in range(m)]
+    s2_ranking_counts = np.zeros(m)
+    for current_idx, (order, original_idx) in enumerate(profile):
+        if original_idx < len(s1):  # order being considered is in split 1
+            for rank, tied_alternatives in enumerate(order):
+                for alt in tied_alternatives:
+                    if to_remove_high[alt][1] == original_idx:
+                        # this is the order that ranked the alternative highest, don't count that towards score
+                        continue
+                    elif to_remove_low[alt][1] == original_idx:
+                        continue
+                    else:
+                        s1_scores[alt] += (k - rank)
+                        s1_ranking_counts[alt] += 1
+        else:   # order being considered is in split 2
+            for rank, tied_alternatives in enumerate(order):
+                for alt in tied_alternatives:
+                    if to_remove_high[alt][1] == original_idx:
+                        continue
+                    elif to_remove_low[alt][1] == original_idx:
+                        continue
+                    else:
+                        # this ranking does not contribute the highest or lowest ranking to the alternative, add score
+                        s2_scores[alt] += (k - rank)
+                        s2_ranking_counts[alt] += 1
+
+    s1_scores = normalize_positional_scores(profile, s1_scores, m, frequencies=s1_ranking_counts)
+    s2_scores = normalize_positional_scores(profile, s2_scores, m, frequencies=s2_ranking_counts)
+    r1 = scores_to_tuple_ranking(s1_scores)
+    r2 = scores_to_tuple_ranking(s2_scores)
+    return r1, r2
 
 
 def antiplurality_ranking_vector(m):
@@ -903,7 +984,7 @@ def annealing_ranking_from_splits(profile, all_s1=None, all_s2=None, return_vect
     if "n_steps" in kwargs:
         n_steps = kwargs["n_steps"]
     else:
-        n_steps = 500
+        n_steps = 100
 
     best_energy = 100000000
     best_annealed_vector = all_annealing_states[0]
@@ -1382,7 +1463,7 @@ def kemeny_gurobi(profile, time_out=None, printout_mode=False, **kwargs):
 
 
 @method_name(name="Kemeny", reversible=False)
-def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=True, **kwargs):
+def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=False, **kwargs):
     """Kemeny-Young optimal rank aggregation"""
     # (n, m, k, l) = args
     # profile = profile.rankings
@@ -1403,11 +1484,11 @@ def kemeny_gurobi_lazy(profile, time_out=None, printout_mode=True, **kwargs):
                 G.add_edge(i, j, weight=edge_weights_np[i, j])
     G = gpcm.add_orig_edges_map(G)
     G = nx.DiGraph(G)
-    # time_out = 150
-    # t1 = time.time()
-    # print(f"Starting Kemeny with time_out={time_out}")
+    time_out = 150
+    t1 = time.time()
+    print(f"Starting Kemeny with time_out={time_out}")
     elims, cost, cycle_matrix = gl.solve_problem(G, time_out=time_out, print_mode=printout_mode)
-    # print(f"Just finished Kemeny. Took {time.time() - t1}")
+    print(f"Just finished Kemeny. Took {time.time() - t1}")
     for (u, v) in elims:
         edge_weights_np[u, v] = 0.0
     ranking = topological_sort_kahn(edge_weights_np)

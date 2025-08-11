@@ -40,10 +40,10 @@ def tmean(vals):
     :param vals:
     :return:
     """
-    if len(vals) <= 2:
-        raise ValueError(f"Too few values to test. Got only {len(vals)}")
-    svals = sorted(vals)
-    return np.mean(svals[1:-1])
+    # if len(vals) <= 2:
+    #     raise ValueError(f"Too few values to test. Got only {len(vals)}")
+    # svals = sorted(vals)
+    return np.mean(vals)
 
 
 def score_data_kt_distance(review_scores):
@@ -55,15 +55,20 @@ def score_data_kt_distance(review_scores):
     :return:
     """
 
+    for _, scores in review_scores.items():
+        scores.sort()
+
     def single_split_distance(r_scores):
         data_splits = dict()
-
-        length_counts = Counter([len(scores) for paper, scores in r_scores.items()])
 
         # split reviews on each paper
         for paper, scores in r_scores.items():
             if len(scores) < 6:
                 continue
+
+            trim = True
+            if trim:
+                scores = scores[1:-1]
 
             # make 1 random split and save each set of scores for later
             random.shuffle(scores)
@@ -96,6 +101,7 @@ def score_data_kt_distance(review_scores):
             dist = rc.kt_distance_between_rankings(wr1, wr2)
 
             distances[func_name] = dist
+
         return distances
 
     aggregation_functions = {
