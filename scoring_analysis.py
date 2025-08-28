@@ -34,16 +34,18 @@ def lehmer_mean(values, p):
 
     return numerator / denominator
 
+
 def tmean(vals):
     """
     Trimmed mean - Mean after removing the minimum and maximum values
     :param vals:
     :return:
     """
-    # if len(vals) <= 2:
-    #     raise ValueError(f"Too few values to test. Got only {len(vals)}")
-    # svals = sorted(vals)
-    return np.mean(vals)
+    if len(vals) <= 2:
+        raise ValueError(f"Too few values to test. Got only {len(vals)}")
+    svals = sorted(vals)
+    # return np.mean(vals)
+    return np.mean(svals[1:-1])
 
 
 def score_data_kt_distance(review_scores):
@@ -66,7 +68,7 @@ def score_data_kt_distance(review_scores):
             if len(scores) < 6:
                 continue
 
-            trim = True
+            trim = False
             if trim:
                 scores = scores[1:-1]
 

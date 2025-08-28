@@ -175,17 +175,17 @@ def evaluate_rankings_alma(rankings, num_alternatives, normalize, include_rule=N
 
     all_rules = [
         vu.trimmed_borda_ranking,
-        # vu.borda_minmax_ranking,
-        # vu.choix_pl_ranking,
+        vu.borda_minmax_ranking,
+        vu.choix_pl_ranking,
         vu.borda_ranking,
         vu.plurality_ranking,
         vu.plurality_veto_ranking,
         vu.antiplurality_ranking,
         vu.two_approval_ranking,
-        # vu.three_approval_ranking,
-        # vu.seven_approval_ranking,
-        # vu.eight_approval_ranking,
-        # vu.nine_approval_ranking,
+        # # vu.three_approval_ranking,
+        # # vu.seven_approval_ranking,
+        # # vu.eight_approval_ranking,
+        # # vu.nine_approval_ranking,
     ]
     all_rule_score_vectors = [
         vu.borda_ranking_vector(k),
@@ -585,15 +585,15 @@ def evaluate_alma_data(file_dir="alma_data", file_name="alma_output.csv"):
 
 
 if __name__ == "__main__":
-    # evaluate_olympics_data()
-    # evaluate_preflib_data()
-    evaluate_alma_data(
-        file_dir="alma_data",
-        file_name="alma_output.csv",
-        # file_name="alma_data_cycle10.csv",
-    )
-    evaluate_alma_data(
-        file_dir="alma_data",
-        # file_name="alma_output.csv",
-        file_name="alma_data_cycle10.csv",
-    )
+    evaluate_olympics_data()
+    evaluate_preflib_data()
+    # evaluate_alma_data(
+    #     file_dir="alma_data",
+    #     file_name="alma_output.csv",
+    #     # file_name="alma_data_cycle10.csv",
+    # )
+    # evaluate_alma_data(
+    #     file_dir="alma_data",
+    #     # file_name="alma_output.csv",
+    #     file_name="alma_data_cycle10.csv",
+    # )

@@ -26,6 +26,8 @@ rule_names = {
     'Optimized Scores': 'Best Positional Scores',
     'Anti-Plurality': 'Veto',
     'Plurality Veto': 'Plurality + Veto',
+    # 'Borda Min-Max': 'Trimmed Borda',
+    'Trimmed Borda': 'Pre-Split Trimmed Borda',
     # 'Kemeny': '4',
     # 'Anti-Plurality': '+',
     # 'Borda': '^',
@@ -171,7 +173,10 @@ rule_colour_dict = {'Best Positional Scores': [0.0, 0.26972, 1.0, 1.0],
                     # 'Plurality + Veto': [0.9961, 0.9725, 0.9961, 1.0],
                     'Plurality + Veto': [0.9961, 0.2725, 0.4961, 1.0],
                     'Two Approval': [0.0, 0.9844, 0.69776, 1.0],
-                    'Veto': [0.40425, 0.82895, 0.0, 1.0]}
+                    'Veto': [0.40425, 0.82895, 0.0, 1.0],
+                    'Trimmed Borda': [0.0, 0.31916, 0.1523, 1.0],
+                    "Pre-Split Trimmed Borda": [0.0, 0.31916, 0.1523, 1.0],
+                    }
 rule_marker_dict = {
     "Best Positional Scores": "*",
     "Borda": "P",
@@ -344,6 +349,14 @@ def add_series_data_to_axis(ax, data, scatter=False):
                                            colormap="gist_ncar",
                                            # cache=rule_colour_dict,
                                            cache=rule_colour_dict,
+                                           excluded_colors={
+                                               (0.97098, 0.80901, 0.97465, 0.6),
+                                               (0.0, 0.9853, 0.40946, 0.6),
+                                               (0.0, 0.99109, 0.79418, 0.6),
+                                               (0.0, 0.77523, 1.0, 0.6),
+                                               (0.73245, 1.0, 0.23416, 0.6),
+                                               (1.0, 0.0373, 0.0, 0.6)
+                                           },
                                            alpha=line_alpha,
                                            force_alpha=True)
 
@@ -580,7 +593,7 @@ def plot_kt_distance_vs_ground_truth_multiple_voter_combos(show=False, out_folde
 
 def plot_kt_distance_vs_ground_truth():
     conference = True  # changes formatting of the figure
-    filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
+    # filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-neurips.csv"
     filename = "results/experiment-ground_truth_vs_split_distance-testing-nsplits=10-trimmed.csv"
 
     df = pd.read_csv(filename)
@@ -664,7 +677,7 @@ def plot_kt_distance_vs_ground_truth():
             axes[idx].set_xlim((0.025, 0.115))
             axes[idx].set_ylim((0.023, 0.3))
         elif pref_dist == "plackett_luce":
-            axes[idx].set_xlim((0.035, 0.13))
+            axes[idx].set_xlim((0.038, 0.13))
             axes[idx].set_ylim((0.055, 0.35))
 
         # x_ticks = [0.04, 0.07, 0.10, 0.13]

@@ -785,10 +785,73 @@ def alma_bar_plot(file_name="alma_data_cycle10"):
 
     rule_names = df["rule_name"]
     distances = df["distance"]
+    dist_std = df["distance_std"]
+    data = list(zip(rule_names, distances, dist_std))
+
+    rule_order = ["Single Profile Annealing", "Borda", "PL MLE", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto", "Trimmed Borda"]
+    # rule_order = ["Pre-Split Trimmed Borda", "Single Profile Annealing", "Borda", "PL MLE", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto"]
+    data = [tup for tup in data if tup[0] in rule_order]
+    data.sort(key=lambda x: rule_order.index(x[0]))
+    rule_names, distances, dist_std = [list(t) for t in zip(*data)]
+
+    # rename before getting colour
+    rule_names = [rn if rn != "Plurality Veto" else "Plurality + Veto" for rn in rule_names]
+    rule_names = [rn if rn != "Single Profile Annealing" else "Best Positional Scores" for rn in rule_names]
+    color_dict = {
+        # rule: rule_colour_dict[rule] if rule in rule_colour_dict else plt_util.get_consistent_color(rule)
+        rule: plt_util.get_consistent_color(rule,
+                                            cache=rule_colour_dict)
+        for rule in rule_names
+    }
+    colors = [c for rule, c in color_dict.items()]
+
+    # rename after getting colour...
+    rule_names = [rn if rn != "Best Positional Scores" else "Best Positional\nScores" for rn in rule_names]
+    rule_names = [rn if rn != "Pre-Split Trimmed Borda" else "Pre-Split\nTrimmed Borda" for rn in rule_names]
+
+    # # Update annealing rule name to fit better
+    # mean_distances['rule_name'] = mean_distances['rule_name'].apply(
+    #     lambda x: x if x != "Best Positional Scores" else "Best Positional\nScores")
+
+    plt.figure(figsize=(10, 4.5))
+    plt.grid(True, alpha=0.3, axis="y")
+    bars = plt.bar(
+        rule_names, distances,
+        yerr=dist_std,
+        color=colors,
+        # error_kw={'elinewidth': 1.5, 'alpha': 0.5}
+    )
+
+    plt.xticks(rotation=45, ha='right')
+    plt.ylabel("Distance", fontsize=14)
+    plt.ylim((0.07, 0.145))
+    plt.gca().tick_params(axis='both', which='major', labelsize=16)
+
+    # Add the actual average values on top of each bar
+    for bar in bars:
+        height = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2., height + 0.02 * max(distances),
+                 f'{height:.3f}', ha='center', va='bottom', size=16)
+
+    plt.tight_layout()
+
+    plt.show()
+    # plt.savefig(f"{folder}/{file_name}-distances.png")
+
+
+def alma_bar_plot_jaccard(file_name="alma_data_cycle10-jaccard"):
+    # file_name = "alma_data_cycle10"
+    # file_name = "alma_output"
+    folder = "alma_data"
+    data_path = f"{folder}/results-{file_name}.csv"
+    df = pd.read_csv(data_path)
+
+    rule_names = df["rule_name"]
+    distances = df["distance"]
     dist_std = df["distance_sem"]
     data = list(zip(rule_names, distances, dist_std))
 
-    rule_order = ["Trimmed Borda", "Single Profile Annealing", "Borda", "PL MLE", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto",]
+    rule_order = ["Single Profile Annealing", "Borda", "PL MLE", "Kemeny", "Plurality Veto", "Two Approval", "Plurality", "Veto", "Trimmed Borda"]
     data = [tup for tup in data if tup[0] in rule_order]
     data.sort(key=lambda x: rule_order.index(x[0]))
     rule_names, distances, dist_std = [list(t) for t in zip(*data)]
@@ -821,14 +884,14 @@ def alma_bar_plot(file_name="alma_data_cycle10"):
     )
 
     plt.xticks(rotation=45, ha='right')
-    plt.ylabel("Distance", fontsize=14)
-    plt.ylim((0.05, 0.13))
+    plt.ylabel("Jaccard Dissimilarity", fontsize=14)
+    plt.ylim((0.7, 1.05))
     plt.gca().tick_params(axis='both', which='major', labelsize=16)
 
     # Add the actual average values on top of each bar
     for bar in bars:
         height = bar.get_height()
-        plt.text(bar.get_x() + bar.get_width() / 2., height + 0.04 * max(distances),
+        plt.text(bar.get_x() + bar.get_width() / 2., height + 0.02 * max(distances),
                  f'{height:.3f}', ha='center', va='bottom', size=16)
 
     plt.tight_layout()
@@ -852,5 +915,8 @@ if __name__ == "__main__":
 
     # count_min_distance_ties()
 
-    alma_bar_plot(file_name="alma_data_cycle10")
-    alma_bar_plot(file_name="alma_output")
+    alma_bar_plot(file_name="alma_data_cycle10-full")
+    alma_bar_plot(file_name="alma_output-full")
+
+    # alma_bar_plot_jaccard(file_name="alma_data_cycle10-jaccard")
+    # alma_bar_plot_jaccard(file_name="alma_output-jaccard")
